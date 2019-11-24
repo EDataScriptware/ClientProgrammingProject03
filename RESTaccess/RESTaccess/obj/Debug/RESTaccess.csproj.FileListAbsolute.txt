@@ -9,3 +9,8 @@ P:\RESTaccess\RESTaccess\obj\Debug\RESTaccess.pdb
 \\vmware-host\Shared Folders\mjfics\RIT_Semesters\ISTE-340_754 Client RIP\Lectures\week12-C# P3 - REST\2191week11bTabAddPrep\P3CsharpDLLtabs\RESTaccess\RESTaccess\obj\Debug\RESTaccess.csproj.CoreCompileInputs.cache
 \\vmware-host\Shared Folders\mjfics\RIT_Semesters\ISTE-340_754 Client RIP\Lectures\week12-C# P3 - REST\2191week11bTabAddPrep\P3CsharpDLLtabs\RESTaccess\RESTaccess\obj\Debug\RESTaccess.dll
 \\vmware-host\Shared Folders\mjfics\RIT_Semesters\ISTE-340_754 Client RIP\Lectures\week12-C# P3 - REST\2191week11bTabAddPrep\P3CsharpDLLtabs\RESTaccess\RESTaccess\obj\Debug\RESTaccess.pdb
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\RESTaccess\RESTaccess\bin\Debug\RESTaccess.dll
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\RESTaccess\RESTaccess\bin\Debug\RESTaccess.pdb
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\RESTaccess\RESTaccess\obj\Debug\RESTaccess.csprojAssemblyReference.cache
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\RESTaccess\RESTaccess\obj\Debug\RESTaccess.dll
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\RESTaccess\RESTaccess\obj\Debug\RESTaccess.pdb

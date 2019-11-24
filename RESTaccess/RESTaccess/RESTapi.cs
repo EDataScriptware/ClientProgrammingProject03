@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace RESTaccess
-{
+{ 
     public class RESTapi
     {
         string baseUri = null;
