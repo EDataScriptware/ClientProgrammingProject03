@@ -57,3 +57,17 @@ P:\P3CsharpDLLtabsMapContact\P3Csharp\P3Csharp\obj\Debug\P3Csharp.csproj.CoreCom
 P:\P3CsharpDLLtabsMapContact\P3Csharp\P3Csharp\obj\Debug\P3Csharp.csproj.CopyComplete
 P:\P3CsharpDLLtabsMapContact\P3Csharp\P3Csharp\obj\Debug\P3Csharp.exe
 P:\P3CsharpDLLtabsMapContact\P3Csharp\P3Csharp\obj\Debug\P3Csharp.pdb
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\bin\Debug\P3Csharp.exe.config
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\bin\Debug\P3Csharp.exe
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\bin\Debug\P3Csharp.pdb
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\bin\Debug\RESTaccess.dll
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\bin\Debug\RESTaccess.pdb
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\obj\Debug\P3Csharp.csprojAssemblyReference.cache
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\obj\Debug\P3Csharp.Form1.resources
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\obj\Debug\P3Csharp.Properties.Resources.resources
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\obj\Debug\P3Csharp.csproj.GenerateResource.cache
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\obj\Debug\P3Csharp.csproj.CopyComplete
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\obj\Debug\P3Csharp.exe
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\P3Csharp\P3Csharp\obj\Debug\P3Csharp.pdb
