@@ -2,3 +2,4 @@ C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingPro
 C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\RESTaccess\RESTaccess\bin\Release\RESTaccess.pdb
 C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\RESTaccess\RESTaccess\obj\Release\RESTaccess.dll
 C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\RESTaccess\RESTaccess\obj\Release\RESTaccess.pdb
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\RESTaccess\RESTaccess\obj\Release\RESTaccess.csprojAssemblyReference.cache
