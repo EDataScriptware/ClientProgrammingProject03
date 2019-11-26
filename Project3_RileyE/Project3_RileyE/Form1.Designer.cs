@@ -40,15 +40,20 @@
             this.txtboxAboutUs = new System.Windows.Forms.RichTextBox();
             this.lblAboutUsTitle = new System.Windows.Forms.Label();
             this.degreesTab = new System.Windows.Forms.TabPage();
+            this.txtboxDegreesDesc = new System.Windows.Forms.RichTextBox();
+            this.lblDegreesTitle = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.computingAndInformationTechnologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.humanCompuingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.graduateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.webAndMobileComputingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.graduateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informationSciencesTechnologiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.humanComputerInteractionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.networkingAndSystemsAdministrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.concentrationHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.minorsTab = new System.Windows.Forms.TabPage();
             this.tbControl.SuspendLayout();
             this.homeTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,6 +67,7 @@
             this.tbControl.Controls.Add(this.homeTab);
             this.tbControl.Controls.Add(this.aboutUsTab);
             this.tbControl.Controls.Add(this.degreesTab);
+            this.tbControl.Controls.Add(this.minorsTab);
             this.tbControl.Location = new System.Drawing.Point(-1, 2);
             this.tbControl.Name = "tbControl";
             this.tbControl.SelectedIndex = 0;
@@ -188,6 +194,9 @@
             // 
             // degreesTab
             // 
+            this.degreesTab.Controls.Add(this.listView1);
+            this.degreesTab.Controls.Add(this.txtboxDegreesDesc);
+            this.degreesTab.Controls.Add(this.lblDegreesTitle);
             this.degreesTab.Controls.Add(this.menuStrip1);
             this.degreesTab.Location = new System.Drawing.Point(4, 22);
             this.degreesTab.Name = "degreesTab";
@@ -195,6 +204,24 @@
             this.degreesTab.TabIndex = 2;
             this.degreesTab.Text = "Degrees";
             this.degreesTab.UseVisualStyleBackColor = true;
+            // 
+            // txtboxDegreesDesc
+            // 
+            this.txtboxDegreesDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxDegreesDesc.Location = new System.Drawing.Point(36, 126);
+            this.txtboxDegreesDesc.Name = "txtboxDegreesDesc";
+            this.txtboxDegreesDesc.Size = new System.Drawing.Size(252, 96);
+            this.txtboxDegreesDesc.TabIndex = 2;
+            this.txtboxDegreesDesc.Text = "Degrees Desc Label";
+            // 
+            // lblDegreesTitle
+            // 
+            this.lblDegreesTitle.AutoSize = true;
+            this.lblDegreesTitle.Location = new System.Drawing.Point(33, 58);
+            this.lblDegreesTitle.Name = "lblDegreesTitle";
+            this.lblDegreesTitle.Size = new System.Drawing.Size(99, 13);
+            this.lblDegreesTitle.TabIndex = 1;
+            this.lblDegreesTitle.Text = "Degrees Title Label";
             // 
             // menuStrip1
             // 
@@ -223,12 +250,19 @@
             this.computingAndInformationTechnologyToolStripMenuItem.Name = "computingAndInformationTechnologyToolStripMenuItem";
             this.computingAndInformationTechnologyToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
             this.computingAndInformationTechnologyToolStripMenuItem.Text = "Computing and Information Technology";
+            this.computingAndInformationTechnologyToolStripMenuItem.Click += new System.EventHandler(this.computingAndInformationTechnologyToolStripMenuItem_Click);
             // 
             // humanCompuingToolStripMenuItem
             // 
             this.humanCompuingToolStripMenuItem.Name = "humanCompuingToolStripMenuItem";
             this.humanCompuingToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
             this.humanCompuingToolStripMenuItem.Text = "Human Centered Computing";
+            // 
+            // webAndMobileComputingToolStripMenuItem
+            // 
+            this.webAndMobileComputingToolStripMenuItem.Name = "webAndMobileComputingToolStripMenuItem";
+            this.webAndMobileComputingToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
+            this.webAndMobileComputingToolStripMenuItem.Text = "Web and Mobile Computing";
             // 
             // graduateToolStripMenuItem
             // 
@@ -239,12 +273,6 @@
             this.graduateToolStripMenuItem.Name = "graduateToolStripMenuItem";
             this.graduateToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.graduateToolStripMenuItem.Text = "Graduate";
-            // 
-            // webAndMobileComputingToolStripMenuItem
-            // 
-            this.webAndMobileComputingToolStripMenuItem.Name = "webAndMobileComputingToolStripMenuItem";
-            this.webAndMobileComputingToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
-            this.webAndMobileComputingToolStripMenuItem.Text = "Web and Mobile Computing";
             // 
             // informationSciencesTechnologiesToolStripMenuItem
             // 
@@ -263,6 +291,27 @@
             this.networkingAndSystemsAdministrationToolStripMenuItem.Name = "networkingAndSystemsAdministrationToolStripMenuItem";
             this.networkingAndSystemsAdministrationToolStripMenuItem.Size = new System.Drawing.Size(287, 22);
             this.networkingAndSystemsAdministrationToolStripMenuItem.Text = "Networking and Systems Administration";
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.concentrationHeader});
+            this.listView1.HideSelection = false;
+            this.listView1.LabelWrap = false;
+            this.listView1.Location = new System.Drawing.Point(301, 58);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(120, 240);
+            this.listView1.TabIndex = 3;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // minorsTab
+            // 
+            this.minorsTab.Location = new System.Drawing.Point(4, 22);
+            this.minorsTab.Name = "minorsTab";
+            this.minorsTab.Size = new System.Drawing.Size(600, 364);
+            this.minorsTab.TabIndex = 3;
+            this.minorsTab.Text = "Minors";
+            this.minorsTab.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -312,6 +361,11 @@
         private System.Windows.Forms.ToolStripMenuItem informationSciencesTechnologiesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem humanComputerInteractionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem networkingAndSystemsAdministrationToolStripMenuItem;
+        private System.Windows.Forms.Label lblDegreesTitle;
+        private System.Windows.Forms.RichTextBox txtboxDegreesDesc;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader concentrationHeader;
+        private System.Windows.Forms.TabPage minorsTab;
     }
 }
 
