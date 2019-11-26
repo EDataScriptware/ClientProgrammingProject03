@@ -17,9 +17,47 @@ namespace Project3_RileyE
 
     public partial class Form1 : Form
     {
+        private RESTapi baseRestURL = null;
+
         public Form1()
         {
             InitializeComponent();
+            AboutUs();
+            Degrees();
+            
+
+
+
+        }
+
+        // About Us Tab
+        private void AboutUs()
+        {
+            baseRestURL = new RESTapi("http://ist.rit.edu/api");
+
+
+            string jsonAbout = baseRestURL.getRESTData("/about/");
+
+            // Console.WriteLine(jsonAbout);
+
+            AboutUs about = JToken.Parse(jsonAbout).ToObject<AboutUs>();
+
+            lblAboutUsTitle.Text = about.title;
+            txtboxAboutUs.Text = '"' + about.quote + '"';
+            txtboxAboutUs.Text += " - " + about.quoteAuthor;
+            txtboxAboutUsDesc.Text = about.description;
+        }
+
+        private void Degrees()
+        {
+            baseRestURL = new RESTapi("http://ist.rit.edu/api");
+
+            string jsonDegrees = baseRestURL.getRESTData("/degrees/");
+
+            Console.WriteLine(jsonDegrees);
+
+
+
         }
     }
 }
