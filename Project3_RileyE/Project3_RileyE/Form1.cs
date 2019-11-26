@@ -64,25 +64,29 @@ namespace Project3_RileyE
             baseRestURL = new RESTapi("http://ist.rit.edu/api");
            string jsonDegrees = baseRestURL.getRESTData("/degrees/");
 
-           Degrees degrees = JToken.Parse(jsonDegrees).ToObject<Degrees>();
+            degrees = JToken.Parse(jsonDegrees).ToObject<Degrees>();
            Console.WriteLine(jsonDegrees);
 
 
 
         }
 
-        
+        Degrees degrees = null;
 
         private void computingAndInformationTechnologyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            baseRestURL = new RESTapi("http://ist.rit.edu/api");
+            //baseRestURL = new RESTapi("http://ist.rit.edu/api");
 
-            string jsonUndergraduate = baseRestURL.getRESTData("/degrees/undergraduate/");
-            Undergraduate undergraduate = JToken.Parse(jsonUndergraduate).ToObject<Undergraduate>();
+            //string jsonUndergraduate = baseRestURL.getRESTData("/degrees/undergraduate/");
+            //Undergraduate undergraduate = JToken.Parse(jsonUndergraduate).ToObject<Undergraduate>();
 
-            lblDegreesTitle.Text = undergraduate.degreeName;
+            lblDegreesTitle.Text = degrees.undergraduate[0].degreeName;
+            // if I click on a CIT button
+            // the degrees title will switch to degreename
 
-            Console.WriteLine(jsonUndergraduate);
+            //Console.WriteLine("Printing undergrad===========================================");
+            //Console.WriteLine(jsonUndergraduate);
+            //Console.WriteLine("Printed undergrad=============================================");
         }
     }
 }

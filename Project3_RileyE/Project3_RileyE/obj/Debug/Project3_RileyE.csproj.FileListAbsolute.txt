@@ -11,3 +11,17 @@ C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingPro
 C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\Project3_RileyE\Project3_RileyE\obj\Debug\Project3_RileyE.csproj.CopyComplete
 C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\Project3_RileyE\Project3_RileyE\obj\Debug\Project3_RileyE.exe
 C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\Project3_RileyE\Project3_RileyE\obj\Debug\Project3_RileyE.pdb
+C:\Users\student\Desktop\Project03\Project3_RileyE\bin\Debug\Project3_RileyE.exe.config
+C:\Users\student\Desktop\Project03\Project3_RileyE\bin\Debug\Project3_RileyE.exe
+C:\Users\student\Desktop\Project03\Project3_RileyE\bin\Debug\Project3_RileyE.pdb
+C:\Users\student\Desktop\Project03\Project3_RileyE\bin\Debug\Newtonsoft.Json.dll
+C:\Users\student\Desktop\Project03\Project3_RileyE\bin\Debug\RESTaccess.dll
+C:\Users\student\Desktop\Project03\Project3_RileyE\bin\Debug\Newtonsoft.Json.xml
+C:\Users\student\Desktop\Project03\Project3_RileyE\obj\Debug\Project3_RileyE.csprojAssemblyReference.cache
+C:\Users\student\Desktop\Project03\Project3_RileyE\obj\Debug\Project3_RileyE.Form1.resources
+C:\Users\student\Desktop\Project03\Project3_RileyE\obj\Debug\Project3_RileyE.Properties.Resources.resources
+C:\Users\student\Desktop\Project03\Project3_RileyE\obj\Debug\Project3_RileyE.csproj.GenerateResource.cache
+C:\Users\student\Desktop\Project03\Project3_RileyE\obj\Debug\Project3_RileyE.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\Project03\Project3_RileyE\obj\Debug\Project3_RileyE.csproj.CopyComplete
+C:\Users\student\Desktop\Project03\Project3_RileyE\obj\Debug\Project3_RileyE.exe
+C:\Users\student\Desktop\Project03\Project3_RileyE\obj\Debug\Project3_RileyE.pdb
