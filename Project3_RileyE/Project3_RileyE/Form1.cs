@@ -28,19 +28,20 @@ namespace Project3_RileyE
 
             // music functionality - THE Legend of Zelda: Breath of the Wild "Cooking SFX" - 
             // By Manaka Kataoka, Yasuaki Iwata, Hajime Wakai | owned by Nintendo (C) (tm)
-            
+
             System.Media.SoundPlayer music = new System.Media.SoundPlayer(@"../../media/opening.wav");
             music.Play();
 
             // methods to load
             AboutUs();
             Degrees();
-            
+
 
 
 
         }
 
+        #region AboutUs
         // About Us Tab
         private void AboutUs()
         {
@@ -58,35 +59,81 @@ namespace Project3_RileyE
             txtboxAboutUs.Text += " - " + about.quoteAuthor;
             txtboxAboutUsDesc.Text = about.description;
         }
+        #endregion
+
+        #region Degrees
+        Degrees degrees = null;
+        Undergraduate undergraduate = null;
+
 
         private void Degrees()
         {
             baseRestURL = new RESTapi("http://ist.rit.edu/api");
-           string jsonDegrees = baseRestURL.getRESTData("/degrees/");
+            string jsonDegrees = baseRestURL.getRESTData("/degrees/");
 
             degrees = JToken.Parse(jsonDegrees).ToObject<Degrees>();
-           Console.WriteLine(jsonDegrees);
+            Console.WriteLine(jsonDegrees);
 
 
 
         }
 
-        Degrees degrees = null;
-
+        // Computing and Information Technology
         private void computingAndInformationTechnologyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //baseRestURL = new RESTapi("http://ist.rit.edu/api");
 
-            //string jsonUndergraduate = baseRestURL.getRESTData("/degrees/undergraduate/");
-            //Undergraduate undergraduate = JToken.Parse(jsonUndergraduate).ToObject<Undergraduate>();
+            baseRestURL = new RESTapi("http://ist.rit.edu/api");
+            string jsonUndergraduate = baseRestURL.getRESTData("/degrees/undergraduate/");
 
-            lblDegreesTitle.Text = degrees.undergraduate[0].degreeName;
-            // if I click on a CIT button
-            // the degrees title will switch to degreename
+            undergraduate = JToken.Parse(jsonUndergraduate).ToObject<Undergraduate>();
 
-            //Console.WriteLine("Printing undergrad===========================================");
-            //Console.WriteLine(jsonUndergraduate);
-            //Console.WriteLine("Printed undergrad=============================================");
+            lblDegreesTitle.Text = (degrees.undergraduate[2].title);
+            lblDegreesTitle.Text += " (" + (degrees.undergraduate[2].degreeName).ToUpper() + ")";
+
+            txtboxDegreesDesc.Text = (degrees.undergraduate[2].description);
+            
+            for (int i = 0; i < degrees.undergraduate[2].concentrations[i].Count(); i++)
+            {
+                Console.WriteLine(i);
+            }
+                       
+                        
+
+        }
+
+        // Human Center Computing
+        private void humanCompuingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lblDegreesTitle.Text = (degrees.undergraduate[1].title);
+            lblDegreesTitle.Text += " (" + (degrees.undergraduate[1].degreeName).ToUpper() + ")";
+
+            txtboxDegreesDesc.Text = (degrees.undergraduate[1].description);
+
+        }
+
+        private void webAndMobileComputingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lblDegreesTitle.Text = (degrees.undergraduate[0].title);
+            lblDegreesTitle.Text += " (" + (degrees.undergraduate[0].degreeName).ToUpper() + ")";
+
+            txtboxDegreesDesc.Text = (degrees.undergraduate[0].description);
+
+        }
+        #endregion
+
+        private void tbControl_Enter(object sender, EventArgs e)
+        {
+            // create the columns for ListView
+            degreesConcentrationListView.View = View.Details;
+            degreesConcentrationListView.GridLines = true;
+            degreesConcentrationListView.FullRowSelect = true;
+
+            // add column headers and widths
+            degreesConcentrationListView.Columns.RemoveAt(0);
+            degreesConcentrationListView.Columns.Add("Concentrations", 100);
+
+
+
         }
     }
 }

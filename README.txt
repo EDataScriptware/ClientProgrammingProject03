@@ -6,3 +6,6 @@ Client Programming Project 03
 
 - RIT's unique color Web Color converted to RGB (243, 110, 33) is used here.
 
+- Music functionality included
+
+- Organization in code by #region [text]
