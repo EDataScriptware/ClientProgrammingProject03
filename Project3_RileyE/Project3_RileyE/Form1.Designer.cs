@@ -61,7 +61,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.employmentTab = new System.Windows.Forms.TabPage();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.tabDegrees.SuspendLayout();
             this.homeTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -384,7 +385,8 @@
             // 
             // employmentTab
             // 
-            this.employmentTab.Controls.Add(this.label8);
+            this.employmentTab.Controls.Add(this.listView1);
+            this.employmentTab.Controls.Add(this.richTextBox2);
             this.employmentTab.Controls.Add(this.label7);
             this.employmentTab.Location = new System.Drawing.Point(4, 22);
             this.employmentTab.Name = "employmentTab";
@@ -402,14 +404,22 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Employment Intro Main Title";
             // 
-            // label8
+            // richTextBox2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 42);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 13);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Employment Intro Desc";
+            this.richTextBox2.Location = new System.Drawing.Point(13, 42);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(380, 332);
+            this.richTextBox2.TabIndex = 1;
+            this.richTextBox2.Text = "Employment Content Title and Desc";
+            // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(427, 42);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(380, 332);
+            this.listView1.TabIndex = 2;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // Form1
             // 
@@ -475,7 +485,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TabPage employmentTab;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.ListView listView1;
     }
 }
 
