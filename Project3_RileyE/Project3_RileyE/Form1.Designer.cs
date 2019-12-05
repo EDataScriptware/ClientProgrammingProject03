@@ -95,6 +95,7 @@
             this.lblPeopleStaffSubtitle = new System.Windows.Forms.Label();
             this.lblPeopleFacultySubtitle = new System.Windows.Forms.Label();
             this.lblEmploymentTitleDesc = new System.Windows.Forms.Label();
+            this.mapTab = new System.Windows.Forms.TabPage();
             this.tabDegrees.SuspendLayout();
             this.homeTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -120,6 +121,7 @@
             this.tabDegrees.Controls.Add(this.minorsTab);
             this.tabDegrees.Controls.Add(this.employmentTab);
             this.tabDegrees.Controls.Add(this.peopleTab);
+            this.tabDegrees.Controls.Add(this.mapTab);
             this.tabDegrees.Location = new System.Drawing.Point(-1, 2);
             this.tabDegrees.Name = "tabDegrees";
             this.tabDegrees.SelectedIndex = 0;
@@ -786,6 +788,15 @@
             this.lblEmploymentTitleDesc.TabIndex = 3;
             this.lblEmploymentTitleDesc.Text = "Employer Title and Desc.";
             // 
+            // mapTab
+            // 
+            this.mapTab.Location = new System.Drawing.Point(4, 22);
+            this.mapTab.Name = "mapTab";
+            this.mapTab.Size = new System.Drawing.Size(839, 400);
+            this.mapTab.TabIndex = 6;
+            this.mapTab.Text = "Map";
+            this.mapTab.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -893,6 +904,7 @@
         private System.Windows.Forms.Label lblPeopleFacultySubtitle;
         private System.Windows.Forms.Label lblPeopleStaffSubtitle;
         private System.Windows.Forms.Label lblEmploymentTitleDesc;
+        private System.Windows.Forms.TabPage mapTab;
     }
 }
 

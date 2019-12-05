@@ -395,7 +395,7 @@ namespace Project3_RileyE
 
         #region People
             
-            People people = null;
+        People people = null;
 
         private void People()
         {
@@ -475,6 +475,8 @@ namespace Project3_RileyE
             System.Diagnostics.Process.Start(people.faculty[index].website);
         }
         #endregion
+
+
 
 
 
