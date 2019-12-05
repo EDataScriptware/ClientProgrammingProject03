@@ -392,9 +392,23 @@ namespace Project3_RileyE
             {
                 
             }
+
+            try
+            {
+                for (int i = 0; i < people.staff.Count(); i++)
+                {
+                    cbPeopleStaff.Items.Add(people.staff[i].name);
+
+                }
+            }
+            catch (Exception)
+            {
+
+            }
             // sets first choice to 0 so it is not automatically empty at first
             cbPeopleFacultyNames.SelectedIndex = 0;
-           
+            cbPeopleStaff.SelectedIndex = 0;
+
         }
 
 
@@ -403,18 +417,30 @@ namespace Project3_RileyE
         private void cbPeopleFacultyNames_SelectedIndexChanged(object sender, EventArgs e)
         {
             int index = cbPeopleFacultyNames.SelectedIndex;
-            pbPeoplePic.ImageLocation = people.faculty[index].imagePath;
-            lblPeopleTitle.Text = people.faculty[index].title;
-            lblPeopleOffice.Text = "Office: " + people.faculty[index].office;
-            lblPeopleEmail.Text = "Email: " + people.faculty[index].email;
-            lblPeoplePhone.Text = "Phone: " + people.faculty[index].phone;
-            lblPeopleUsername.Text = "Username: " + (people.faculty[index].username).ToUpper();
+            pbPeopleFacultyPic.ImageLocation = people.faculty[index].imagePath;
+            lblPeopleFacultyTitle.Text = people.faculty[index].title;
+            lblPeopleFacultyOffice.Text = "Office: " + people.faculty[index].office;
+            lblPeopleFacultyEmail.Text = "Email: " + people.faculty[index].email;
+            lblPeopleFacultyPhone.Text = "Phone: " + people.faculty[index].phone;
+            lblPeopleFacultyUsername.Text = "Username: " + (people.faculty[index].username).ToUpper();
             
             lblLinkPeopleWebsite.Text = people.faculty[index].website;
 
 
         }
 
+        private void cbPeopleStaff_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = cbPeopleStaff.SelectedIndex;
+            pictureBoxPeopleStaff.ImageLocation = people.staff[index].imagePath;
+            lblPeopleStaffTitle.Text = people.staff[index].title;
+            lblPeopleStaffOffice.Text = "Office: " + people.staff[index].office;
+            lblPeopleStaffEmail.Text = "Email: " + people.staff[index].email;
+            lblPeopleStaffPhone.Text = "Phone: " + people.staff[index].phone;
+            lblPeopleStaffUsername.Text = "Username: " + (people.staff[index].username).ToUpper();
+
+            linkLblPeopleStaffWebsite.Text = people.staff[index].website;
+        }
 
         // click and directs on a default web browser to faculty's website
         private void lblLinkPeopleWebsite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -423,5 +449,7 @@ namespace Project3_RileyE
 
             System.Diagnostics.Process.Start(people.faculty[index].website);
         }
+
+       
     }
 }
