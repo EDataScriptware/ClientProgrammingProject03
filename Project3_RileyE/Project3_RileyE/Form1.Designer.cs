@@ -55,17 +55,21 @@
             this.networkingAndSystemsAdministrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.graduateAdvancedCertficiatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.minorsTab = new System.Windows.Forms.TabPage();
+            this.txtBoxUgNote = new System.Windows.Forms.RichTextBox();
+            this.lblMinorsNote = new System.Windows.Forms.Label();
+            this.listBoxUgMinorsCourses = new System.Windows.Forms.ListBox();
             this.Courses = new System.Windows.Forms.Label();
             this.txtboxUgMinorsTitle = new System.Windows.Forms.RichTextBox();
             this.lblUgMinorsTitle = new System.Windows.Forms.Label();
             this.listBoxUgMinorsName = new System.Windows.Forms.ListBox();
             this.employmentTab = new System.Windows.Forms.TabPage();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.listBoxUgMinorsCourses = new System.Windows.Forms.ListBox();
-            this.lblMinorsNote = new System.Windows.Forms.Label();
-            this.txtBoxUgNote = new System.Windows.Forms.RichTextBox();
+            this.txtBoxContentTitleAndDesc = new System.Windows.Forms.RichTextBox();
+            this.lblEmpIntroTitle = new System.Windows.Forms.Label();
+            this.dataGridViewCoopTable = new System.Windows.Forms.DataGridView();
+            this.Employer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Degree = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Term = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabDegrees.SuspendLayout();
             this.homeTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -74,6 +78,7 @@
             this.menuStrip1.SuspendLayout();
             this.minorsTab.SuspendLayout();
             this.employmentTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCoopTable)).BeginInit();
             this.SuspendLayout();
             // 
             // tabDegrees
@@ -354,6 +359,32 @@
             this.minorsTab.Text = "Minors";
             this.minorsTab.UseVisualStyleBackColor = true;
             // 
+            // txtBoxUgNote
+            // 
+            this.txtBoxUgNote.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxUgNote.Location = new System.Drawing.Point(29, 301);
+            this.txtBoxUgNote.Name = "txtBoxUgNote";
+            this.txtBoxUgNote.Size = new System.Drawing.Size(786, 96);
+            this.txtBoxUgNote.TabIndex = 7;
+            this.txtBoxUgNote.Text = "Undergraduate Minors Note";
+            // 
+            // lblMinorsNote
+            // 
+            this.lblMinorsNote.AutoSize = true;
+            this.lblMinorsNote.Location = new System.Drawing.Point(26, 327);
+            this.lblMinorsNote.Name = "lblMinorsNote";
+            this.lblMinorsNote.Size = new System.Drawing.Size(0, 13);
+            this.lblMinorsNote.TabIndex = 6;
+            // 
+            // listBoxUgMinorsCourses
+            // 
+            this.listBoxUgMinorsCourses.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBoxUgMinorsCourses.FormattingEnabled = true;
+            this.listBoxUgMinorsCourses.Location = new System.Drawing.Point(563, 37);
+            this.listBoxUgMinorsCourses.Name = "listBoxUgMinorsCourses";
+            this.listBoxUgMinorsCourses.Size = new System.Drawing.Size(245, 182);
+            this.listBoxUgMinorsCourses.TabIndex = 5;
+            // 
             // Courses
             // 
             this.Courses.AutoSize = true;
@@ -396,9 +427,9 @@
             // 
             // employmentTab
             // 
-            this.employmentTab.Controls.Add(this.listView1);
-            this.employmentTab.Controls.Add(this.richTextBox2);
-            this.employmentTab.Controls.Add(this.label7);
+            this.employmentTab.Controls.Add(this.dataGridViewCoopTable);
+            this.employmentTab.Controls.Add(this.txtBoxContentTitleAndDesc);
+            this.employmentTab.Controls.Add(this.lblEmpIntroTitle);
             this.employmentTab.Location = new System.Drawing.Point(4, 22);
             this.employmentTab.Name = "employmentTab";
             this.employmentTab.Size = new System.Drawing.Size(839, 400);
@@ -406,57 +437,66 @@
             this.employmentTab.Text = "Employment";
             this.employmentTab.UseVisualStyleBackColor = true;
             // 
-            // listView1
+            // txtBoxContentTitleAndDesc
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(427, 42);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(380, 332);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.txtBoxContentTitleAndDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxContentTitleAndDesc.Location = new System.Drawing.Point(13, 42);
+            this.txtBoxContentTitleAndDesc.Name = "txtBoxContentTitleAndDesc";
+            this.txtBoxContentTitleAndDesc.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtBoxContentTitleAndDesc.Size = new System.Drawing.Size(344, 248);
+            this.txtBoxContentTitleAndDesc.TabIndex = 1;
+            this.txtBoxContentTitleAndDesc.Text = "Employment Content Title and Desc";
             // 
-            // richTextBox2
+            // lblEmpIntroTitle
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(13, 42);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(380, 332);
-            this.richTextBox2.TabIndex = 1;
-            this.richTextBox2.Text = "Employment Content Title and Desc";
+            this.lblEmpIntroTitle.AutoSize = true;
+            this.lblEmpIntroTitle.Location = new System.Drawing.Point(10, 14);
+            this.lblEmpIntroTitle.Name = "lblEmpIntroTitle";
+            this.lblEmpIntroTitle.Size = new System.Drawing.Size(137, 13);
+            this.lblEmpIntroTitle.TabIndex = 0;
+            this.lblEmpIntroTitle.Text = "Employment Intro Main Title";
             // 
-            // label7
+            // dataGridViewCoopTable
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 14);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(137, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Employment Intro Main Title";
+            this.dataGridViewCoopTable.AllowUserToAddRows = false;
+            this.dataGridViewCoopTable.AllowUserToDeleteRows = false;
+            this.dataGridViewCoopTable.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.dataGridViewCoopTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCoopTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Employer,
+            this.Degree,
+            this.City,
+            this.Term});
+            this.dataGridViewCoopTable.Location = new System.Drawing.Point(377, 42);
+            this.dataGridViewCoopTable.Name = "dataGridViewCoopTable";
+            this.dataGridViewCoopTable.ReadOnly = true;
+            this.dataGridViewCoopTable.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridViewCoopTable.Size = new System.Drawing.Size(436, 248);
+            this.dataGridViewCoopTable.TabIndex = 2;
             // 
-            // listBoxUgMinorsCourses
+            // Employer
             // 
-            this.listBoxUgMinorsCourses.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBoxUgMinorsCourses.FormattingEnabled = true;
-            this.listBoxUgMinorsCourses.Location = new System.Drawing.Point(563, 37);
-            this.listBoxUgMinorsCourses.Name = "listBoxUgMinorsCourses";
-            this.listBoxUgMinorsCourses.Size = new System.Drawing.Size(245, 182);
-            this.listBoxUgMinorsCourses.TabIndex = 5;
+            this.Employer.HeaderText = "Employer";
+            this.Employer.Name = "Employer";
+            this.Employer.ReadOnly = true;
             // 
-            // lblMinorsNote
+            // Degree
             // 
-            this.lblMinorsNote.AutoSize = true;
-            this.lblMinorsNote.Location = new System.Drawing.Point(26, 327);
-            this.lblMinorsNote.Name = "lblMinorsNote";
-            this.lblMinorsNote.Size = new System.Drawing.Size(0, 13);
-            this.lblMinorsNote.TabIndex = 6;
+            this.Degree.HeaderText = "Degree";
+            this.Degree.Name = "Degree";
+            this.Degree.ReadOnly = true;
             // 
-            // txtBoxUgNote
+            // City
             // 
-            this.txtBoxUgNote.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBoxUgNote.Location = new System.Drawing.Point(29, 301);
-            this.txtBoxUgNote.Name = "txtBoxUgNote";
-            this.txtBoxUgNote.Size = new System.Drawing.Size(786, 96);
-            this.txtBoxUgNote.TabIndex = 7;
-            this.txtBoxUgNote.Text = "Undergraduate Minors Note";
+            this.City.HeaderText = "City";
+            this.City.Name = "City";
+            this.City.ReadOnly = true;
+            // 
+            // Term
+            // 
+            this.Term.HeaderText = "Term";
+            this.Term.Name = "Term";
+            this.Term.ReadOnly = true;
             // 
             // Form1
             // 
@@ -483,6 +523,7 @@
             this.minorsTab.PerformLayout();
             this.employmentTab.ResumeLayout(false);
             this.employmentTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCoopTable)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -520,13 +561,17 @@
         private System.Windows.Forms.Label lblUgMinorsTitle;
         private System.Windows.Forms.Label Courses;
         private System.Windows.Forms.TabPage employmentTab;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Label lblEmpIntroTitle;
+        private System.Windows.Forms.RichTextBox txtBoxContentTitleAndDesc;
         private System.Windows.Forms.ToolStripMenuItem graduateAdvancedCertficiatesToolStripMenuItem;
         private System.Windows.Forms.ListBox listBoxUgMinorsCourses;
         private System.Windows.Forms.Label lblMinorsNote;
         private System.Windows.Forms.RichTextBox txtBoxUgNote;
+        private System.Windows.Forms.DataGridView dataGridViewCoopTable;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Employer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Degree;
+        private System.Windows.Forms.DataGridViewTextBoxColumn City;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Term;
     }
 }
 

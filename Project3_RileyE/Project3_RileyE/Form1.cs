@@ -72,7 +72,7 @@ namespace Project3_RileyE
             string jsonDegrees = baseRestURL.getRESTData("/degrees/");
 
             degrees = JToken.Parse(jsonDegrees).ToObject<Degrees>();
-            Console.WriteLine(jsonDegrees);
+            // Console.WriteLine(jsonDegrees);
 
             lblDegreesTitle.Text = "";
             txtboxDegreesDesc.Text = "";
@@ -279,7 +279,6 @@ namespace Project3_RileyE
             {
                 for (int i = 0; i < minors.UgMinors.Count(); i++)
                 {
-                    // Console.WriteLine(degrees.undergraduate[2].concentrations[i]);
                     listBoxUgMinorsName.Items.Add(minors.UgMinors[i].name);
                 }
             }
@@ -287,16 +286,20 @@ namespace Project3_RileyE
             {
 
             }
+
+            lblUgMinorsTitle.Text = "";
+            txtboxUgMinorsTitle.Text = "";
+            txtBoxUgNote.Text = "";
+
         }
 
         private void listBoxUgMinorsName_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Console.WriteLine(listBoxUgMinorsName.SelectedIndex);
-
             int index = listBoxUgMinorsName.SelectedIndex;
 
             lblUgMinorsTitle.Text = minors.UgMinors[index].title;
             txtboxUgMinorsTitle.Text = minors.UgMinors[index].description;
+
 
             if (minors.UgMinors[index].note == "")
             {
@@ -323,11 +326,49 @@ namespace Project3_RileyE
         {
             baseRestURL = new RESTapi("http://ist.rit.edu/api");
             string jsonEmployment = baseRestURL.getRESTData("/employment/");
-
             employment = JToken.Parse(jsonEmployment).ToObject<Employment>();
-            // Console.WriteLine(jsonMinors);
+
+            lblEmpIntroTitle.Text = employment.introduction.title;
+            txtBoxContentTitleAndDesc.Text = "";
+
+            // Introduction Title and Desc
+            try
+            {
+                for (int i = 0; i < employment.introduction.content.Count(); i++)
+                {
+                    txtBoxContentTitleAndDesc.Text += employment.introduction.content[i].title + "\n";
+                    txtBoxContentTitleAndDesc.Text += employment.introduction.content[i].description + "\n\n";
+
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+
+            // CoopTable
+            try
+            {
+                for (int i = 0; i < employment.coopTable.coopInformation.Count(); i++)
+                {
+                    dataGridViewCoopTable.Rows.Add(
+                        employment.coopTable.coopInformation[i].employer,   // employer
+                        employment.coopTable.coopInformation[i].degree,     // degree
+                        employment.coopTable.coopInformation[i].city,       // city
+                        employment.coopTable.coopInformation[i].term        // term
+                        );
+
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+            // sorting CoopTable A-Z 
+            dataGridViewCoopTable.Sort(dataGridViewCoopTable.Columns["Employer"], ListSortDirection.Ascending);
 
             #endregion
+
 
 
         }
