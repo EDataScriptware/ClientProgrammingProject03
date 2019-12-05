@@ -53,16 +53,19 @@
             this.informationSciencesTechnologiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.humanComputerInteractionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.networkingAndSystemsAdministrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.graduateAdvancedCertficiatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.minorsTab = new System.Windows.Forms.TabPage();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.Courses = new System.Windows.Forms.Label();
+            this.txtboxUgMinorsTitle = new System.Windows.Forms.RichTextBox();
+            this.lblUgMinorsTitle = new System.Windows.Forms.Label();
+            this.listBoxUgMinorsName = new System.Windows.Forms.ListBox();
             this.employmentTab = new System.Windows.Forms.TabPage();
-            this.label7 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.listBoxUgMinorsCourses = new System.Windows.Forms.ListBox();
+            this.lblMinorsNote = new System.Windows.Forms.Label();
+            this.txtBoxUgNote = new System.Windows.Forms.RichTextBox();
             this.tabDegrees.SuspendLayout();
             this.homeTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -226,9 +229,13 @@
             this.degreesConcentrationListView.LabelWrap = false;
             this.degreesConcentrationListView.Location = new System.Drawing.Point(301, 58);
             this.degreesConcentrationListView.Name = "degreesConcentrationListView";
-            this.degreesConcentrationListView.Size = new System.Drawing.Size(120, 240);
+            this.degreesConcentrationListView.Size = new System.Drawing.Size(403, 240);
             this.degreesConcentrationListView.TabIndex = 3;
             this.degreesConcentrationListView.UseCompatibleStateImageBehavior = false;
+            // 
+            // concentrationHeader
+            // 
+            this.concentrationHeader.Width = 80;
             // 
             // txtboxDegreesDesc
             // 
@@ -296,7 +303,8 @@
             this.graduateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.informationSciencesTechnologiesToolStripMenuItem,
             this.humanComputerInteractionToolStripMenuItem,
-            this.networkingAndSystemsAdministrationToolStripMenuItem});
+            this.networkingAndSystemsAdministrationToolStripMenuItem,
+            this.graduateAdvancedCertficiatesToolStripMenuItem});
             this.graduateToolStripMenuItem.Name = "graduateToolStripMenuItem";
             this.graduateToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.graduateToolStripMenuItem.Text = "Graduate";
@@ -306,26 +314,39 @@
             this.informationSciencesTechnologiesToolStripMenuItem.Name = "informationSciencesTechnologiesToolStripMenuItem";
             this.informationSciencesTechnologiesToolStripMenuItem.Size = new System.Drawing.Size(287, 22);
             this.informationSciencesTechnologiesToolStripMenuItem.Text = "Information Sciences and Technologies";
+            this.informationSciencesTechnologiesToolStripMenuItem.Click += new System.EventHandler(this.informationSciencesTechnologiesToolStripMenuItem_Click);
             // 
             // humanComputerInteractionToolStripMenuItem
             // 
             this.humanComputerInteractionToolStripMenuItem.Name = "humanComputerInteractionToolStripMenuItem";
             this.humanComputerInteractionToolStripMenuItem.Size = new System.Drawing.Size(287, 22);
             this.humanComputerInteractionToolStripMenuItem.Text = "Human Computer Interaction";
+            this.humanComputerInteractionToolStripMenuItem.Click += new System.EventHandler(this.humanComputerInteractionToolStripMenuItem_Click);
             // 
             // networkingAndSystemsAdministrationToolStripMenuItem
             // 
             this.networkingAndSystemsAdministrationToolStripMenuItem.Name = "networkingAndSystemsAdministrationToolStripMenuItem";
             this.networkingAndSystemsAdministrationToolStripMenuItem.Size = new System.Drawing.Size(287, 22);
             this.networkingAndSystemsAdministrationToolStripMenuItem.Text = "Networking and Systems Administration";
+            this.networkingAndSystemsAdministrationToolStripMenuItem.Click += new System.EventHandler(this.networkingAndSystemsAdministrationToolStripMenuItem_Click);
+            // 
+            // graduateAdvancedCertficiatesToolStripMenuItem
+            // 
+            this.graduateAdvancedCertficiatesToolStripMenuItem.Name = "graduateAdvancedCertficiatesToolStripMenuItem";
+            this.graduateAdvancedCertficiatesToolStripMenuItem.Size = new System.Drawing.Size(287, 22);
+            this.graduateAdvancedCertficiatesToolStripMenuItem.Text = "Graduate Advanced Certificates";
+            this.graduateAdvancedCertficiatesToolStripMenuItem.Click += new System.EventHandler(this.graduateAdvancedCertficiatesToolStripMenuItem_Click);
             // 
             // minorsTab
             // 
-            this.minorsTab.Controls.Add(this.label6);
-            this.minorsTab.Controls.Add(this.listBox2);
-            this.minorsTab.Controls.Add(this.richTextBox1);
-            this.minorsTab.Controls.Add(this.label5);
-            this.minorsTab.Controls.Add(this.listBox1);
+            this.minorsTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.minorsTab.Controls.Add(this.txtBoxUgNote);
+            this.minorsTab.Controls.Add(this.lblMinorsNote);
+            this.minorsTab.Controls.Add(this.listBoxUgMinorsCourses);
+            this.minorsTab.Controls.Add(this.Courses);
+            this.minorsTab.Controls.Add(this.txtboxUgMinorsTitle);
+            this.minorsTab.Controls.Add(this.lblUgMinorsTitle);
+            this.minorsTab.Controls.Add(this.listBoxUgMinorsName);
             this.minorsTab.Location = new System.Drawing.Point(4, 22);
             this.minorsTab.Name = "minorsTab";
             this.minorsTab.Size = new System.Drawing.Size(839, 400);
@@ -333,55 +354,45 @@
             this.minorsTab.Text = "Minors";
             this.minorsTab.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // Courses
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.richTextBox1.Location = new System.Drawing.Point(212, 69);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(346, 227);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "Undergraduate Minors Desc";
+            this.Courses.AutoSize = true;
+            this.Courses.Location = new System.Drawing.Point(560, 21);
+            this.Courses.Name = "Courses";
+            this.Courses.Size = new System.Drawing.Size(45, 13);
+            this.Courses.TabIndex = 4;
+            this.Courses.Text = "Courses";
             // 
-            // label5
+            // txtboxUgMinorsTitle
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(209, 21);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Undergraduate Minors Title";
+            this.txtboxUgMinorsTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxUgMinorsTitle.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtboxUgMinorsTitle.Location = new System.Drawing.Point(212, 69);
+            this.txtboxUgMinorsTitle.Name = "txtboxUgMinorsTitle";
+            this.txtboxUgMinorsTitle.Size = new System.Drawing.Size(346, 227);
+            this.txtboxUgMinorsTitle.TabIndex = 2;
+            this.txtboxUgMinorsTitle.Text = "Undergraduate Minors Desc";
             // 
-            // listBox1
+            // lblUgMinorsTitle
             // 
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
+            this.lblUgMinorsTitle.AutoSize = true;
+            this.lblUgMinorsTitle.Location = new System.Drawing.Point(209, 21);
+            this.lblUgMinorsTitle.Name = "lblUgMinorsTitle";
+            this.lblUgMinorsTitle.Size = new System.Drawing.Size(135, 13);
+            this.lblUgMinorsTitle.TabIndex = 1;
+            this.lblUgMinorsTitle.Text = "Undergraduate Minors Title";
+            // 
+            // listBoxUgMinorsName
+            // 
+            this.listBoxUgMinorsName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBoxUgMinorsName.FormattingEnabled = true;
+            this.listBoxUgMinorsName.Items.AddRange(new object[] {
             "Undergraduate Minors Name"});
-            this.listBox1.Location = new System.Drawing.Point(29, 21);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(153, 275);
-            this.listBox1.TabIndex = 0;
-            // 
-            // listBox2
-            // 
-            this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Items.AddRange(new object[] {
-            "Undergraduate Minor Courses"});
-            this.listBox2.Location = new System.Drawing.Point(563, 69);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(147, 260);
-            this.listBox2.TabIndex = 3;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(560, 21);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Courses";
+            this.listBoxUgMinorsName.Location = new System.Drawing.Point(29, 21);
+            this.listBoxUgMinorsName.Name = "listBoxUgMinorsName";
+            this.listBoxUgMinorsName.Size = new System.Drawing.Size(153, 275);
+            this.listBoxUgMinorsName.TabIndex = 0;
+            this.listBoxUgMinorsName.SelectedIndexChanged += new System.EventHandler(this.listBoxUgMinorsName_SelectedIndexChanged);
             // 
             // employmentTab
             // 
@@ -395,14 +406,14 @@
             this.employmentTab.Text = "Employment";
             this.employmentTab.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // listView1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 14);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(137, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Employment Intro Main Title";
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(427, 42);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(380, 332);
+            this.listView1.TabIndex = 2;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // richTextBox2
             // 
@@ -412,14 +423,40 @@
             this.richTextBox2.TabIndex = 1;
             this.richTextBox2.Text = "Employment Content Title and Desc";
             // 
-            // listView1
+            // label7
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(427, 42);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(380, 332);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 14);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(137, 13);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Employment Intro Main Title";
+            // 
+            // listBoxUgMinorsCourses
+            // 
+            this.listBoxUgMinorsCourses.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBoxUgMinorsCourses.FormattingEnabled = true;
+            this.listBoxUgMinorsCourses.Location = new System.Drawing.Point(563, 37);
+            this.listBoxUgMinorsCourses.Name = "listBoxUgMinorsCourses";
+            this.listBoxUgMinorsCourses.Size = new System.Drawing.Size(245, 182);
+            this.listBoxUgMinorsCourses.TabIndex = 5;
+            // 
+            // lblMinorsNote
+            // 
+            this.lblMinorsNote.AutoSize = true;
+            this.lblMinorsNote.Location = new System.Drawing.Point(26, 327);
+            this.lblMinorsNote.Name = "lblMinorsNote";
+            this.lblMinorsNote.Size = new System.Drawing.Size(0, 13);
+            this.lblMinorsNote.TabIndex = 6;
+            // 
+            // txtBoxUgNote
+            // 
+            this.txtBoxUgNote.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxUgNote.Location = new System.Drawing.Point(29, 301);
+            this.txtBoxUgNote.Name = "txtBoxUgNote";
+            this.txtBoxUgNote.Size = new System.Drawing.Size(786, 96);
+            this.txtBoxUgNote.TabIndex = 7;
+            this.txtBoxUgNote.Text = "Undergraduate Minors Note";
             // 
             // Form1
             // 
@@ -478,15 +515,18 @@
         private System.Windows.Forms.ListView degreesConcentrationListView;
         private System.Windows.Forms.ColumnHeader concentrationHeader;
         private System.Windows.Forms.TabPage minorsTab;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListBox listBoxUgMinorsName;
+        private System.Windows.Forms.RichTextBox txtboxUgMinorsTitle;
+        private System.Windows.Forms.Label lblUgMinorsTitle;
+        private System.Windows.Forms.Label Courses;
         private System.Windows.Forms.TabPage employmentTab;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ToolStripMenuItem graduateAdvancedCertficiatesToolStripMenuItem;
+        private System.Windows.Forms.ListBox listBoxUgMinorsCourses;
+        private System.Windows.Forms.Label lblMinorsNote;
+        private System.Windows.Forms.RichTextBox txtBoxUgNote;
     }
 }
 

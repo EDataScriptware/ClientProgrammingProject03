@@ -9,3 +9,10 @@ Client Programming Project 03
 - Music functionality included
 
 - Organization in code by #region [text]
+
+- Professor Floeser said to "Take undesirable bugs and treat it as a feature" and so I shall
+
+- Caught an API mistake in /degrees/graduate/ with available certificates. 
+-- Networking should be its own certificate
+
+- Sorted Minors courses
