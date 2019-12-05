@@ -16,3 +16,7 @@ Client Programming Project 03
 -- Networking should be its own certificate
 
 - Sorted Minors courses
+
+- Picture Box in People have been resized to stretch because Matt H. has a very big picture and some people have very small picture.
+-- Everyone gets the same size in 200x200 to maintain consistency. [ no one is special :( ]
+

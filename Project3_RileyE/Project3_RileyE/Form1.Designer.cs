@@ -63,13 +63,26 @@
             this.lblUgMinorsTitle = new System.Windows.Forms.Label();
             this.listBoxUgMinorsName = new System.Windows.Forms.ListBox();
             this.employmentTab = new System.Windows.Forms.TabPage();
-            this.txtBoxContentTitleAndDesc = new System.Windows.Forms.RichTextBox();
-            this.lblEmpIntroTitle = new System.Windows.Forms.Label();
             this.dataGridViewCoopTable = new System.Windows.Forms.DataGridView();
             this.Employer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Degree = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Term = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtBoxContentTitleAndDesc = new System.Windows.Forms.RichTextBox();
+            this.lblEmpIntroTitle = new System.Windows.Forms.Label();
+            this.peopleTab = new System.Windows.Forms.TabPage();
+            this.tbPeopleType = new System.Windows.Forms.TabControl();
+            this.tbFaculty = new System.Windows.Forms.TabPage();
+            this.lblPeoplePhone = new System.Windows.Forms.Label();
+            this.lblPeopleEmail = new System.Windows.Forms.Label();
+            this.lblPeopleOffice = new System.Windows.Forms.Label();
+            this.lblPeopleTitle = new System.Windows.Forms.Label();
+            this.pbPeoplePic = new System.Windows.Forms.PictureBox();
+            this.cbPeopleFacultyNames = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbStaff = new System.Windows.Forms.TabPage();
+            this.lblLinkPeopleWebsite = new System.Windows.Forms.LinkLabel();
+            this.lblPeopleUsername = new System.Windows.Forms.Label();
             this.tabDegrees.SuspendLayout();
             this.homeTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -79,6 +92,10 @@
             this.minorsTab.SuspendLayout();
             this.employmentTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCoopTable)).BeginInit();
+            this.peopleTab.SuspendLayout();
+            this.tbPeopleType.SuspendLayout();
+            this.tbFaculty.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPeoplePic)).BeginInit();
             this.SuspendLayout();
             // 
             // tabDegrees
@@ -88,6 +105,7 @@
             this.tabDegrees.Controls.Add(this.degreesTab);
             this.tabDegrees.Controls.Add(this.minorsTab);
             this.tabDegrees.Controls.Add(this.employmentTab);
+            this.tabDegrees.Controls.Add(this.peopleTab);
             this.tabDegrees.Location = new System.Drawing.Point(-1, 2);
             this.tabDegrees.Name = "tabDegrees";
             this.tabDegrees.SelectedIndex = 0;
@@ -437,25 +455,6 @@
             this.employmentTab.Text = "Employment";
             this.employmentTab.UseVisualStyleBackColor = true;
             // 
-            // txtBoxContentTitleAndDesc
-            // 
-            this.txtBoxContentTitleAndDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBoxContentTitleAndDesc.Location = new System.Drawing.Point(13, 42);
-            this.txtBoxContentTitleAndDesc.Name = "txtBoxContentTitleAndDesc";
-            this.txtBoxContentTitleAndDesc.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.txtBoxContentTitleAndDesc.Size = new System.Drawing.Size(344, 248);
-            this.txtBoxContentTitleAndDesc.TabIndex = 1;
-            this.txtBoxContentTitleAndDesc.Text = "Employment Content Title and Desc";
-            // 
-            // lblEmpIntroTitle
-            // 
-            this.lblEmpIntroTitle.AutoSize = true;
-            this.lblEmpIntroTitle.Location = new System.Drawing.Point(10, 14);
-            this.lblEmpIntroTitle.Name = "lblEmpIntroTitle";
-            this.lblEmpIntroTitle.Size = new System.Drawing.Size(137, 13);
-            this.lblEmpIntroTitle.TabIndex = 0;
-            this.lblEmpIntroTitle.Text = "Employment Intro Main Title";
-            // 
             // dataGridViewCoopTable
             // 
             this.dataGridViewCoopTable.AllowUserToAddRows = false;
@@ -498,6 +497,158 @@
             this.Term.Name = "Term";
             this.Term.ReadOnly = true;
             // 
+            // txtBoxContentTitleAndDesc
+            // 
+            this.txtBoxContentTitleAndDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxContentTitleAndDesc.Location = new System.Drawing.Point(13, 42);
+            this.txtBoxContentTitleAndDesc.Name = "txtBoxContentTitleAndDesc";
+            this.txtBoxContentTitleAndDesc.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtBoxContentTitleAndDesc.Size = new System.Drawing.Size(344, 248);
+            this.txtBoxContentTitleAndDesc.TabIndex = 1;
+            this.txtBoxContentTitleAndDesc.Text = "Employment Content Title and Desc";
+            // 
+            // lblEmpIntroTitle
+            // 
+            this.lblEmpIntroTitle.AutoSize = true;
+            this.lblEmpIntroTitle.Location = new System.Drawing.Point(10, 14);
+            this.lblEmpIntroTitle.Name = "lblEmpIntroTitle";
+            this.lblEmpIntroTitle.Size = new System.Drawing.Size(137, 13);
+            this.lblEmpIntroTitle.TabIndex = 0;
+            this.lblEmpIntroTitle.Text = "Employment Intro Main Title";
+            // 
+            // peopleTab
+            // 
+            this.peopleTab.BackColor = System.Drawing.Color.Gainsboro;
+            this.peopleTab.Controls.Add(this.tbPeopleType);
+            this.peopleTab.Location = new System.Drawing.Point(4, 22);
+            this.peopleTab.Name = "peopleTab";
+            this.peopleTab.Size = new System.Drawing.Size(839, 400);
+            this.peopleTab.TabIndex = 5;
+            this.peopleTab.Text = "People";
+            // 
+            // tbPeopleType
+            // 
+            this.tbPeopleType.Controls.Add(this.tbFaculty);
+            this.tbPeopleType.Controls.Add(this.tbStaff);
+            this.tbPeopleType.Location = new System.Drawing.Point(4, 3);
+            this.tbPeopleType.Name = "tbPeopleType";
+            this.tbPeopleType.SelectedIndex = 0;
+            this.tbPeopleType.Size = new System.Drawing.Size(832, 389);
+            this.tbPeopleType.TabIndex = 3;
+            // 
+            // tbFaculty
+            // 
+            this.tbFaculty.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tbFaculty.Controls.Add(this.lblPeopleUsername);
+            this.tbFaculty.Controls.Add(this.lblLinkPeopleWebsite);
+            this.tbFaculty.Controls.Add(this.lblPeoplePhone);
+            this.tbFaculty.Controls.Add(this.lblPeopleEmail);
+            this.tbFaculty.Controls.Add(this.lblPeopleOffice);
+            this.tbFaculty.Controls.Add(this.lblPeopleTitle);
+            this.tbFaculty.Controls.Add(this.pbPeoplePic);
+            this.tbFaculty.Controls.Add(this.cbPeopleFacultyNames);
+            this.tbFaculty.Controls.Add(this.label5);
+            this.tbFaculty.Location = new System.Drawing.Point(4, 22);
+            this.tbFaculty.Name = "tbFaculty";
+            this.tbFaculty.Padding = new System.Windows.Forms.Padding(3);
+            this.tbFaculty.Size = new System.Drawing.Size(824, 363);
+            this.tbFaculty.TabIndex = 0;
+            this.tbFaculty.Text = "Faculty";
+            // 
+            // lblPeoplePhone
+            // 
+            this.lblPeoplePhone.AutoSize = true;
+            this.lblPeoplePhone.Location = new System.Drawing.Point(486, 70);
+            this.lblPeoplePhone.Name = "lblPeoplePhone";
+            this.lblPeoplePhone.Size = new System.Drawing.Size(44, 13);
+            this.lblPeoplePhone.TabIndex = 6;
+            this.lblPeoplePhone.Text = "Phone: ";
+            // 
+            // lblPeopleEmail
+            // 
+            this.lblPeopleEmail.AutoSize = true;
+            this.lblPeopleEmail.Location = new System.Drawing.Point(486, 43);
+            this.lblPeopleEmail.Name = "lblPeopleEmail";
+            this.lblPeopleEmail.Size = new System.Drawing.Size(38, 13);
+            this.lblPeopleEmail.TabIndex = 5;
+            this.lblPeopleEmail.Text = "Email: ";
+            // 
+            // lblPeopleOffice
+            // 
+            this.lblPeopleOffice.AutoSize = true;
+            this.lblPeopleOffice.Location = new System.Drawing.Point(486, 16);
+            this.lblPeopleOffice.Name = "lblPeopleOffice";
+            this.lblPeopleOffice.Size = new System.Drawing.Size(41, 13);
+            this.lblPeopleOffice.TabIndex = 4;
+            this.lblPeopleOffice.Text = "Office: ";
+            // 
+            // lblPeopleTitle
+            // 
+            this.lblPeopleTitle.AutoSize = true;
+            this.lblPeopleTitle.Location = new System.Drawing.Point(14, 333);
+            this.lblPeopleTitle.Name = "lblPeopleTitle";
+            this.lblPeopleTitle.Size = new System.Drawing.Size(63, 13);
+            this.lblPeopleTitle.TabIndex = 3;
+            this.lblPeopleTitle.Text = "People Title";
+            // 
+            // pbPeoplePic
+            // 
+            this.pbPeoplePic.BackColor = System.Drawing.Color.Transparent;
+            this.pbPeoplePic.Location = new System.Drawing.Point(17, 95);
+            this.pbPeoplePic.Name = "pbPeoplePic";
+            this.pbPeoplePic.Size = new System.Drawing.Size(200, 200);
+            this.pbPeoplePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPeoplePic.TabIndex = 2;
+            this.pbPeoplePic.TabStop = false;
+            // 
+            // cbPeopleFacultyNames
+            // 
+            this.cbPeopleFacultyNames.FormattingEnabled = true;
+            this.cbPeopleFacultyNames.Location = new System.Drawing.Point(17, 35);
+            this.cbPeopleFacultyNames.Name = "cbPeopleFacultyNames";
+            this.cbPeopleFacultyNames.Size = new System.Drawing.Size(136, 21);
+            this.cbPeopleFacultyNames.TabIndex = 0;
+            this.cbPeopleFacultyNames.SelectedIndexChanged += new System.EventHandler(this.cbPeopleFacultyNames_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(17, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(97, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Golisano Employee";
+            // 
+            // tbStaff
+            // 
+            this.tbStaff.Location = new System.Drawing.Point(4, 22);
+            this.tbStaff.Name = "tbStaff";
+            this.tbStaff.Padding = new System.Windows.Forms.Padding(3);
+            this.tbStaff.Size = new System.Drawing.Size(824, 363);
+            this.tbStaff.TabIndex = 1;
+            this.tbStaff.Text = "Staff";
+            this.tbStaff.UseVisualStyleBackColor = true;
+            // 
+            // lblLinkPeopleWebsite
+            // 
+            this.lblLinkPeopleWebsite.AutoSize = true;
+            this.lblLinkPeopleWebsite.Location = new System.Drawing.Point(489, 95);
+            this.lblLinkPeopleWebsite.Name = "lblLinkPeopleWebsite";
+            this.lblLinkPeopleWebsite.Size = new System.Drawing.Size(46, 13);
+            this.lblLinkPeopleWebsite.TabIndex = 7;
+            this.lblLinkPeopleWebsite.TabStop = true;
+            this.lblLinkPeopleWebsite.Text = "Website";
+            this.lblLinkPeopleWebsite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkPeopleWebsite_LinkClicked);
+            // 
+            // lblPeopleUsername
+            // 
+            this.lblPeopleUsername.AutoSize = true;
+            this.lblPeopleUsername.Location = new System.Drawing.Point(14, 70);
+            this.lblPeopleUsername.Name = "lblPeopleUsername";
+            this.lblPeopleUsername.Size = new System.Drawing.Size(99, 13);
+            this.lblPeopleUsername.TabIndex = 8;
+            this.lblPeopleUsername.Text = "Golisano Username";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -524,6 +675,11 @@
             this.employmentTab.ResumeLayout(false);
             this.employmentTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCoopTable)).EndInit();
+            this.peopleTab.ResumeLayout(false);
+            this.tbPeopleType.ResumeLayout(false);
+            this.tbFaculty.ResumeLayout(false);
+            this.tbFaculty.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPeoplePic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -572,6 +728,19 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Degree;
         private System.Windows.Forms.DataGridViewTextBoxColumn City;
         private System.Windows.Forms.DataGridViewTextBoxColumn Term;
+        private System.Windows.Forms.TabPage peopleTab;
+        private System.Windows.Forms.ComboBox cbPeopleFacultyNames;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pbPeoplePic;
+        private System.Windows.Forms.TabControl tbPeopleType;
+        private System.Windows.Forms.TabPage tbFaculty;
+        private System.Windows.Forms.TabPage tbStaff;
+        private System.Windows.Forms.Label lblPeopleTitle;
+        private System.Windows.Forms.Label lblPeopleOffice;
+        private System.Windows.Forms.Label lblPeopleEmail;
+        private System.Windows.Forms.Label lblPeoplePhone;
+        private System.Windows.Forms.LinkLabel lblLinkPeopleWebsite;
+        private System.Windows.Forms.Label lblPeopleUsername;
     }
 }
 

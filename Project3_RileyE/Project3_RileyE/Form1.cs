@@ -37,6 +37,7 @@ namespace Project3_RileyE
             Degrees();
             Minors();
             Employment();
+            People();
 
 
 
@@ -366,14 +367,61 @@ namespace Project3_RileyE
             }
             // sorting CoopTable A-Z 
             dataGridViewCoopTable.Sort(dataGridViewCoopTable.Columns["Employer"], ListSortDirection.Ascending);
-
+        }
             #endregion
 
         #region People
+            
+            People people = null;
 
-            #endregion
+        private void People()
+        {
+            baseRestURL = new RESTapi("http://ist.rit.edu/api");
+            string jsonPeople = baseRestURL.getRESTData("/people/");
+            people = JToken.Parse(jsonPeople).ToObject<People>();
+
+            try
+            {
+                for (int i = 0; i < people.faculty.Count(); i++)
+                {
+                    cbPeopleFacultyNames.Items.Add(people.faculty[i].name);
+
+                }
+            }
+            catch (Exception)
+            {
+                
+            }
+            // sets first choice to 0 so it is not automatically empty at first
+            cbPeopleFacultyNames.SelectedIndex = 0;
+           
+        }
 
 
+        #endregion
+
+        private void cbPeopleFacultyNames_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = cbPeopleFacultyNames.SelectedIndex;
+            pbPeoplePic.ImageLocation = people.faculty[index].imagePath;
+            lblPeopleTitle.Text = people.faculty[index].title;
+            lblPeopleOffice.Text = "Office: " + people.faculty[index].office;
+            lblPeopleEmail.Text = "Email: " + people.faculty[index].email;
+            lblPeoplePhone.Text = "Phone: " + people.faculty[index].phone;
+            lblPeopleUsername.Text = "Username: " + (people.faculty[index].username).ToUpper();
+            
+            lblLinkPeopleWebsite.Text = people.faculty[index].website;
+
+
+        }
+
+
+        // click and directs on a default web browser to faculty's website
+        private void lblLinkPeopleWebsite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            int index = cbPeopleFacultyNames.SelectedIndex;
+
+            System.Diagnostics.Process.Start(people.faculty[index].website);
         }
     }
 }
