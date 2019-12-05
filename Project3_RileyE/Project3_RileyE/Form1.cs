@@ -331,6 +331,29 @@ namespace Project3_RileyE
 
             lblEmpIntroTitle.Text = employment.introduction.title;
             txtBoxContentTitleAndDesc.Text = "";
+            lblEmploymentTitleDesc.Text = employment.employers.title + ": ";
+            Console.WriteLine(employment.employers.employerNames.Count());
+            try
+            {
+                for (int i = 0; i < employment.employers.employerNames.Count(); i++ )
+                {
+                    Console.WriteLine(i+1);
+
+                    if (employment.employers.employerNames.Count() == (i + 1))
+                    {
+                        // Console.WriteLine("Stopping at: " + i + " " + employment.employers.employerNames[i] + " ");
+                        lblEmploymentTitleDesc.Text += employment.employers.employerNames[i];
+                    }
+                    else
+                    {
+                        lblEmploymentTitleDesc.Text += employment.employers.employerNames[i] + ", ";
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            }
 
             // Introduction Title and Desc
             try
@@ -380,6 +403,11 @@ namespace Project3_RileyE
             string jsonPeople = baseRestURL.getRESTData("/people/");
             people = JToken.Parse(jsonPeople).ToObject<People>();
 
+            lblPeopleFacultyMainTitle.Text = people.title;
+            lblPeopleStaffMainTitle.Text = people.title;
+            lblPeopleFacultySubtitle.Text = people.subTitle;
+            lblPeopleStaffSubtitle.Text = people.subTitle;
+
             try
             {
                 for (int i = 0; i < people.faculty.Count(); i++)
@@ -411,9 +439,6 @@ namespace Project3_RileyE
 
         }
 
-
-        #endregion
-
         private void cbPeopleFacultyNames_SelectedIndexChanged(object sender, EventArgs e)
         {
             int index = cbPeopleFacultyNames.SelectedIndex;
@@ -423,7 +448,7 @@ namespace Project3_RileyE
             lblPeopleFacultyEmail.Text = "Email: " + people.faculty[index].email;
             lblPeopleFacultyPhone.Text = "Phone: " + people.faculty[index].phone;
             lblPeopleFacultyUsername.Text = "Username: " + (people.faculty[index].username).ToUpper();
-            
+
             lblLinkPeopleWebsite.Text = people.faculty[index].website;
 
 
@@ -449,7 +474,10 @@ namespace Project3_RileyE
 
             System.Diagnostics.Process.Start(people.faculty[index].website);
         }
+        #endregion
 
-       
+
+
+
     }
 }

@@ -73,16 +73,16 @@
             this.peopleTab = new System.Windows.Forms.TabPage();
             this.tbPeopleType = new System.Windows.Forms.TabControl();
             this.tbFaculty = new System.Windows.Forms.TabPage();
+            this.lblPeopleFacultyUsername = new System.Windows.Forms.Label();
+            this.lblLinkPeopleWebsite = new System.Windows.Forms.LinkLabel();
             this.lblPeopleFacultyPhone = new System.Windows.Forms.Label();
             this.lblPeopleFacultyEmail = new System.Windows.Forms.Label();
             this.lblPeopleFacultyOffice = new System.Windows.Forms.Label();
             this.lblPeopleFacultyTitle = new System.Windows.Forms.Label();
             this.pbPeopleFacultyPic = new System.Windows.Forms.PictureBox();
             this.cbPeopleFacultyNames = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblPeopleFacultyMainTitle = new System.Windows.Forms.Label();
             this.tbStaff = new System.Windows.Forms.TabPage();
-            this.lblLinkPeopleWebsite = new System.Windows.Forms.LinkLabel();
-            this.lblPeopleFacultyUsername = new System.Windows.Forms.Label();
             this.lblPeopleStaffUsername = new System.Windows.Forms.Label();
             this.linkLblPeopleStaffWebsite = new System.Windows.Forms.LinkLabel();
             this.lblPeopleStaffPhone = new System.Windows.Forms.Label();
@@ -91,7 +91,10 @@
             this.lblPeopleStaffTitle = new System.Windows.Forms.Label();
             this.pictureBoxPeopleStaff = new System.Windows.Forms.PictureBox();
             this.cbPeopleStaff = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblPeopleStaffMainTitle = new System.Windows.Forms.Label();
+            this.lblPeopleStaffSubtitle = new System.Windows.Forms.Label();
+            this.lblPeopleFacultySubtitle = new System.Windows.Forms.Label();
+            this.lblEmploymentTitleDesc = new System.Windows.Forms.Label();
             this.tabDegrees.SuspendLayout();
             this.homeTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -456,6 +459,7 @@
             // 
             // employmentTab
             // 
+            this.employmentTab.Controls.Add(this.lblEmploymentTitleDesc);
             this.employmentTab.Controls.Add(this.dataGridViewCoopTable);
             this.employmentTab.Controls.Add(this.txtBoxContentTitleAndDesc);
             this.employmentTab.Controls.Add(this.lblEmpIntroTitle);
@@ -550,6 +554,7 @@
             // tbFaculty
             // 
             this.tbFaculty.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tbFaculty.Controls.Add(this.lblPeopleFacultySubtitle);
             this.tbFaculty.Controls.Add(this.lblPeopleFacultyUsername);
             this.tbFaculty.Controls.Add(this.lblLinkPeopleWebsite);
             this.tbFaculty.Controls.Add(this.lblPeopleFacultyPhone);
@@ -558,13 +563,33 @@
             this.tbFaculty.Controls.Add(this.lblPeopleFacultyTitle);
             this.tbFaculty.Controls.Add(this.pbPeopleFacultyPic);
             this.tbFaculty.Controls.Add(this.cbPeopleFacultyNames);
-            this.tbFaculty.Controls.Add(this.label5);
+            this.tbFaculty.Controls.Add(this.lblPeopleFacultyMainTitle);
             this.tbFaculty.Location = new System.Drawing.Point(4, 22);
             this.tbFaculty.Name = "tbFaculty";
             this.tbFaculty.Padding = new System.Windows.Forms.Padding(3);
             this.tbFaculty.Size = new System.Drawing.Size(824, 363);
             this.tbFaculty.TabIndex = 0;
             this.tbFaculty.Text = "Faculty";
+            // 
+            // lblPeopleFacultyUsername
+            // 
+            this.lblPeopleFacultyUsername.AutoSize = true;
+            this.lblPeopleFacultyUsername.Location = new System.Drawing.Point(14, 70);
+            this.lblPeopleFacultyUsername.Name = "lblPeopleFacultyUsername";
+            this.lblPeopleFacultyUsername.Size = new System.Drawing.Size(99, 13);
+            this.lblPeopleFacultyUsername.TabIndex = 8;
+            this.lblPeopleFacultyUsername.Text = "Golisano Username";
+            // 
+            // lblLinkPeopleWebsite
+            // 
+            this.lblLinkPeopleWebsite.AutoSize = true;
+            this.lblLinkPeopleWebsite.Location = new System.Drawing.Point(489, 95);
+            this.lblLinkPeopleWebsite.Name = "lblLinkPeopleWebsite";
+            this.lblLinkPeopleWebsite.Size = new System.Drawing.Size(46, 13);
+            this.lblLinkPeopleWebsite.TabIndex = 7;
+            this.lblLinkPeopleWebsite.TabStop = true;
+            this.lblLinkPeopleWebsite.Text = "Website";
+            this.lblLinkPeopleWebsite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkPeopleWebsite_LinkClicked);
             // 
             // lblPeopleFacultyPhone
             // 
@@ -621,18 +646,19 @@
             this.cbPeopleFacultyNames.TabIndex = 0;
             this.cbPeopleFacultyNames.SelectedIndexChanged += new System.EventHandler(this.cbPeopleFacultyNames_SelectedIndexChanged);
             // 
-            // label5
+            // lblPeopleFacultyMainTitle
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(17, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Golisano Faculty Employee";
+            this.lblPeopleFacultyMainTitle.AutoSize = true;
+            this.lblPeopleFacultyMainTitle.Location = new System.Drawing.Point(14, 3);
+            this.lblPeopleFacultyMainTitle.Name = "lblPeopleFacultyMainTitle";
+            this.lblPeopleFacultyMainTitle.Size = new System.Drawing.Size(134, 13);
+            this.lblPeopleFacultyMainTitle.TabIndex = 1;
+            this.lblPeopleFacultyMainTitle.Text = "Golisano Faculty Employee";
             // 
             // tbStaff
             // 
             this.tbStaff.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tbStaff.Controls.Add(this.lblPeopleStaffSubtitle);
             this.tbStaff.Controls.Add(this.lblPeopleStaffUsername);
             this.tbStaff.Controls.Add(this.linkLblPeopleStaffWebsite);
             this.tbStaff.Controls.Add(this.lblPeopleStaffPhone);
@@ -641,33 +667,13 @@
             this.tbStaff.Controls.Add(this.lblPeopleStaffTitle);
             this.tbStaff.Controls.Add(this.pictureBoxPeopleStaff);
             this.tbStaff.Controls.Add(this.cbPeopleStaff);
-            this.tbStaff.Controls.Add(this.label11);
+            this.tbStaff.Controls.Add(this.lblPeopleStaffMainTitle);
             this.tbStaff.Location = new System.Drawing.Point(4, 22);
             this.tbStaff.Name = "tbStaff";
             this.tbStaff.Padding = new System.Windows.Forms.Padding(3);
             this.tbStaff.Size = new System.Drawing.Size(824, 363);
             this.tbStaff.TabIndex = 1;
             this.tbStaff.Text = "Staff";
-            // 
-            // lblLinkPeopleWebsite
-            // 
-            this.lblLinkPeopleWebsite.AutoSize = true;
-            this.lblLinkPeopleWebsite.Location = new System.Drawing.Point(489, 95);
-            this.lblLinkPeopleWebsite.Name = "lblLinkPeopleWebsite";
-            this.lblLinkPeopleWebsite.Size = new System.Drawing.Size(46, 13);
-            this.lblLinkPeopleWebsite.TabIndex = 7;
-            this.lblLinkPeopleWebsite.TabStop = true;
-            this.lblLinkPeopleWebsite.Text = "Website";
-            this.lblLinkPeopleWebsite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkPeopleWebsite_LinkClicked);
-            // 
-            // lblPeopleFacultyUsername
-            // 
-            this.lblPeopleFacultyUsername.AutoSize = true;
-            this.lblPeopleFacultyUsername.Location = new System.Drawing.Point(14, 70);
-            this.lblPeopleFacultyUsername.Name = "lblPeopleFacultyUsername";
-            this.lblPeopleFacultyUsername.Size = new System.Drawing.Size(99, 13);
-            this.lblPeopleFacultyUsername.TabIndex = 8;
-            this.lblPeopleFacultyUsername.Text = "Golisano Username";
             // 
             // lblPeopleStaffUsername
             // 
@@ -744,14 +750,41 @@
             this.cbPeopleStaff.TabIndex = 9;
             this.cbPeopleStaff.SelectedIndexChanged += new System.EventHandler(this.cbPeopleStaff_SelectedIndexChanged);
             // 
-            // label11
+            // lblPeopleStaffMainTitle
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(17, 16);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(122, 13);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Golisano Staff Employee";
+            this.lblPeopleStaffMainTitle.AutoSize = true;
+            this.lblPeopleStaffMainTitle.Location = new System.Drawing.Point(14, 3);
+            this.lblPeopleStaffMainTitle.Name = "lblPeopleStaffMainTitle";
+            this.lblPeopleStaffMainTitle.Size = new System.Drawing.Size(122, 13);
+            this.lblPeopleStaffMainTitle.TabIndex = 10;
+            this.lblPeopleStaffMainTitle.Text = "Golisano Staff Employee";
+            // 
+            // lblPeopleStaffSubtitle
+            // 
+            this.lblPeopleStaffSubtitle.AutoSize = true;
+            this.lblPeopleStaffSubtitle.Location = new System.Drawing.Point(14, 19);
+            this.lblPeopleStaffSubtitle.Name = "lblPeopleStaffSubtitle";
+            this.lblPeopleStaffSubtitle.Size = new System.Drawing.Size(42, 13);
+            this.lblPeopleStaffSubtitle.TabIndex = 18;
+            this.lblPeopleStaffSubtitle.Text = "Subtitle";
+            // 
+            // lblPeopleFacultySubtitle
+            // 
+            this.lblPeopleFacultySubtitle.AutoSize = true;
+            this.lblPeopleFacultySubtitle.Location = new System.Drawing.Point(14, 19);
+            this.lblPeopleFacultySubtitle.Name = "lblPeopleFacultySubtitle";
+            this.lblPeopleFacultySubtitle.Size = new System.Drawing.Size(42, 13);
+            this.lblPeopleFacultySubtitle.TabIndex = 19;
+            this.lblPeopleFacultySubtitle.Text = "Subtitle";
+            // 
+            // lblEmploymentTitleDesc
+            // 
+            this.lblEmploymentTitleDesc.AutoSize = true;
+            this.lblEmploymentTitleDesc.Location = new System.Drawing.Point(13, 311);
+            this.lblEmploymentTitleDesc.Name = "lblEmploymentTitleDesc";
+            this.lblEmploymentTitleDesc.Size = new System.Drawing.Size(125, 13);
+            this.lblEmploymentTitleDesc.TabIndex = 3;
+            this.lblEmploymentTitleDesc.Text = "Employer Title and Desc.";
             // 
             // Form1
             // 
@@ -837,7 +870,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Term;
         private System.Windows.Forms.TabPage peopleTab;
         private System.Windows.Forms.ComboBox cbPeopleFacultyNames;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblPeopleFacultyMainTitle;
         private System.Windows.Forms.PictureBox pbPeopleFacultyPic;
         private System.Windows.Forms.TabControl tbPeopleType;
         private System.Windows.Forms.TabPage tbFaculty;
@@ -854,9 +887,12 @@
         private System.Windows.Forms.Label lblPeopleStaffTitle;
         private System.Windows.Forms.PictureBox pictureBoxPeopleStaff;
         private System.Windows.Forms.ComboBox cbPeopleStaff;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblPeopleStaffMainTitle;
         private System.Windows.Forms.Label lblPeopleStaffUsername;
         private System.Windows.Forms.LinkLabel linkLblPeopleStaffWebsite;
+        private System.Windows.Forms.Label lblPeopleFacultySubtitle;
+        private System.Windows.Forms.Label lblPeopleStaffSubtitle;
+        private System.Windows.Forms.Label lblEmploymentTitleDesc;
     }
 }
 
