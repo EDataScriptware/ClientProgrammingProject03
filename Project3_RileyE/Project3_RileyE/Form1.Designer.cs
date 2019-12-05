@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mapTab = new System.Windows.Forms.TabPage();
+            this.contactUsTab = new System.Windows.Forms.TabPage();
             this.peopleTab = new System.Windows.Forms.TabPage();
             this.tbPeopleType = new System.Windows.Forms.TabControl();
             this.tbStaff = new System.Windows.Forms.TabPage();
@@ -97,7 +97,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tabDegrees = new System.Windows.Forms.TabControl();
             this.wbContactForm = new System.Windows.Forms.WebBrowser();
-            this.mapTab.SuspendLayout();
+            this.contactUsTab.SuspendLayout();
             this.peopleTab.SuspendLayout();
             this.tbPeopleType.SuspendLayout();
             this.tbStaff.SuspendLayout();
@@ -115,15 +115,15 @@
             this.tabDegrees.SuspendLayout();
             this.SuspendLayout();
             // 
-            // mapTab
+            // contactUsTab
             // 
-            this.mapTab.Controls.Add(this.wbContactForm);
-            this.mapTab.Location = new System.Drawing.Point(4, 22);
-            this.mapTab.Name = "mapTab";
-            this.mapTab.Size = new System.Drawing.Size(894, 455);
-            this.mapTab.TabIndex = 6;
-            this.mapTab.Text = "Map";
-            this.mapTab.UseVisualStyleBackColor = true;
+            this.contactUsTab.Controls.Add(this.wbContactForm);
+            this.contactUsTab.Location = new System.Drawing.Point(4, 22);
+            this.contactUsTab.Name = "contactUsTab";
+            this.contactUsTab.Size = new System.Drawing.Size(894, 557);
+            this.contactUsTab.TabIndex = 6;
+            this.contactUsTab.Text = "Contact Us";
+            this.contactUsTab.UseVisualStyleBackColor = true;
             // 
             // peopleTab
             // 
@@ -131,7 +131,7 @@
             this.peopleTab.Controls.Add(this.tbPeopleType);
             this.peopleTab.Location = new System.Drawing.Point(4, 22);
             this.peopleTab.Name = "peopleTab";
-            this.peopleTab.Size = new System.Drawing.Size(894, 455);
+            this.peopleTab.Size = new System.Drawing.Size(894, 557);
             this.peopleTab.TabIndex = 5;
             this.peopleTab.Text = "People";
             // 
@@ -142,7 +142,7 @@
             this.tbPeopleType.Location = new System.Drawing.Point(4, 3);
             this.tbPeopleType.Name = "tbPeopleType";
             this.tbPeopleType.SelectedIndex = 0;
-            this.tbPeopleType.Size = new System.Drawing.Size(890, 449);
+            this.tbPeopleType.Size = new System.Drawing.Size(890, 551);
             this.tbPeopleType.TabIndex = 3;
             // 
             // tbStaff
@@ -161,7 +161,7 @@
             this.tbStaff.Location = new System.Drawing.Point(4, 22);
             this.tbStaff.Name = "tbStaff";
             this.tbStaff.Padding = new System.Windows.Forms.Padding(3);
-            this.tbStaff.Size = new System.Drawing.Size(882, 423);
+            this.tbStaff.Size = new System.Drawing.Size(882, 525);
             this.tbStaff.TabIndex = 1;
             this.tbStaff.Text = "Staff";
             // 
@@ -379,7 +379,7 @@
             this.employmentTab.Controls.Add(this.lblEmpIntroTitle);
             this.employmentTab.Location = new System.Drawing.Point(4, 22);
             this.employmentTab.Name = "employmentTab";
-            this.employmentTab.Size = new System.Drawing.Size(839, 400);
+            this.employmentTab.Size = new System.Drawing.Size(894, 455);
             this.employmentTab.TabIndex = 4;
             this.employmentTab.Text = "Employment";
             this.employmentTab.UseVisualStyleBackColor = true;
@@ -466,7 +466,7 @@
             this.minorsTab.Controls.Add(this.listBoxUgMinorsName);
             this.minorsTab.Location = new System.Drawing.Point(4, 22);
             this.minorsTab.Name = "minorsTab";
-            this.minorsTab.Size = new System.Drawing.Size(839, 400);
+            this.minorsTab.Size = new System.Drawing.Size(894, 557);
             this.minorsTab.TabIndex = 3;
             this.minorsTab.Text = "Minors";
             this.minorsTab.UseVisualStyleBackColor = true;
@@ -545,7 +545,7 @@
             this.degreesTab.Controls.Add(this.menuStrip1);
             this.degreesTab.Location = new System.Drawing.Point(4, 22);
             this.degreesTab.Name = "degreesTab";
-            this.degreesTab.Size = new System.Drawing.Size(839, 400);
+            this.degreesTab.Size = new System.Drawing.Size(894, 557);
             this.degreesTab.TabIndex = 2;
             this.degreesTab.Text = "Degrees";
             this.degreesTab.UseVisualStyleBackColor = true;
@@ -558,7 +558,7 @@
             this.graduateToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(839, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(894, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -674,7 +674,7 @@
             this.aboutUsTab.Location = new System.Drawing.Point(4, 22);
             this.aboutUsTab.Name = "aboutUsTab";
             this.aboutUsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.aboutUsTab.Size = new System.Drawing.Size(839, 400);
+            this.aboutUsTab.Size = new System.Drawing.Size(894, 455);
             this.aboutUsTab.TabIndex = 1;
             this.aboutUsTab.Text = "About Us";
             this.aboutUsTab.UseVisualStyleBackColor = true;
@@ -723,7 +723,7 @@
             this.homeTab.Location = new System.Drawing.Point(4, 22);
             this.homeTab.Name = "homeTab";
             this.homeTab.Padding = new System.Windows.Forms.Padding(3);
-            this.homeTab.Size = new System.Drawing.Size(839, 400);
+            this.homeTab.Size = new System.Drawing.Size(894, 557);
             this.homeTab.TabIndex = 0;
             this.homeTab.Text = "Home";
             this.homeTab.UseVisualStyleBackColor = true;
@@ -733,7 +733,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Minion Pro", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
-            this.label1.Location = new System.Drawing.Point(227, 32);
+            this.label1.Location = new System.Drawing.Point(262, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(363, 32);
             this.label1.TabIndex = 0;
@@ -744,7 +744,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gill Sans MT", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
-            this.label2.Location = new System.Drawing.Point(308, 64);
+            this.label2.Location = new System.Drawing.Point(343, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 27);
             this.label2.TabIndex = 1;
@@ -755,7 +755,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Project3_RileyE.Properties.Resources.rit_logo;
             this.pictureBox1.ImageLocation = "";
-            this.pictureBox1.Location = new System.Drawing.Point(295, 126);
+            this.pictureBox1.Location = new System.Drawing.Point(326, 151);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(208, 210);
             this.pictureBox1.TabIndex = 2;
@@ -766,7 +766,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
-            this.label3.Location = new System.Drawing.Point(268, 339);
+            this.label3.Location = new System.Drawing.Point(306, 373);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(250, 17);
             this.label3.TabIndex = 1;
@@ -777,7 +777,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Gill Sans MT", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
-            this.label4.Location = new System.Drawing.Point(346, 96);
+            this.label4.Location = new System.Drawing.Point(381, 89);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 27);
             this.label4.TabIndex = 3;
@@ -792,11 +792,11 @@
             this.tabDegrees.Controls.Add(this.minorsTab);
             this.tabDegrees.Controls.Add(this.employmentTab);
             this.tabDegrees.Controls.Add(this.peopleTab);
-            this.tabDegrees.Controls.Add(this.mapTab);
+            this.tabDegrees.Controls.Add(this.contactUsTab);
             this.tabDegrees.Location = new System.Drawing.Point(-1, 2);
             this.tabDegrees.Name = "tabDegrees";
             this.tabDegrees.SelectedIndex = 0;
-            this.tabDegrees.Size = new System.Drawing.Size(902, 481);
+            this.tabDegrees.Size = new System.Drawing.Size(902, 583);
             this.tabDegrees.TabIndex = 0;
             this.tabDegrees.Enter += new System.EventHandler(this.tbControl_Enter);
             // 
@@ -809,7 +809,8 @@
             this.wbContactForm.MinimumSize = new System.Drawing.Size(20, 20);
             this.wbContactForm.Name = "wbContactForm";
             this.wbContactForm.ScriptErrorsSuppressed = true;
-            this.wbContactForm.Size = new System.Drawing.Size(894, 455);
+            this.wbContactForm.ScrollBarsEnabled = false;
+            this.wbContactForm.Size = new System.Drawing.Size(894, 557);
             this.wbContactForm.TabIndex = 0;
             this.wbContactForm.Url = new System.Uri("http://ist.rit.edu/api/contactForm.php", System.UriKind.Absolute);
             // 
@@ -818,13 +819,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(900, 483);
+            this.ClientSize = new System.Drawing.Size(900, 584);
             this.Controls.Add(this.tabDegrees);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Edward Riley - Golisano Home Page";
-            this.mapTab.ResumeLayout(false);
+            this.contactUsTab.ResumeLayout(false);
             this.peopleTab.ResumeLayout(false);
             this.tbPeopleType.ResumeLayout(false);
             this.tbStaff.ResumeLayout(false);
@@ -854,7 +855,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabPage mapTab;
+        private System.Windows.Forms.TabPage contactUsTab;
         private System.Windows.Forms.TabPage peopleTab;
         private System.Windows.Forms.TabControl tbPeopleType;
         private System.Windows.Forms.TabPage tbFaculty;
