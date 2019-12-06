@@ -1,6 +1,6 @@
 ﻿namespace Project3_RileyE
 {
-    partial class Form1
+    partial class MainWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -76,6 +76,16 @@
             this.concentrationHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txtboxDegreesDesc = new System.Windows.Forms.RichTextBox();
             this.lblDegreesTitle = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.computingAndInformationTechnologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.computingAndInformationTechnologyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.humanCenteredComputingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.webAndMobileComputingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.graduateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informationSciencesTechnologiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.humanComputerInteractionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.networkingSystemsAdministrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.graduateCertificatesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsTab = new System.Windows.Forms.TabPage();
             this.txtboxAboutUsDesc = new System.Windows.Forms.RichTextBox();
             this.txtboxAboutUs = new System.Windows.Forms.RichTextBox();
@@ -90,27 +100,37 @@
             this.researchTab = new System.Windows.Forms.TabPage();
             this.tabResearchType = new System.Windows.Forms.TabControl();
             this.interestTab = new System.Windows.Forms.TabPage();
-            this.facultyTab = new System.Windows.Forms.TabPage();
-            this.listboxResearchByInterestArea = new System.Windows.Forms.ListBox();
-            this.richTextBoxResearchByInterestCitation = new System.Windows.Forms.RichTextBox();
             this.lblResearchByInterestAreaCitation = new System.Windows.Forms.Label();
+            this.richTextBoxResearchByInterestCitation = new System.Windows.Forms.RichTextBox();
+            this.listboxResearchByInterestArea = new System.Windows.Forms.ListBox();
+            this.facultyTab = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.richTextBoxResearchByFacultyCitation = new System.Windows.Forms.RichTextBox();
             this.listboxResearchByFaculty = new System.Windows.Forms.ListBox();
             this.resourcesTab = new System.Windows.Forms.TabPage();
-            this.lblStudentResourcesTitle = new System.Windows.Forms.Label();
-            this.lblStudentResourcesSubtitle = new System.Windows.Forms.Label();
-            this.lblResourcesStudyAbroad = new System.Windows.Forms.Label();
-            this.richTextBoxResourcesStudyAbroadDesc = new System.Windows.Forms.RichTextBox();
             this.tabControlResourcesType = new System.Windows.Forms.TabControl();
             this.generalResourceTab = new System.Windows.Forms.TabPage();
-            this.advisingTab = new System.Windows.Forms.TabPage();
+            this.linkLblResourcesTutorSchedule = new System.Windows.Forms.LinkLabel();
             this.richTextBoxResourcesTutorDesc = new System.Windows.Forms.RichTextBox();
             this.lblResourcesTutorTitle = new System.Windows.Forms.Label();
-            this.linkLblResourcesTutorSchedule = new System.Windows.Forms.LinkLabel();
-            this.lblResourcesAdvisingTitle = new System.Windows.Forms.Label();
-            this.richtextboxAcademicAdvisorDesc = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxResourcesStudyAbroadDesc = new System.Windows.Forms.RichTextBox();
+            this.lblStudentResourcesTitle = new System.Windows.Forms.Label();
+            this.lblResourcesStudyAbroad = new System.Windows.Forms.Label();
+            this.lblStudentResourcesSubtitle = new System.Windows.Forms.Label();
+            this.advisingTab = new System.Windows.Forms.TabPage();
+            this.datagridviewResourcesISTAdvisor = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.richtextboxFacultyAdvisorDesc = new System.Windows.Forms.RichTextBox();
+            this.lblResourcesAdvisingFacultyTitle = new System.Windows.Forms.Label();
+            this.datagridviewResourcesAcademicAdvisor = new System.Windows.Forms.DataGridView();
+            this.AdvisorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.linkLblAcademicAdvisor = new System.Windows.Forms.LinkLabel();
+            this.richtextboxAcademicAdvisorDesc = new System.Windows.Forms.RichTextBox();
+            this.lblResourcesAdvisingAcademicTitle = new System.Windows.Forms.Label();
             this.contactUsTab.SuspendLayout();
             this.peopleTab.SuspendLayout();
             this.tbPeopleType.SuspendLayout();
@@ -122,6 +142,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCoopTable)).BeginInit();
             this.minorsTab.SuspendLayout();
             this.degreesTab.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.aboutUsTab.SuspendLayout();
             this.homeTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRITLogo)).BeginInit();
@@ -134,6 +155,8 @@
             this.tabControlResourcesType.SuspendLayout();
             this.generalResourceTab.SuspendLayout();
             this.advisingTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridviewResourcesISTAdvisor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridviewResourcesAcademicAdvisor)).BeginInit();
             this.SuspendLayout();
             // 
             // contactUsTab
@@ -577,6 +600,7 @@
             this.degreesTab.Controls.Add(this.degreesConcentrationListView);
             this.degreesTab.Controls.Add(this.txtboxDegreesDesc);
             this.degreesTab.Controls.Add(this.lblDegreesTitle);
+            this.degreesTab.Controls.Add(this.menuStrip1);
             this.degreesTab.Location = new System.Drawing.Point(4, 22);
             this.degreesTab.Name = "degreesTab";
             this.degreesTab.Size = new System.Drawing.Size(894, 557);
@@ -617,6 +641,87 @@
             this.lblDegreesTitle.Size = new System.Drawing.Size(99, 13);
             this.lblDegreesTitle.TabIndex = 1;
             this.lblDegreesTitle.Text = "Degrees Title Label";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.computingAndInformationTechnologyToolStripMenuItem,
+            this.graduateToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(894, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // computingAndInformationTechnologyToolStripMenuItem
+            // 
+            this.computingAndInformationTechnologyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.computingAndInformationTechnologyToolStripMenuItem1,
+            this.humanCenteredComputingToolStripMenuItem,
+            this.webAndMobileComputingToolStripMenuItem});
+            this.computingAndInformationTechnologyToolStripMenuItem.Name = "computingAndInformationTechnologyToolStripMenuItem";
+            this.computingAndInformationTechnologyToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
+            this.computingAndInformationTechnologyToolStripMenuItem.Text = "Undergraduate";
+            // 
+            // computingAndInformationTechnologyToolStripMenuItem1
+            // 
+            this.computingAndInformationTechnologyToolStripMenuItem1.Name = "computingAndInformationTechnologyToolStripMenuItem1";
+            this.computingAndInformationTechnologyToolStripMenuItem1.Size = new System.Drawing.Size(288, 22);
+            this.computingAndInformationTechnologyToolStripMenuItem1.Text = "Computing and Information Technology";
+            this.computingAndInformationTechnologyToolStripMenuItem1.Click += new System.EventHandler(this.computingAndInformationTechnologyToolStripMenuItem_Click);
+            // 
+            // humanCenteredComputingToolStripMenuItem
+            // 
+            this.humanCenteredComputingToolStripMenuItem.Name = "humanCenteredComputingToolStripMenuItem";
+            this.humanCenteredComputingToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
+            this.humanCenteredComputingToolStripMenuItem.Text = "Human Centered Computing";
+            this.humanCenteredComputingToolStripMenuItem.Click += new System.EventHandler(this.humanCompuingToolStripMenuItem_Click);
+            // 
+            // webAndMobileComputingToolStripMenuItem
+            // 
+            this.webAndMobileComputingToolStripMenuItem.Name = "webAndMobileComputingToolStripMenuItem";
+            this.webAndMobileComputingToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
+            this.webAndMobileComputingToolStripMenuItem.Text = "Web and Mobile Computing";
+            this.webAndMobileComputingToolStripMenuItem.Click += new System.EventHandler(this.webAndMobileComputingToolStripMenuItem_Click);
+            // 
+            // graduateToolStripMenuItem
+            // 
+            this.graduateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.informationSciencesTechnologiesToolStripMenuItem,
+            this.humanComputerInteractionToolStripMenuItem,
+            this.networkingSystemsAdministrationToolStripMenuItem,
+            this.graduateCertificatesToolStripMenuItem1});
+            this.graduateToolStripMenuItem.Name = "graduateToolStripMenuItem";
+            this.graduateToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.graduateToolStripMenuItem.Text = "Graduate";
+            // 
+            // informationSciencesTechnologiesToolStripMenuItem
+            // 
+            this.informationSciencesTechnologiesToolStripMenuItem.Name = "informationSciencesTechnologiesToolStripMenuItem";
+            this.informationSciencesTechnologiesToolStripMenuItem.Size = new System.Drawing.Size(287, 22);
+            this.informationSciencesTechnologiesToolStripMenuItem.Text = "Information Sciences and Technologies";
+            this.informationSciencesTechnologiesToolStripMenuItem.Click += new System.EventHandler(this.informationSciencesTechnologiesToolStripMenuItem_Click);
+            // 
+            // humanComputerInteractionToolStripMenuItem
+            // 
+            this.humanComputerInteractionToolStripMenuItem.Name = "humanComputerInteractionToolStripMenuItem";
+            this.humanComputerInteractionToolStripMenuItem.Size = new System.Drawing.Size(287, 22);
+            this.humanComputerInteractionToolStripMenuItem.Text = "Human Computer Interaction";
+            this.humanComputerInteractionToolStripMenuItem.Click += new System.EventHandler(this.humanComputerInteractionToolStripMenuItem_Click);
+            // 
+            // networkingSystemsAdministrationToolStripMenuItem
+            // 
+            this.networkingSystemsAdministrationToolStripMenuItem.Name = "networkingSystemsAdministrationToolStripMenuItem";
+            this.networkingSystemsAdministrationToolStripMenuItem.Size = new System.Drawing.Size(287, 22);
+            this.networkingSystemsAdministrationToolStripMenuItem.Text = "Networking and Systems Administration";
+            this.networkingSystemsAdministrationToolStripMenuItem.Click += new System.EventHandler(this.networkingAndSystemsAdministrationToolStripMenuItem_Click);
+            // 
+            // graduateCertificatesToolStripMenuItem1
+            // 
+            this.graduateCertificatesToolStripMenuItem1.Name = "graduateCertificatesToolStripMenuItem1";
+            this.graduateCertificatesToolStripMenuItem1.Size = new System.Drawing.Size(287, 22);
+            this.graduateCertificatesToolStripMenuItem1.Text = "Graduate Certificates";
+            this.graduateCertificatesToolStripMenuItem1.Click += new System.EventHandler(this.graduateAdvancedCertficiatesToolStripMenuItem_Click);
             // 
             // aboutUsTab
             // 
@@ -787,6 +892,32 @@
             this.interestTab.TabIndex = 0;
             this.interestTab.Text = "By Interest Area";
             // 
+            // lblResearchByInterestAreaCitation
+            // 
+            this.lblResearchByInterestAreaCitation.AutoSize = true;
+            this.lblResearchByInterestAreaCitation.Location = new System.Drawing.Point(254, 7);
+            this.lblResearchByInterestAreaCitation.Name = "lblResearchByInterestAreaCitation";
+            this.lblResearchByInterestAreaCitation.Size = new System.Drawing.Size(47, 13);
+            this.lblResearchByInterestAreaCitation.TabIndex = 2;
+            this.lblResearchByInterestAreaCitation.Text = "Citations";
+            // 
+            // richTextBoxResearchByInterestCitation
+            // 
+            this.richTextBoxResearchByInterestCitation.Location = new System.Drawing.Point(254, 29);
+            this.richTextBoxResearchByInterestCitation.Name = "richTextBoxResearchByInterestCitation";
+            this.richTextBoxResearchByInterestCitation.Size = new System.Drawing.Size(598, 446);
+            this.richTextBoxResearchByInterestCitation.TabIndex = 1;
+            this.richTextBoxResearchByInterestCitation.Text = "";
+            // 
+            // listboxResearchByInterestArea
+            // 
+            this.listboxResearchByInterestArea.FormattingEnabled = true;
+            this.listboxResearchByInterestArea.Location = new System.Drawing.Point(18, 29);
+            this.listboxResearchByInterestArea.Name = "listboxResearchByInterestArea";
+            this.listboxResearchByInterestArea.Size = new System.Drawing.Size(185, 446);
+            this.listboxResearchByInterestArea.TabIndex = 0;
+            this.listboxResearchByInterestArea.SelectedIndexChanged += new System.EventHandler(this.listboxResearchByInterestArea_SelectedIndexChanged);
+            // 
             // facultyTab
             // 
             this.facultyTab.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -799,32 +930,6 @@
             this.facultyTab.Size = new System.Drawing.Size(879, 524);
             this.facultyTab.TabIndex = 1;
             this.facultyTab.Text = "By Faculty";
-            // 
-            // listboxResearchByInterestArea
-            // 
-            this.listboxResearchByInterestArea.FormattingEnabled = true;
-            this.listboxResearchByInterestArea.Location = new System.Drawing.Point(18, 29);
-            this.listboxResearchByInterestArea.Name = "listboxResearchByInterestArea";
-            this.listboxResearchByInterestArea.Size = new System.Drawing.Size(185, 446);
-            this.listboxResearchByInterestArea.TabIndex = 0;
-            this.listboxResearchByInterestArea.SelectedIndexChanged += new System.EventHandler(this.listboxResearchByInterestArea_SelectedIndexChanged);
-            // 
-            // richTextBoxResearchByInterestCitation
-            // 
-            this.richTextBoxResearchByInterestCitation.Location = new System.Drawing.Point(254, 29);
-            this.richTextBoxResearchByInterestCitation.Name = "richTextBoxResearchByInterestCitation";
-            this.richTextBoxResearchByInterestCitation.Size = new System.Drawing.Size(598, 446);
-            this.richTextBoxResearchByInterestCitation.TabIndex = 1;
-            this.richTextBoxResearchByInterestCitation.Text = "";
-            // 
-            // lblResearchByInterestAreaCitation
-            // 
-            this.lblResearchByInterestAreaCitation.AutoSize = true;
-            this.lblResearchByInterestAreaCitation.Location = new System.Drawing.Point(254, 7);
-            this.lblResearchByInterestAreaCitation.Name = "lblResearchByInterestAreaCitation";
-            this.lblResearchByInterestAreaCitation.Size = new System.Drawing.Size(47, 13);
-            this.lblResearchByInterestAreaCitation.TabIndex = 2;
-            this.lblResearchByInterestAreaCitation.Text = "Citations";
             // 
             // label5
             // 
@@ -862,41 +967,6 @@
             this.resourcesTab.TabIndex = 8;
             this.resourcesTab.Text = "Resources";
             // 
-            // lblStudentResourcesTitle
-            // 
-            this.lblStudentResourcesTitle.AutoSize = true;
-            this.lblStudentResourcesTitle.Location = new System.Drawing.Point(14, 7);
-            this.lblStudentResourcesTitle.Name = "lblStudentResourcesTitle";
-            this.lblStudentResourcesTitle.Size = new System.Drawing.Size(27, 13);
-            this.lblStudentResourcesTitle.TabIndex = 0;
-            this.lblStudentResourcesTitle.Text = "Title";
-            // 
-            // lblStudentResourcesSubtitle
-            // 
-            this.lblStudentResourcesSubtitle.AutoSize = true;
-            this.lblStudentResourcesSubtitle.Location = new System.Drawing.Point(17, 40);
-            this.lblStudentResourcesSubtitle.Name = "lblStudentResourcesSubtitle";
-            this.lblStudentResourcesSubtitle.Size = new System.Drawing.Size(42, 13);
-            this.lblStudentResourcesSubtitle.TabIndex = 1;
-            this.lblStudentResourcesSubtitle.Text = "Subtitle";
-            // 
-            // lblResourcesStudyAbroad
-            // 
-            this.lblResourcesStudyAbroad.AutoSize = true;
-            this.lblResourcesStudyAbroad.Location = new System.Drawing.Point(153, 72);
-            this.lblResourcesStudyAbroad.Name = "lblResourcesStudyAbroad";
-            this.lblResourcesStudyAbroad.Size = new System.Drawing.Size(94, 13);
-            this.lblResourcesStudyAbroad.TabIndex = 2;
-            this.lblResourcesStudyAbroad.Text = "Study Abroad Title";
-            // 
-            // richTextBoxResourcesStudyAbroadDesc
-            // 
-            this.richTextBoxResourcesStudyAbroadDesc.Location = new System.Drawing.Point(34, 88);
-            this.richTextBoxResourcesStudyAbroadDesc.Name = "richTextBoxResourcesStudyAbroadDesc";
-            this.richTextBoxResourcesStudyAbroadDesc.Size = new System.Drawing.Size(330, 314);
-            this.richTextBoxResourcesStudyAbroadDesc.TabIndex = 3;
-            this.richTextBoxResourcesStudyAbroadDesc.Text = "";
-            // 
             // tabControlResourcesType
             // 
             this.tabControlResourcesType.Controls.Add(this.generalResourceTab);
@@ -924,18 +994,16 @@
             this.generalResourceTab.TabIndex = 0;
             this.generalResourceTab.Text = "General Resources";
             // 
-            // advisingTab
+            // linkLblResourcesTutorSchedule
             // 
-            this.advisingTab.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.advisingTab.Controls.Add(this.linkLblAcademicAdvisor);
-            this.advisingTab.Controls.Add(this.richtextboxAcademicAdvisorDesc);
-            this.advisingTab.Controls.Add(this.lblResourcesAdvisingTitle);
-            this.advisingTab.Location = new System.Drawing.Point(4, 22);
-            this.advisingTab.Name = "advisingTab";
-            this.advisingTab.Padding = new System.Windows.Forms.Padding(3);
-            this.advisingTab.Size = new System.Drawing.Size(883, 525);
-            this.advisingTab.TabIndex = 1;
-            this.advisingTab.Text = "Advising";
+            this.linkLblResourcesTutorSchedule.AutoSize = true;
+            this.linkLblResourcesTutorSchedule.Location = new System.Drawing.Point(602, 174);
+            this.linkLblResourcesTutorSchedule.Name = "linkLblResourcesTutorSchedule";
+            this.linkLblResourcesTutorSchedule.Size = new System.Drawing.Size(80, 13);
+            this.linkLblResourcesTutorSchedule.TabIndex = 6;
+            this.linkLblResourcesTutorSchedule.TabStop = true;
+            this.linkLblResourcesTutorSchedule.Text = "Tutor Schedule";
+            this.linkLblResourcesTutorSchedule.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesTutorSchedule_LinkClicked);
             // 
             // richTextBoxResourcesTutorDesc
             // 
@@ -954,33 +1022,138 @@
             this.lblResourcesTutorTitle.TabIndex = 4;
             this.lblResourcesTutorTitle.Text = "Tutor Title";
             // 
-            // linkLblResourcesTutorSchedule
+            // richTextBoxResourcesStudyAbroadDesc
             // 
-            this.linkLblResourcesTutorSchedule.AutoSize = true;
-            this.linkLblResourcesTutorSchedule.Location = new System.Drawing.Point(602, 174);
-            this.linkLblResourcesTutorSchedule.Name = "linkLblResourcesTutorSchedule";
-            this.linkLblResourcesTutorSchedule.Size = new System.Drawing.Size(80, 13);
-            this.linkLblResourcesTutorSchedule.TabIndex = 6;
-            this.linkLblResourcesTutorSchedule.TabStop = true;
-            this.linkLblResourcesTutorSchedule.Text = "Tutor Schedule";
-            this.linkLblResourcesTutorSchedule.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesTutorSchedule_LinkClicked);
+            this.richTextBoxResourcesStudyAbroadDesc.Location = new System.Drawing.Point(34, 88);
+            this.richTextBoxResourcesStudyAbroadDesc.Name = "richTextBoxResourcesStudyAbroadDesc";
+            this.richTextBoxResourcesStudyAbroadDesc.Size = new System.Drawing.Size(330, 314);
+            this.richTextBoxResourcesStudyAbroadDesc.TabIndex = 3;
+            this.richTextBoxResourcesStudyAbroadDesc.Text = "";
             // 
-            // lblResourcesAdvisingTitle
+            // lblStudentResourcesTitle
             // 
-            this.lblResourcesAdvisingTitle.AutoSize = true;
-            this.lblResourcesAdvisingTitle.Location = new System.Drawing.Point(18, 12);
-            this.lblResourcesAdvisingTitle.Name = "lblResourcesAdvisingTitle";
-            this.lblResourcesAdvisingTitle.Size = new System.Drawing.Size(115, 13);
-            this.lblResourcesAdvisingTitle.TabIndex = 0;
-            this.lblResourcesAdvisingTitle.Text = "Academic Advisor Title";
+            this.lblStudentResourcesTitle.AutoSize = true;
+            this.lblStudentResourcesTitle.Location = new System.Drawing.Point(14, 7);
+            this.lblStudentResourcesTitle.Name = "lblStudentResourcesTitle";
+            this.lblStudentResourcesTitle.Size = new System.Drawing.Size(27, 13);
+            this.lblStudentResourcesTitle.TabIndex = 0;
+            this.lblStudentResourcesTitle.Text = "Title";
             // 
-            // richtextboxAcademicAdvisorDesc
+            // lblResourcesStudyAbroad
             // 
-            this.richtextboxAcademicAdvisorDesc.Location = new System.Drawing.Point(21, 42);
-            this.richtextboxAcademicAdvisorDesc.Name = "richtextboxAcademicAdvisorDesc";
-            this.richtextboxAcademicAdvisorDesc.Size = new System.Drawing.Size(401, 172);
-            this.richtextboxAcademicAdvisorDesc.TabIndex = 2;
-            this.richtextboxAcademicAdvisorDesc.Text = "";
+            this.lblResourcesStudyAbroad.AutoSize = true;
+            this.lblResourcesStudyAbroad.Location = new System.Drawing.Point(153, 72);
+            this.lblResourcesStudyAbroad.Name = "lblResourcesStudyAbroad";
+            this.lblResourcesStudyAbroad.Size = new System.Drawing.Size(94, 13);
+            this.lblResourcesStudyAbroad.TabIndex = 2;
+            this.lblResourcesStudyAbroad.Text = "Study Abroad Title";
+            // 
+            // lblStudentResourcesSubtitle
+            // 
+            this.lblStudentResourcesSubtitle.AutoSize = true;
+            this.lblStudentResourcesSubtitle.Location = new System.Drawing.Point(17, 40);
+            this.lblStudentResourcesSubtitle.Name = "lblStudentResourcesSubtitle";
+            this.lblStudentResourcesSubtitle.Size = new System.Drawing.Size(42, 13);
+            this.lblStudentResourcesSubtitle.TabIndex = 1;
+            this.lblStudentResourcesSubtitle.Text = "Subtitle";
+            // 
+            // advisingTab
+            // 
+            this.advisingTab.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.advisingTab.Controls.Add(this.datagridviewResourcesISTAdvisor);
+            this.advisingTab.Controls.Add(this.richtextboxFacultyAdvisorDesc);
+            this.advisingTab.Controls.Add(this.lblResourcesAdvisingFacultyTitle);
+            this.advisingTab.Controls.Add(this.datagridviewResourcesAcademicAdvisor);
+            this.advisingTab.Controls.Add(this.linkLblAcademicAdvisor);
+            this.advisingTab.Controls.Add(this.richtextboxAcademicAdvisorDesc);
+            this.advisingTab.Controls.Add(this.lblResourcesAdvisingAcademicTitle);
+            this.advisingTab.Location = new System.Drawing.Point(4, 22);
+            this.advisingTab.Name = "advisingTab";
+            this.advisingTab.Padding = new System.Windows.Forms.Padding(3);
+            this.advisingTab.Size = new System.Drawing.Size(883, 525);
+            this.advisingTab.TabIndex = 1;
+            this.advisingTab.Text = "Advising";
+            // 
+            // datagridviewResourcesISTAdvisor
+            // 
+            this.datagridviewResourcesISTAdvisor.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.datagridviewResourcesISTAdvisor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagridviewResourcesISTAdvisor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.datagridviewResourcesISTAdvisor.Location = new System.Drawing.Point(455, 248);
+            this.datagridviewResourcesISTAdvisor.Name = "datagridviewResourcesISTAdvisor";
+            this.datagridviewResourcesISTAdvisor.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.datagridviewResourcesISTAdvisor.Size = new System.Drawing.Size(401, 224);
+            this.datagridviewResourcesISTAdvisor.TabIndex = 7;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "IST Advisor Name";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 75;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Department";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 175;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Email";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 115;
+            // 
+            // richtextboxFacultyAdvisorDesc
+            // 
+            this.richtextboxFacultyAdvisorDesc.Location = new System.Drawing.Point(455, 42);
+            this.richtextboxFacultyAdvisorDesc.Name = "richtextboxFacultyAdvisorDesc";
+            this.richtextboxFacultyAdvisorDesc.Size = new System.Drawing.Size(401, 195);
+            this.richtextboxFacultyAdvisorDesc.TabIndex = 6;
+            this.richtextboxFacultyAdvisorDesc.Text = "";
+            // 
+            // lblResourcesAdvisingFacultyTitle
+            // 
+            this.lblResourcesAdvisingFacultyTitle.AutoSize = true;
+            this.lblResourcesAdvisingFacultyTitle.Location = new System.Drawing.Point(452, 12);
+            this.lblResourcesAdvisingFacultyTitle.Name = "lblResourcesAdvisingFacultyTitle";
+            this.lblResourcesAdvisingFacultyTitle.Size = new System.Drawing.Size(102, 13);
+            this.lblResourcesAdvisingFacultyTitle.TabIndex = 5;
+            this.lblResourcesAdvisingFacultyTitle.Text = "Faculty Advisor Title";
+            // 
+            // datagridviewResourcesAcademicAdvisor
+            // 
+            this.datagridviewResourcesAcademicAdvisor.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.datagridviewResourcesAcademicAdvisor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagridviewResourcesAcademicAdvisor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AdvisorName,
+            this.Department,
+            this.Email});
+            this.datagridviewResourcesAcademicAdvisor.Location = new System.Drawing.Point(21, 248);
+            this.datagridviewResourcesAcademicAdvisor.Name = "datagridviewResourcesAcademicAdvisor";
+            this.datagridviewResourcesAcademicAdvisor.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.datagridviewResourcesAcademicAdvisor.Size = new System.Drawing.Size(401, 115);
+            this.datagridviewResourcesAcademicAdvisor.TabIndex = 4;
+            // 
+            // AdvisorName
+            // 
+            this.AdvisorName.HeaderText = "Academic Advisor Name";
+            this.AdvisorName.Name = "AdvisorName";
+            this.AdvisorName.Width = 75;
+            // 
+            // Department
+            // 
+            this.Department.HeaderText = "Department";
+            this.Department.Name = "Department";
+            this.Department.Width = 175;
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.Width = 115;
             // 
             // linkLblAcademicAdvisor
             // 
@@ -993,15 +1166,33 @@
             this.linkLblAcademicAdvisor.Text = "URL";
             this.linkLblAcademicAdvisor.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblAcademicAdvisor_LinkClicked);
             // 
-            // Form1
+            // richtextboxAcademicAdvisorDesc
+            // 
+            this.richtextboxAcademicAdvisorDesc.Location = new System.Drawing.Point(21, 42);
+            this.richtextboxAcademicAdvisorDesc.Name = "richtextboxAcademicAdvisorDesc";
+            this.richtextboxAcademicAdvisorDesc.Size = new System.Drawing.Size(401, 172);
+            this.richtextboxAcademicAdvisorDesc.TabIndex = 2;
+            this.richtextboxAcademicAdvisorDesc.Text = "";
+            // 
+            // lblResourcesAdvisingAcademicTitle
+            // 
+            this.lblResourcesAdvisingAcademicTitle.AutoSize = true;
+            this.lblResourcesAdvisingAcademicTitle.Location = new System.Drawing.Point(18, 12);
+            this.lblResourcesAdvisingAcademicTitle.Name = "lblResourcesAdvisingAcademicTitle";
+            this.lblResourcesAdvisingAcademicTitle.Size = new System.Drawing.Size(115, 13);
+            this.lblResourcesAdvisingAcademicTitle.TabIndex = 0;
+            this.lblResourcesAdvisingAcademicTitle.Text = "Academic Advisor Title";
+            // 
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(900, 584);
             this.Controls.Add(this.tabMain);
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form1";
+            this.Name = "MainWindow";
             this.Text = "Edward Riley - Golisano Home Page";
             this.contactUsTab.ResumeLayout(false);
             this.peopleTab.ResumeLayout(false);
@@ -1019,6 +1210,8 @@
             this.minorsTab.PerformLayout();
             this.degreesTab.ResumeLayout(false);
             this.degreesTab.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.aboutUsTab.ResumeLayout(false);
             this.aboutUsTab.PerformLayout();
             this.homeTab.ResumeLayout(false);
@@ -1037,6 +1230,8 @@
             this.generalResourceTab.PerformLayout();
             this.advisingTab.ResumeLayout(false);
             this.advisingTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridviewResourcesISTAdvisor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridviewResourcesAcademicAdvisor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1123,9 +1318,29 @@
         private System.Windows.Forms.RichTextBox richTextBoxResourcesTutorDesc;
         private System.Windows.Forms.Label lblResourcesTutorTitle;
         private System.Windows.Forms.LinkLabel linkLblResourcesTutorSchedule;
-        private System.Windows.Forms.Label lblResourcesAdvisingTitle;
+        private System.Windows.Forms.Label lblResourcesAdvisingAcademicTitle;
         private System.Windows.Forms.RichTextBox richtextboxAcademicAdvisorDesc;
         private System.Windows.Forms.LinkLabel linkLblAcademicAdvisor;
+        private System.Windows.Forms.DataGridView datagridviewResourcesAcademicAdvisor;
+        private System.Windows.Forms.RichTextBox richtextboxFacultyAdvisorDesc;
+        private System.Windows.Forms.Label lblResourcesAdvisingFacultyTitle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AdvisorName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Department;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridView datagridviewResourcesISTAdvisor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem computingAndInformationTechnologyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem computingAndInformationTechnologyToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem humanCenteredComputingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem webAndMobileComputingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem graduateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informationSciencesTechnologiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem humanComputerInteractionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem networkingSystemsAdministrationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem graduateCertificatesToolStripMenuItem1;
     }
 }
 

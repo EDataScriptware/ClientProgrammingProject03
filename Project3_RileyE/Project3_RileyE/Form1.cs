@@ -18,11 +18,11 @@ namespace Project3_RileyE
 
 
 
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
         private RESTapi baseRestURL = null;
 
-        public Form1()
+        public MainWindow()
         {
             InitializeComponent();
 
@@ -78,6 +78,8 @@ namespace Project3_RileyE
 
             lblDegreesTitle.Text = "";
             txtboxDegreesDesc.Text = "";
+
+
 
 
 
@@ -142,7 +144,9 @@ namespace Project3_RileyE
             lblDegreesTitle.Text += " (" + (degrees.undergraduate[0].degreeName).ToUpper() + ")";
 
             txtboxDegreesDesc.Text = (degrees.undergraduate[0].description);
+
             degreesConcentrationListView.Items.Clear();
+
             try
             {
                 for (int i = 0; i < degrees.undergraduate[0].concentrations[i].Count(); i++)
@@ -155,7 +159,6 @@ namespace Project3_RileyE
             {
 
             }
-
         }
 
         private void informationSciencesTechnologiesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -256,9 +259,9 @@ namespace Project3_RileyE
             degreesConcentrationListView.Columns.Add("Concentrations", 399);
 
 
+           
+
         }
-
-
 
 
 
@@ -588,15 +591,51 @@ namespace Project3_RileyE
             lblResourcesTutorTitle.Text = resources.tutorsAndLabInformation.title;
             richTextBoxResourcesTutorDesc.Text = resources.tutorsAndLabInformation.description;
 
-            lblResourcesAdvisingTitle.Text = resources.studentServices.academicAdvisors.title;
+            lblResourcesAdvisingAcademicTitle.Text = resources.studentServices.academicAdvisors.title;
             richtextboxAcademicAdvisorDesc.Text = resources.studentServices.academicAdvisors.description;
             linkLblAcademicAdvisor.Text = resources.studentServices.academicAdvisors.faq.title;
+
+            lblResourcesAdvisingFacultyTitle.Text = resources.studentServices.facultyAdvisors.title;
+            richtextboxFacultyAdvisorDesc.Text = resources.studentServices.facultyAdvisors.description;
+            // Academic Advisors
+
+            try
+            {
+                for (int i = 0; i < resources.studentServices.professonalAdvisors.advisorInformation.Count(); i++)
+                {
+                    datagridviewResourcesAcademicAdvisor.Rows.Add(
+                        resources.studentServices.professonalAdvisors.advisorInformation[i].name,             // name
+                        resources.studentServices.professonalAdvisors.advisorInformation[i].department,       // department
+                        resources.studentServices.professonalAdvisors.advisorInformation[i].email             // email
+                        );
+
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+
+            try
+            {
+                for (int i = 0; i < resources.studentServices.istMinorAdvising.minorAdvisorInformation.Count(); i++)
+                {
+                    datagridviewResourcesISTAdvisor.Rows.Add(
+                        resources.studentServices.istMinorAdvising.minorAdvisorInformation[i].advisor,          // name of advisor
+                        resources.studentServices.istMinorAdvising.minorAdvisorInformation[i].title,            // title (department)
+                        resources.studentServices.istMinorAdvising.minorAdvisorInformation[i].email             // email
+                        );
+
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+
+          
+
         }
-
-
-
-        #endregion
-
         private void linkLblResourcesTutorSchedule_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             linkLblResourcesTutorSchedule.LinkVisited = true;
@@ -611,5 +650,16 @@ namespace Project3_RileyE
             System.Diagnostics.Process.Start(resources.studentServices.academicAdvisors.faq.contentHref);
 
         }
-    } 
-}
+
+       
+    }
+
+       
+            
+
+       
+
+        #endregion
+
+
+} 
