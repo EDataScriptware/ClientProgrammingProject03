@@ -39,7 +39,7 @@ namespace Project3_RileyE
             Employment();
             People();
             Research();
-
+            Resources();
 
 
 
@@ -336,7 +336,7 @@ namespace Project3_RileyE
             // Console.WriteLine(employment.employers.employerNames.Count());
             try
             {
-                for (int i = 0; i < employment.employers.employerNames.Count(); i++ )
+                for (int i = 0; i < employment.employers.employerNames.Count(); i++)
                 {
                     // Console.WriteLine(i+1);
 
@@ -392,10 +392,10 @@ namespace Project3_RileyE
             // sorting CoopTable A-Z 
             dataGridViewCoopTable.Sort(dataGridViewCoopTable.Columns["Employer"], ListSortDirection.Ascending);
         }
-            #endregion
+        #endregion
 
         #region People
-            
+
         People people = null;
 
         private void People()
@@ -419,7 +419,7 @@ namespace Project3_RileyE
             }
             catch (Exception)
             {
-                
+
             }
 
             try
@@ -485,7 +485,7 @@ namespace Project3_RileyE
             baseRestURL = new RESTapi("http://ist.rit.edu/api");
             string jsonResearch = baseRestURL.getRESTData("/research/");
             research = JToken.Parse(jsonResearch).ToObject<Research>();
-            Console.WriteLine(jsonResearch);
+            // Console.WriteLine(jsonResearch);
 
             try
             {
@@ -503,7 +503,8 @@ namespace Project3_RileyE
             {
                 for (int i = 0; i < research.byFaculty.Count(); i++)
                 {
-                    listboxResearchByFaculty.Items.Add(research.byFaculty[i].facultyName);
+                    listboxResearchByFaculty.Items.Add(research.byFaculty[i].facultyName +
+                        " (" + research.byFaculty[i].username + ")");
                 }
             }
             catch (Exception)
@@ -522,8 +523,10 @@ namespace Project3_RileyE
             try
             {
                 for (int i = 0; i < research.byInterestArea[index].citations.Count(); i++)
+                {
                     richTextBoxResearchByInterestCitation.Text += "- " +
-                        research.byInterestArea[index].citations[i] + "\n\n";
+                          research.byInterestArea[index].citations[i] + "\n\n";
+                }
             }
             catch (Exception)
             {
@@ -540,8 +543,10 @@ namespace Project3_RileyE
             try
             {
                 for (int i = 0; i < research.byFaculty[index].citations.Count(); i++)
+                {
                     richTextBoxResearchByFacultyCitation.Text += "- " +
                         research.byFaculty[index].citations[i] + "\n\n";
+                }
             }
             catch (Exception)
             {
@@ -550,6 +555,61 @@ namespace Project3_RileyE
         }
         #endregion
 
+        #region Resources
+        Resources resources = null;
 
-    }
+        private void Resources()
+        {
+            baseRestURL = new RESTapi("http://ist.rit.edu/api");
+            string jsonResources = baseRestURL.getRESTData("/resources/");
+            resources = JToken.Parse(jsonResources).ToObject<Resources>();
+            // Console.WriteLine(jsonResources);
+
+            lblStudentResourcesTitle.Text = resources.title;
+            lblStudentResourcesSubtitle.Text = resources.subTitle;
+
+            lblResourcesStudyAbroad.Text = resources.studyAbroad.title;
+
+            richTextBoxResourcesStudyAbroadDesc.Text = resources.studyAbroad.description;
+            try
+            {
+                for (int i = 0; i < resources.studyAbroad.places.Count(); i++)
+                {
+                    richTextBoxResourcesStudyAbroadDesc.Text += "\n\n- " +
+                           resources.studyAbroad.places[i].nameOfPlace + "\n\t" +
+                           resources.studyAbroad.places[i].description;
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+
+            lblResourcesTutorTitle.Text = resources.tutorsAndLabInformation.title;
+            richTextBoxResourcesTutorDesc.Text = resources.tutorsAndLabInformation.description;
+
+            lblResourcesAdvisingTitle.Text = resources.studentServices.academicAdvisors.title;
+            richtextboxAcademicAdvisorDesc.Text = resources.studentServices.academicAdvisors.description;
+            linkLblAcademicAdvisor.Text = resources.studentServices.academicAdvisors.faq.title;
+        }
+
+
+
+        #endregion
+
+        private void linkLblResourcesTutorSchedule_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLblResourcesTutorSchedule.LinkVisited = true;
+
+            System.Diagnostics.Process.Start(resources.tutorsAndLabInformation.tutoringLabHoursLink);
+        }
+
+        private void linkLblAcademicAdvisor_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLblAcademicAdvisor.LinkVisited = true;
+
+            System.Diagnostics.Process.Start(resources.studentServices.academicAdvisors.faq.contentHref);
+
+        }
+    } 
 }
