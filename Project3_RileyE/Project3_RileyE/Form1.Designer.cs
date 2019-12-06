@@ -29,48 +29,53 @@
         private void InitializeComponent()
         {
             this.contactUsTab = new System.Windows.Forms.TabPage();
+            this.wbContactForm = new System.Windows.Forms.WebBrowser();
             this.peopleTab = new System.Windows.Forms.TabPage();
             this.tbPeopleType = new System.Windows.Forms.TabControl();
-            this.tbStaff = new System.Windows.Forms.TabPage();
-            this.lblPeopleStaffMainTitle = new System.Windows.Forms.Label();
-            this.cbPeopleStaff = new System.Windows.Forms.ComboBox();
-            this.pictureBoxPeopleStaff = new System.Windows.Forms.PictureBox();
-            this.lblPeopleStaffTitle = new System.Windows.Forms.Label();
-            this.lblPeopleStaffOffice = new System.Windows.Forms.Label();
-            this.lblPeopleStaffEmail = new System.Windows.Forms.Label();
-            this.lblPeopleStaffPhone = new System.Windows.Forms.Label();
-            this.linkLblPeopleStaffWebsite = new System.Windows.Forms.LinkLabel();
-            this.lblPeopleStaffUsername = new System.Windows.Forms.Label();
-            this.lblPeopleStaffSubtitle = new System.Windows.Forms.Label();
             this.tbFaculty = new System.Windows.Forms.TabPage();
-            this.lblPeopleFacultyMainTitle = new System.Windows.Forms.Label();
-            this.cbPeopleFacultyNames = new System.Windows.Forms.ComboBox();
-            this.pbPeopleFacultyPic = new System.Windows.Forms.PictureBox();
-            this.lblPeopleFacultyTitle = new System.Windows.Forms.Label();
-            this.lblPeopleFacultyOffice = new System.Windows.Forms.Label();
-            this.lblPeopleFacultyEmail = new System.Windows.Forms.Label();
-            this.lblPeopleFacultyPhone = new System.Windows.Forms.Label();
-            this.lblLinkPeopleWebsite = new System.Windows.Forms.LinkLabel();
-            this.lblPeopleFacultyUsername = new System.Windows.Forms.Label();
             this.lblPeopleFacultySubtitle = new System.Windows.Forms.Label();
+            this.lblPeopleFacultyUsername = new System.Windows.Forms.Label();
+            this.lblLinkPeopleWebsite = new System.Windows.Forms.LinkLabel();
+            this.lblPeopleFacultyPhone = new System.Windows.Forms.Label();
+            this.lblPeopleFacultyEmail = new System.Windows.Forms.Label();
+            this.lblPeopleFacultyOffice = new System.Windows.Forms.Label();
+            this.lblPeopleFacultyTitle = new System.Windows.Forms.Label();
+            this.pbPeopleFacultyPic = new System.Windows.Forms.PictureBox();
+            this.cbPeopleFacultyNames = new System.Windows.Forms.ComboBox();
+            this.lblPeopleFacultyMainTitle = new System.Windows.Forms.Label();
+            this.tbStaff = new System.Windows.Forms.TabPage();
+            this.lblPeopleStaffSubtitle = new System.Windows.Forms.Label();
+            this.lblPeopleStaffUsername = new System.Windows.Forms.Label();
+            this.linkLblPeopleStaffWebsite = new System.Windows.Forms.LinkLabel();
+            this.lblPeopleStaffPhone = new System.Windows.Forms.Label();
+            this.lblPeopleStaffEmail = new System.Windows.Forms.Label();
+            this.lblPeopleStaffOffice = new System.Windows.Forms.Label();
+            this.lblPeopleStaffTitle = new System.Windows.Forms.Label();
+            this.pictureBoxPeopleStaff = new System.Windows.Forms.PictureBox();
+            this.cbPeopleStaff = new System.Windows.Forms.ComboBox();
+            this.lblPeopleStaffMainTitle = new System.Windows.Forms.Label();
             this.employmentTab = new System.Windows.Forms.TabPage();
-            this.lblEmpIntroTitle = new System.Windows.Forms.Label();
-            this.txtBoxContentTitleAndDesc = new System.Windows.Forms.RichTextBox();
-            this.dataGridViewCoopTable = new System.Windows.Forms.DataGridView();
-            this.Term = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Degree = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Employer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblEmploymentTitleDesc = new System.Windows.Forms.Label();
+            this.dataGridViewCoopTable = new System.Windows.Forms.DataGridView();
+            this.Employer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Degree = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Term = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtBoxContentTitleAndDesc = new System.Windows.Forms.RichTextBox();
+            this.lblEmpIntroTitle = new System.Windows.Forms.Label();
             this.minorsTab = new System.Windows.Forms.TabPage();
-            this.listBoxUgMinorsName = new System.Windows.Forms.ListBox();
-            this.lblUgMinorsTitle = new System.Windows.Forms.Label();
-            this.txtboxUgMinorsTitle = new System.Windows.Forms.RichTextBox();
-            this.Courses = new System.Windows.Forms.Label();
-            this.listBoxUgMinorsCourses = new System.Windows.Forms.ListBox();
-            this.lblMinorsNote = new System.Windows.Forms.Label();
             this.txtBoxUgNote = new System.Windows.Forms.RichTextBox();
+            this.txtboxUgMinorsTitle = new System.Windows.Forms.RichTextBox();
+            this.lblMinorsNote = new System.Windows.Forms.Label();
+            this.listBoxUgMinorsCourses = new System.Windows.Forms.ListBox();
+            this.Courses = new System.Windows.Forms.Label();
+            this.lblUgMinorsTitle = new System.Windows.Forms.Label();
+            this.listBoxUgMinorsName = new System.Windows.Forms.ListBox();
             this.degreesTab = new System.Windows.Forms.TabPage();
+            this.degreesConcentrationListView = new System.Windows.Forms.ListView();
+            this.concentrationHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txtboxDegreesDesc = new System.Windows.Forms.RichTextBox();
+            this.lblDegreesTitle = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.computingAndInformationTechnologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,29 +86,34 @@
             this.humanComputerInteractionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.networkingAndSystemsAdministrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.graduateAdvancedCertficiatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblDegreesTitle = new System.Windows.Forms.Label();
-            this.txtboxDegreesDesc = new System.Windows.Forms.RichTextBox();
-            this.degreesConcentrationListView = new System.Windows.Forms.ListView();
-            this.concentrationHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.aboutUsTab = new System.Windows.Forms.TabPage();
-            this.lblAboutUsTitle = new System.Windows.Forms.Label();
-            this.txtboxAboutUs = new System.Windows.Forms.RichTextBox();
             this.txtboxAboutUsDesc = new System.Windows.Forms.RichTextBox();
+            this.txtboxAboutUs = new System.Windows.Forms.RichTextBox();
+            this.lblAboutUsTitle = new System.Windows.Forms.Label();
             this.homeTab = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tabDegrees = new System.Windows.Forms.TabControl();
-            this.wbContactForm = new System.Windows.Forms.WebBrowser();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBoxRITLogo = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabMain = new System.Windows.Forms.TabControl();
+            this.researchTab = new System.Windows.Forms.TabPage();
+            this.tabResearchType = new System.Windows.Forms.TabControl();
+            this.interestTab = new System.Windows.Forms.TabPage();
+            this.facultyTab = new System.Windows.Forms.TabPage();
+            this.listboxResearchByInterestArea = new System.Windows.Forms.ListBox();
+            this.richTextBoxResearchByInterestCitation = new System.Windows.Forms.RichTextBox();
+            this.lblResearchByInterestAreaCitation = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.richTextBoxResearchByFacultyCitation = new System.Windows.Forms.RichTextBox();
+            this.listboxResearchByFaculty = new System.Windows.Forms.ListBox();
             this.contactUsTab.SuspendLayout();
             this.peopleTab.SuspendLayout();
             this.tbPeopleType.SuspendLayout();
-            this.tbStaff.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPeopleStaff)).BeginInit();
             this.tbFaculty.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPeopleFacultyPic)).BeginInit();
+            this.tbStaff.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPeopleStaff)).BeginInit();
             this.employmentTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCoopTable)).BeginInit();
             this.minorsTab.SuspendLayout();
@@ -111,8 +121,12 @@
             this.menuStrip1.SuspendLayout();
             this.aboutUsTab.SuspendLayout();
             this.homeTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabDegrees.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRITLogo)).BeginInit();
+            this.tabMain.SuspendLayout();
+            this.researchTab.SuspendLayout();
+            this.tabResearchType.SuspendLayout();
+            this.interestTab.SuspendLayout();
+            this.facultyTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // contactUsTab
@@ -124,6 +138,20 @@
             this.contactUsTab.TabIndex = 6;
             this.contactUsTab.Text = "Contact Us";
             this.contactUsTab.UseVisualStyleBackColor = true;
+            // 
+            // wbContactForm
+            // 
+            this.wbContactForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wbContactForm.IsWebBrowserContextMenuEnabled = false;
+            this.wbContactForm.Location = new System.Drawing.Point(0, 0);
+            this.wbContactForm.Margin = new System.Windows.Forms.Padding(0);
+            this.wbContactForm.MinimumSize = new System.Drawing.Size(20, 20);
+            this.wbContactForm.Name = "wbContactForm";
+            this.wbContactForm.ScriptErrorsSuppressed = true;
+            this.wbContactForm.ScrollBarsEnabled = false;
+            this.wbContactForm.Size = new System.Drawing.Size(894, 557);
+            this.wbContactForm.TabIndex = 0;
+            this.wbContactForm.Url = new System.Uri("http://ist.rit.edu/api/contactForm.php", System.UriKind.Absolute);
             // 
             // peopleTab
             // 
@@ -145,6 +173,119 @@
             this.tbPeopleType.Size = new System.Drawing.Size(890, 551);
             this.tbPeopleType.TabIndex = 3;
             // 
+            // tbFaculty
+            // 
+            this.tbFaculty.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tbFaculty.Controls.Add(this.lblPeopleFacultySubtitle);
+            this.tbFaculty.Controls.Add(this.lblPeopleFacultyUsername);
+            this.tbFaculty.Controls.Add(this.lblLinkPeopleWebsite);
+            this.tbFaculty.Controls.Add(this.lblPeopleFacultyPhone);
+            this.tbFaculty.Controls.Add(this.lblPeopleFacultyEmail);
+            this.tbFaculty.Controls.Add(this.lblPeopleFacultyOffice);
+            this.tbFaculty.Controls.Add(this.lblPeopleFacultyTitle);
+            this.tbFaculty.Controls.Add(this.pbPeopleFacultyPic);
+            this.tbFaculty.Controls.Add(this.cbPeopleFacultyNames);
+            this.tbFaculty.Controls.Add(this.lblPeopleFacultyMainTitle);
+            this.tbFaculty.Location = new System.Drawing.Point(4, 22);
+            this.tbFaculty.Name = "tbFaculty";
+            this.tbFaculty.Padding = new System.Windows.Forms.Padding(3);
+            this.tbFaculty.Size = new System.Drawing.Size(882, 525);
+            this.tbFaculty.TabIndex = 0;
+            this.tbFaculty.Text = "Faculty";
+            // 
+            // lblPeopleFacultySubtitle
+            // 
+            this.lblPeopleFacultySubtitle.AutoSize = true;
+            this.lblPeopleFacultySubtitle.Location = new System.Drawing.Point(14, 19);
+            this.lblPeopleFacultySubtitle.Name = "lblPeopleFacultySubtitle";
+            this.lblPeopleFacultySubtitle.Size = new System.Drawing.Size(42, 13);
+            this.lblPeopleFacultySubtitle.TabIndex = 19;
+            this.lblPeopleFacultySubtitle.Text = "Subtitle";
+            // 
+            // lblPeopleFacultyUsername
+            // 
+            this.lblPeopleFacultyUsername.AutoSize = true;
+            this.lblPeopleFacultyUsername.Location = new System.Drawing.Point(14, 70);
+            this.lblPeopleFacultyUsername.Name = "lblPeopleFacultyUsername";
+            this.lblPeopleFacultyUsername.Size = new System.Drawing.Size(99, 13);
+            this.lblPeopleFacultyUsername.TabIndex = 8;
+            this.lblPeopleFacultyUsername.Text = "Golisano Username";
+            // 
+            // lblLinkPeopleWebsite
+            // 
+            this.lblLinkPeopleWebsite.AutoSize = true;
+            this.lblLinkPeopleWebsite.Location = new System.Drawing.Point(486, 95);
+            this.lblLinkPeopleWebsite.Name = "lblLinkPeopleWebsite";
+            this.lblLinkPeopleWebsite.Size = new System.Drawing.Size(46, 13);
+            this.lblLinkPeopleWebsite.TabIndex = 7;
+            this.lblLinkPeopleWebsite.TabStop = true;
+            this.lblLinkPeopleWebsite.Text = "Website";
+            this.lblLinkPeopleWebsite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkPeopleWebsite_LinkClicked);
+            // 
+            // lblPeopleFacultyPhone
+            // 
+            this.lblPeopleFacultyPhone.AutoSize = true;
+            this.lblPeopleFacultyPhone.Location = new System.Drawing.Point(486, 70);
+            this.lblPeopleFacultyPhone.Name = "lblPeopleFacultyPhone";
+            this.lblPeopleFacultyPhone.Size = new System.Drawing.Size(44, 13);
+            this.lblPeopleFacultyPhone.TabIndex = 6;
+            this.lblPeopleFacultyPhone.Text = "Phone: ";
+            // 
+            // lblPeopleFacultyEmail
+            // 
+            this.lblPeopleFacultyEmail.AutoSize = true;
+            this.lblPeopleFacultyEmail.Location = new System.Drawing.Point(486, 43);
+            this.lblPeopleFacultyEmail.Name = "lblPeopleFacultyEmail";
+            this.lblPeopleFacultyEmail.Size = new System.Drawing.Size(38, 13);
+            this.lblPeopleFacultyEmail.TabIndex = 5;
+            this.lblPeopleFacultyEmail.Text = "Email: ";
+            // 
+            // lblPeopleFacultyOffice
+            // 
+            this.lblPeopleFacultyOffice.AutoSize = true;
+            this.lblPeopleFacultyOffice.Location = new System.Drawing.Point(486, 16);
+            this.lblPeopleFacultyOffice.Name = "lblPeopleFacultyOffice";
+            this.lblPeopleFacultyOffice.Size = new System.Drawing.Size(41, 13);
+            this.lblPeopleFacultyOffice.TabIndex = 4;
+            this.lblPeopleFacultyOffice.Text = "Office: ";
+            // 
+            // lblPeopleFacultyTitle
+            // 
+            this.lblPeopleFacultyTitle.AutoSize = true;
+            this.lblPeopleFacultyTitle.Location = new System.Drawing.Point(14, 348);
+            this.lblPeopleFacultyTitle.Name = "lblPeopleFacultyTitle";
+            this.lblPeopleFacultyTitle.Size = new System.Drawing.Size(63, 13);
+            this.lblPeopleFacultyTitle.TabIndex = 3;
+            this.lblPeopleFacultyTitle.Text = "People Title";
+            // 
+            // pbPeopleFacultyPic
+            // 
+            this.pbPeopleFacultyPic.BackColor = System.Drawing.Color.Transparent;
+            this.pbPeopleFacultyPic.Location = new System.Drawing.Point(17, 95);
+            this.pbPeopleFacultyPic.Name = "pbPeopleFacultyPic";
+            this.pbPeopleFacultyPic.Size = new System.Drawing.Size(250, 250);
+            this.pbPeopleFacultyPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPeopleFacultyPic.TabIndex = 2;
+            this.pbPeopleFacultyPic.TabStop = false;
+            // 
+            // cbPeopleFacultyNames
+            // 
+            this.cbPeopleFacultyNames.FormattingEnabled = true;
+            this.cbPeopleFacultyNames.Location = new System.Drawing.Point(17, 35);
+            this.cbPeopleFacultyNames.Name = "cbPeopleFacultyNames";
+            this.cbPeopleFacultyNames.Size = new System.Drawing.Size(136, 21);
+            this.cbPeopleFacultyNames.TabIndex = 0;
+            this.cbPeopleFacultyNames.SelectedIndexChanged += new System.EventHandler(this.cbPeopleFacultyNames_SelectedIndexChanged);
+            // 
+            // lblPeopleFacultyMainTitle
+            // 
+            this.lblPeopleFacultyMainTitle.AutoSize = true;
+            this.lblPeopleFacultyMainTitle.Location = new System.Drawing.Point(14, 3);
+            this.lblPeopleFacultyMainTitle.Name = "lblPeopleFacultyMainTitle";
+            this.lblPeopleFacultyMainTitle.Size = new System.Drawing.Size(134, 13);
+            this.lblPeopleFacultyMainTitle.TabIndex = 1;
+            this.lblPeopleFacultyMainTitle.Text = "Golisano Faculty Employee";
+            // 
             // tbStaff
             // 
             this.tbStaff.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -165,69 +306,23 @@
             this.tbStaff.TabIndex = 1;
             this.tbStaff.Text = "Staff";
             // 
-            // lblPeopleStaffMainTitle
+            // lblPeopleStaffSubtitle
             // 
-            this.lblPeopleStaffMainTitle.AutoSize = true;
-            this.lblPeopleStaffMainTitle.Location = new System.Drawing.Point(14, 3);
-            this.lblPeopleStaffMainTitle.Name = "lblPeopleStaffMainTitle";
-            this.lblPeopleStaffMainTitle.Size = new System.Drawing.Size(122, 13);
-            this.lblPeopleStaffMainTitle.TabIndex = 10;
-            this.lblPeopleStaffMainTitle.Text = "Golisano Staff Employee";
+            this.lblPeopleStaffSubtitle.AutoSize = true;
+            this.lblPeopleStaffSubtitle.Location = new System.Drawing.Point(14, 19);
+            this.lblPeopleStaffSubtitle.Name = "lblPeopleStaffSubtitle";
+            this.lblPeopleStaffSubtitle.Size = new System.Drawing.Size(42, 13);
+            this.lblPeopleStaffSubtitle.TabIndex = 18;
+            this.lblPeopleStaffSubtitle.Text = "Subtitle";
             // 
-            // cbPeopleStaff
+            // lblPeopleStaffUsername
             // 
-            this.cbPeopleStaff.FormattingEnabled = true;
-            this.cbPeopleStaff.Location = new System.Drawing.Point(17, 35);
-            this.cbPeopleStaff.Name = "cbPeopleStaff";
-            this.cbPeopleStaff.Size = new System.Drawing.Size(136, 21);
-            this.cbPeopleStaff.TabIndex = 9;
-            this.cbPeopleStaff.SelectedIndexChanged += new System.EventHandler(this.cbPeopleStaff_SelectedIndexChanged);
-            // 
-            // pictureBoxPeopleStaff
-            // 
-            this.pictureBoxPeopleStaff.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxPeopleStaff.Location = new System.Drawing.Point(17, 95);
-            this.pictureBoxPeopleStaff.Name = "pictureBoxPeopleStaff";
-            this.pictureBoxPeopleStaff.Size = new System.Drawing.Size(200, 200);
-            this.pictureBoxPeopleStaff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxPeopleStaff.TabIndex = 11;
-            this.pictureBoxPeopleStaff.TabStop = false;
-            // 
-            // lblPeopleStaffTitle
-            // 
-            this.lblPeopleStaffTitle.AutoSize = true;
-            this.lblPeopleStaffTitle.Location = new System.Drawing.Point(14, 333);
-            this.lblPeopleStaffTitle.Name = "lblPeopleStaffTitle";
-            this.lblPeopleStaffTitle.Size = new System.Drawing.Size(63, 13);
-            this.lblPeopleStaffTitle.TabIndex = 12;
-            this.lblPeopleStaffTitle.Text = "People Title";
-            // 
-            // lblPeopleStaffOffice
-            // 
-            this.lblPeopleStaffOffice.AutoSize = true;
-            this.lblPeopleStaffOffice.Location = new System.Drawing.Point(486, 16);
-            this.lblPeopleStaffOffice.Name = "lblPeopleStaffOffice";
-            this.lblPeopleStaffOffice.Size = new System.Drawing.Size(41, 13);
-            this.lblPeopleStaffOffice.TabIndex = 13;
-            this.lblPeopleStaffOffice.Text = "Office: ";
-            // 
-            // lblPeopleStaffEmail
-            // 
-            this.lblPeopleStaffEmail.AutoSize = true;
-            this.lblPeopleStaffEmail.Location = new System.Drawing.Point(486, 43);
-            this.lblPeopleStaffEmail.Name = "lblPeopleStaffEmail";
-            this.lblPeopleStaffEmail.Size = new System.Drawing.Size(38, 13);
-            this.lblPeopleStaffEmail.TabIndex = 14;
-            this.lblPeopleStaffEmail.Text = "Email: ";
-            // 
-            // lblPeopleStaffPhone
-            // 
-            this.lblPeopleStaffPhone.AutoSize = true;
-            this.lblPeopleStaffPhone.Location = new System.Drawing.Point(486, 70);
-            this.lblPeopleStaffPhone.Name = "lblPeopleStaffPhone";
-            this.lblPeopleStaffPhone.Size = new System.Drawing.Size(44, 13);
-            this.lblPeopleStaffPhone.TabIndex = 15;
-            this.lblPeopleStaffPhone.Text = "Phone: ";
+            this.lblPeopleStaffUsername.AutoSize = true;
+            this.lblPeopleStaffUsername.Location = new System.Drawing.Point(14, 70);
+            this.lblPeopleStaffUsername.Name = "lblPeopleStaffUsername";
+            this.lblPeopleStaffUsername.Size = new System.Drawing.Size(99, 13);
+            this.lblPeopleStaffUsername.TabIndex = 17;
+            this.lblPeopleStaffUsername.Text = "Golisano Username";
             // 
             // linkLblPeopleStaffWebsite
             // 
@@ -240,136 +335,69 @@
             this.linkLblPeopleStaffWebsite.Text = "Website";
             this.linkLblPeopleStaffWebsite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkPeopleWebsite_LinkClicked);
             // 
-            // lblPeopleStaffUsername
+            // lblPeopleStaffPhone
             // 
-            this.lblPeopleStaffUsername.AutoSize = true;
-            this.lblPeopleStaffUsername.Location = new System.Drawing.Point(14, 70);
-            this.lblPeopleStaffUsername.Name = "lblPeopleStaffUsername";
-            this.lblPeopleStaffUsername.Size = new System.Drawing.Size(99, 13);
-            this.lblPeopleStaffUsername.TabIndex = 17;
-            this.lblPeopleStaffUsername.Text = "Golisano Username";
+            this.lblPeopleStaffPhone.AutoSize = true;
+            this.lblPeopleStaffPhone.Location = new System.Drawing.Point(486, 70);
+            this.lblPeopleStaffPhone.Name = "lblPeopleStaffPhone";
+            this.lblPeopleStaffPhone.Size = new System.Drawing.Size(44, 13);
+            this.lblPeopleStaffPhone.TabIndex = 15;
+            this.lblPeopleStaffPhone.Text = "Phone: ";
             // 
-            // lblPeopleStaffSubtitle
+            // lblPeopleStaffEmail
             // 
-            this.lblPeopleStaffSubtitle.AutoSize = true;
-            this.lblPeopleStaffSubtitle.Location = new System.Drawing.Point(14, 19);
-            this.lblPeopleStaffSubtitle.Name = "lblPeopleStaffSubtitle";
-            this.lblPeopleStaffSubtitle.Size = new System.Drawing.Size(42, 13);
-            this.lblPeopleStaffSubtitle.TabIndex = 18;
-            this.lblPeopleStaffSubtitle.Text = "Subtitle";
+            this.lblPeopleStaffEmail.AutoSize = true;
+            this.lblPeopleStaffEmail.Location = new System.Drawing.Point(486, 43);
+            this.lblPeopleStaffEmail.Name = "lblPeopleStaffEmail";
+            this.lblPeopleStaffEmail.Size = new System.Drawing.Size(38, 13);
+            this.lblPeopleStaffEmail.TabIndex = 14;
+            this.lblPeopleStaffEmail.Text = "Email: ";
             // 
-            // tbFaculty
+            // lblPeopleStaffOffice
             // 
-            this.tbFaculty.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tbFaculty.Controls.Add(this.lblPeopleFacultySubtitle);
-            this.tbFaculty.Controls.Add(this.lblPeopleFacultyUsername);
-            this.tbFaculty.Controls.Add(this.lblLinkPeopleWebsite);
-            this.tbFaculty.Controls.Add(this.lblPeopleFacultyPhone);
-            this.tbFaculty.Controls.Add(this.lblPeopleFacultyEmail);
-            this.tbFaculty.Controls.Add(this.lblPeopleFacultyOffice);
-            this.tbFaculty.Controls.Add(this.lblPeopleFacultyTitle);
-            this.tbFaculty.Controls.Add(this.pbPeopleFacultyPic);
-            this.tbFaculty.Controls.Add(this.cbPeopleFacultyNames);
-            this.tbFaculty.Controls.Add(this.lblPeopleFacultyMainTitle);
-            this.tbFaculty.Location = new System.Drawing.Point(4, 22);
-            this.tbFaculty.Name = "tbFaculty";
-            this.tbFaculty.Padding = new System.Windows.Forms.Padding(3);
-            this.tbFaculty.Size = new System.Drawing.Size(882, 423);
-            this.tbFaculty.TabIndex = 0;
-            this.tbFaculty.Text = "Faculty";
+            this.lblPeopleStaffOffice.AutoSize = true;
+            this.lblPeopleStaffOffice.Location = new System.Drawing.Point(486, 16);
+            this.lblPeopleStaffOffice.Name = "lblPeopleStaffOffice";
+            this.lblPeopleStaffOffice.Size = new System.Drawing.Size(41, 13);
+            this.lblPeopleStaffOffice.TabIndex = 13;
+            this.lblPeopleStaffOffice.Text = "Office: ";
             // 
-            // lblPeopleFacultyMainTitle
+            // lblPeopleStaffTitle
             // 
-            this.lblPeopleFacultyMainTitle.AutoSize = true;
-            this.lblPeopleFacultyMainTitle.Location = new System.Drawing.Point(14, 3);
-            this.lblPeopleFacultyMainTitle.Name = "lblPeopleFacultyMainTitle";
-            this.lblPeopleFacultyMainTitle.Size = new System.Drawing.Size(134, 13);
-            this.lblPeopleFacultyMainTitle.TabIndex = 1;
-            this.lblPeopleFacultyMainTitle.Text = "Golisano Faculty Employee";
+            this.lblPeopleStaffTitle.AutoSize = true;
+            this.lblPeopleStaffTitle.Location = new System.Drawing.Point(14, 348);
+            this.lblPeopleStaffTitle.Name = "lblPeopleStaffTitle";
+            this.lblPeopleStaffTitle.Size = new System.Drawing.Size(63, 13);
+            this.lblPeopleStaffTitle.TabIndex = 12;
+            this.lblPeopleStaffTitle.Text = "People Title";
             // 
-            // cbPeopleFacultyNames
+            // pictureBoxPeopleStaff
             // 
-            this.cbPeopleFacultyNames.FormattingEnabled = true;
-            this.cbPeopleFacultyNames.Location = new System.Drawing.Point(17, 35);
-            this.cbPeopleFacultyNames.Name = "cbPeopleFacultyNames";
-            this.cbPeopleFacultyNames.Size = new System.Drawing.Size(136, 21);
-            this.cbPeopleFacultyNames.TabIndex = 0;
-            this.cbPeopleFacultyNames.SelectedIndexChanged += new System.EventHandler(this.cbPeopleFacultyNames_SelectedIndexChanged);
+            this.pictureBoxPeopleStaff.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxPeopleStaff.Location = new System.Drawing.Point(17, 95);
+            this.pictureBoxPeopleStaff.Name = "pictureBoxPeopleStaff";
+            this.pictureBoxPeopleStaff.Size = new System.Drawing.Size(250, 250);
+            this.pictureBoxPeopleStaff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPeopleStaff.TabIndex = 11;
+            this.pictureBoxPeopleStaff.TabStop = false;
             // 
-            // pbPeopleFacultyPic
+            // cbPeopleStaff
             // 
-            this.pbPeopleFacultyPic.BackColor = System.Drawing.Color.Transparent;
-            this.pbPeopleFacultyPic.Location = new System.Drawing.Point(17, 95);
-            this.pbPeopleFacultyPic.Name = "pbPeopleFacultyPic";
-            this.pbPeopleFacultyPic.Size = new System.Drawing.Size(200, 200);
-            this.pbPeopleFacultyPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbPeopleFacultyPic.TabIndex = 2;
-            this.pbPeopleFacultyPic.TabStop = false;
+            this.cbPeopleStaff.FormattingEnabled = true;
+            this.cbPeopleStaff.Location = new System.Drawing.Point(17, 35);
+            this.cbPeopleStaff.Name = "cbPeopleStaff";
+            this.cbPeopleStaff.Size = new System.Drawing.Size(136, 21);
+            this.cbPeopleStaff.TabIndex = 9;
+            this.cbPeopleStaff.SelectedIndexChanged += new System.EventHandler(this.cbPeopleStaff_SelectedIndexChanged);
             // 
-            // lblPeopleFacultyTitle
+            // lblPeopleStaffMainTitle
             // 
-            this.lblPeopleFacultyTitle.AutoSize = true;
-            this.lblPeopleFacultyTitle.Location = new System.Drawing.Point(14, 333);
-            this.lblPeopleFacultyTitle.Name = "lblPeopleFacultyTitle";
-            this.lblPeopleFacultyTitle.Size = new System.Drawing.Size(63, 13);
-            this.lblPeopleFacultyTitle.TabIndex = 3;
-            this.lblPeopleFacultyTitle.Text = "People Title";
-            // 
-            // lblPeopleFacultyOffice
-            // 
-            this.lblPeopleFacultyOffice.AutoSize = true;
-            this.lblPeopleFacultyOffice.Location = new System.Drawing.Point(486, 16);
-            this.lblPeopleFacultyOffice.Name = "lblPeopleFacultyOffice";
-            this.lblPeopleFacultyOffice.Size = new System.Drawing.Size(41, 13);
-            this.lblPeopleFacultyOffice.TabIndex = 4;
-            this.lblPeopleFacultyOffice.Text = "Office: ";
-            // 
-            // lblPeopleFacultyEmail
-            // 
-            this.lblPeopleFacultyEmail.AutoSize = true;
-            this.lblPeopleFacultyEmail.Location = new System.Drawing.Point(486, 43);
-            this.lblPeopleFacultyEmail.Name = "lblPeopleFacultyEmail";
-            this.lblPeopleFacultyEmail.Size = new System.Drawing.Size(38, 13);
-            this.lblPeopleFacultyEmail.TabIndex = 5;
-            this.lblPeopleFacultyEmail.Text = "Email: ";
-            // 
-            // lblPeopleFacultyPhone
-            // 
-            this.lblPeopleFacultyPhone.AutoSize = true;
-            this.lblPeopleFacultyPhone.Location = new System.Drawing.Point(486, 70);
-            this.lblPeopleFacultyPhone.Name = "lblPeopleFacultyPhone";
-            this.lblPeopleFacultyPhone.Size = new System.Drawing.Size(44, 13);
-            this.lblPeopleFacultyPhone.TabIndex = 6;
-            this.lblPeopleFacultyPhone.Text = "Phone: ";
-            // 
-            // lblLinkPeopleWebsite
-            // 
-            this.lblLinkPeopleWebsite.AutoSize = true;
-            this.lblLinkPeopleWebsite.Location = new System.Drawing.Point(489, 95);
-            this.lblLinkPeopleWebsite.Name = "lblLinkPeopleWebsite";
-            this.lblLinkPeopleWebsite.Size = new System.Drawing.Size(46, 13);
-            this.lblLinkPeopleWebsite.TabIndex = 7;
-            this.lblLinkPeopleWebsite.TabStop = true;
-            this.lblLinkPeopleWebsite.Text = "Website";
-            this.lblLinkPeopleWebsite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkPeopleWebsite_LinkClicked);
-            // 
-            // lblPeopleFacultyUsername
-            // 
-            this.lblPeopleFacultyUsername.AutoSize = true;
-            this.lblPeopleFacultyUsername.Location = new System.Drawing.Point(14, 70);
-            this.lblPeopleFacultyUsername.Name = "lblPeopleFacultyUsername";
-            this.lblPeopleFacultyUsername.Size = new System.Drawing.Size(99, 13);
-            this.lblPeopleFacultyUsername.TabIndex = 8;
-            this.lblPeopleFacultyUsername.Text = "Golisano Username";
-            // 
-            // lblPeopleFacultySubtitle
-            // 
-            this.lblPeopleFacultySubtitle.AutoSize = true;
-            this.lblPeopleFacultySubtitle.Location = new System.Drawing.Point(14, 19);
-            this.lblPeopleFacultySubtitle.Name = "lblPeopleFacultySubtitle";
-            this.lblPeopleFacultySubtitle.Size = new System.Drawing.Size(42, 13);
-            this.lblPeopleFacultySubtitle.TabIndex = 19;
-            this.lblPeopleFacultySubtitle.Text = "Subtitle";
+            this.lblPeopleStaffMainTitle.AutoSize = true;
+            this.lblPeopleStaffMainTitle.Location = new System.Drawing.Point(14, 3);
+            this.lblPeopleStaffMainTitle.Name = "lblPeopleStaffMainTitle";
+            this.lblPeopleStaffMainTitle.Size = new System.Drawing.Size(122, 13);
+            this.lblPeopleStaffMainTitle.TabIndex = 10;
+            this.lblPeopleStaffMainTitle.Text = "Golisano Staff Employee";
             // 
             // employmentTab
             // 
@@ -379,29 +407,19 @@
             this.employmentTab.Controls.Add(this.lblEmpIntroTitle);
             this.employmentTab.Location = new System.Drawing.Point(4, 22);
             this.employmentTab.Name = "employmentTab";
-            this.employmentTab.Size = new System.Drawing.Size(894, 455);
+            this.employmentTab.Size = new System.Drawing.Size(894, 557);
             this.employmentTab.TabIndex = 4;
             this.employmentTab.Text = "Employment";
             this.employmentTab.UseVisualStyleBackColor = true;
             // 
-            // lblEmpIntroTitle
+            // lblEmploymentTitleDesc
             // 
-            this.lblEmpIntroTitle.AutoSize = true;
-            this.lblEmpIntroTitle.Location = new System.Drawing.Point(10, 14);
-            this.lblEmpIntroTitle.Name = "lblEmpIntroTitle";
-            this.lblEmpIntroTitle.Size = new System.Drawing.Size(137, 13);
-            this.lblEmpIntroTitle.TabIndex = 0;
-            this.lblEmpIntroTitle.Text = "Employment Intro Main Title";
-            // 
-            // txtBoxContentTitleAndDesc
-            // 
-            this.txtBoxContentTitleAndDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBoxContentTitleAndDesc.Location = new System.Drawing.Point(13, 42);
-            this.txtBoxContentTitleAndDesc.Name = "txtBoxContentTitleAndDesc";
-            this.txtBoxContentTitleAndDesc.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.txtBoxContentTitleAndDesc.Size = new System.Drawing.Size(344, 248);
-            this.txtBoxContentTitleAndDesc.TabIndex = 1;
-            this.txtBoxContentTitleAndDesc.Text = "Employment Content Title and Desc";
+            this.lblEmploymentTitleDesc.AutoSize = true;
+            this.lblEmploymentTitleDesc.Location = new System.Drawing.Point(10, 538);
+            this.lblEmploymentTitleDesc.Name = "lblEmploymentTitleDesc";
+            this.lblEmploymentTitleDesc.Size = new System.Drawing.Size(125, 13);
+            this.lblEmploymentTitleDesc.TabIndex = 3;
+            this.lblEmploymentTitleDesc.Text = "Employer Title and Desc.";
             // 
             // dataGridViewCoopTable
             // 
@@ -418,26 +436,8 @@
             this.dataGridViewCoopTable.Name = "dataGridViewCoopTable";
             this.dataGridViewCoopTable.ReadOnly = true;
             this.dataGridViewCoopTable.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridViewCoopTable.Size = new System.Drawing.Size(436, 248);
+            this.dataGridViewCoopTable.Size = new System.Drawing.Size(436, 485);
             this.dataGridViewCoopTable.TabIndex = 2;
-            // 
-            // Term
-            // 
-            this.Term.HeaderText = "Term";
-            this.Term.Name = "Term";
-            this.Term.ReadOnly = true;
-            // 
-            // City
-            // 
-            this.City.HeaderText = "City";
-            this.City.Name = "City";
-            this.City.ReadOnly = true;
-            // 
-            // Degree
-            // 
-            this.Degree.HeaderText = "Degree";
-            this.Degree.Name = "Degree";
-            this.Degree.ReadOnly = true;
             // 
             // Employer
             // 
@@ -445,14 +445,42 @@
             this.Employer.Name = "Employer";
             this.Employer.ReadOnly = true;
             // 
-            // lblEmploymentTitleDesc
+            // Degree
             // 
-            this.lblEmploymentTitleDesc.AutoSize = true;
-            this.lblEmploymentTitleDesc.Location = new System.Drawing.Point(13, 311);
-            this.lblEmploymentTitleDesc.Name = "lblEmploymentTitleDesc";
-            this.lblEmploymentTitleDesc.Size = new System.Drawing.Size(125, 13);
-            this.lblEmploymentTitleDesc.TabIndex = 3;
-            this.lblEmploymentTitleDesc.Text = "Employer Title and Desc.";
+            this.Degree.HeaderText = "Degree";
+            this.Degree.Name = "Degree";
+            this.Degree.ReadOnly = true;
+            // 
+            // City
+            // 
+            this.City.HeaderText = "City";
+            this.City.Name = "City";
+            this.City.ReadOnly = true;
+            // 
+            // Term
+            // 
+            this.Term.HeaderText = "Term";
+            this.Term.Name = "Term";
+            this.Term.ReadOnly = true;
+            // 
+            // txtBoxContentTitleAndDesc
+            // 
+            this.txtBoxContentTitleAndDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxContentTitleAndDesc.Location = new System.Drawing.Point(13, 42);
+            this.txtBoxContentTitleAndDesc.Name = "txtBoxContentTitleAndDesc";
+            this.txtBoxContentTitleAndDesc.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.txtBoxContentTitleAndDesc.Size = new System.Drawing.Size(344, 248);
+            this.txtBoxContentTitleAndDesc.TabIndex = 1;
+            this.txtBoxContentTitleAndDesc.Text = "Employment Content Title and Desc";
+            // 
+            // lblEmpIntroTitle
+            // 
+            this.lblEmpIntroTitle.AutoSize = true;
+            this.lblEmpIntroTitle.Location = new System.Drawing.Point(10, 14);
+            this.lblEmpIntroTitle.Name = "lblEmpIntroTitle";
+            this.lblEmpIntroTitle.Size = new System.Drawing.Size(137, 13);
+            this.lblEmpIntroTitle.TabIndex = 0;
+            this.lblEmpIntroTitle.Text = "Employment Intro Main Title";
             // 
             // minorsTab
             // 
@@ -471,26 +499,14 @@
             this.minorsTab.Text = "Minors";
             this.minorsTab.UseVisualStyleBackColor = true;
             // 
-            // listBoxUgMinorsName
+            // txtBoxUgNote
             // 
-            this.listBoxUgMinorsName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBoxUgMinorsName.FormattingEnabled = true;
-            this.listBoxUgMinorsName.Items.AddRange(new object[] {
-            "Undergraduate Minors Name"});
-            this.listBoxUgMinorsName.Location = new System.Drawing.Point(29, 21);
-            this.listBoxUgMinorsName.Name = "listBoxUgMinorsName";
-            this.listBoxUgMinorsName.Size = new System.Drawing.Size(153, 275);
-            this.listBoxUgMinorsName.TabIndex = 0;
-            this.listBoxUgMinorsName.SelectedIndexChanged += new System.EventHandler(this.listBoxUgMinorsName_SelectedIndexChanged);
-            // 
-            // lblUgMinorsTitle
-            // 
-            this.lblUgMinorsTitle.AutoSize = true;
-            this.lblUgMinorsTitle.Location = new System.Drawing.Point(209, 21);
-            this.lblUgMinorsTitle.Name = "lblUgMinorsTitle";
-            this.lblUgMinorsTitle.Size = new System.Drawing.Size(135, 13);
-            this.lblUgMinorsTitle.TabIndex = 1;
-            this.lblUgMinorsTitle.Text = "Undergraduate Minors Title";
+            this.txtBoxUgNote.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxUgNote.Location = new System.Drawing.Point(29, 301);
+            this.txtBoxUgNote.Name = "txtBoxUgNote";
+            this.txtBoxUgNote.Size = new System.Drawing.Size(786, 137);
+            this.txtBoxUgNote.TabIndex = 7;
+            this.txtBoxUgNote.Text = "Undergraduate Minors Note";
             // 
             // txtboxUgMinorsTitle
             // 
@@ -502,14 +518,13 @@
             this.txtboxUgMinorsTitle.TabIndex = 2;
             this.txtboxUgMinorsTitle.Text = "Undergraduate Minors Desc";
             // 
-            // Courses
+            // lblMinorsNote
             // 
-            this.Courses.AutoSize = true;
-            this.Courses.Location = new System.Drawing.Point(560, 21);
-            this.Courses.Name = "Courses";
-            this.Courses.Size = new System.Drawing.Size(45, 13);
-            this.Courses.TabIndex = 4;
-            this.Courses.Text = "Courses";
+            this.lblMinorsNote.AutoSize = true;
+            this.lblMinorsNote.Location = new System.Drawing.Point(26, 327);
+            this.lblMinorsNote.Name = "lblMinorsNote";
+            this.lblMinorsNote.Size = new System.Drawing.Size(0, 13);
+            this.lblMinorsNote.TabIndex = 6;
             // 
             // listBoxUgMinorsCourses
             // 
@@ -520,22 +535,35 @@
             this.listBoxUgMinorsCourses.Size = new System.Drawing.Size(245, 182);
             this.listBoxUgMinorsCourses.TabIndex = 5;
             // 
-            // lblMinorsNote
+            // Courses
             // 
-            this.lblMinorsNote.AutoSize = true;
-            this.lblMinorsNote.Location = new System.Drawing.Point(26, 327);
-            this.lblMinorsNote.Name = "lblMinorsNote";
-            this.lblMinorsNote.Size = new System.Drawing.Size(0, 13);
-            this.lblMinorsNote.TabIndex = 6;
+            this.Courses.AutoSize = true;
+            this.Courses.Location = new System.Drawing.Point(560, 21);
+            this.Courses.Name = "Courses";
+            this.Courses.Size = new System.Drawing.Size(45, 13);
+            this.Courses.TabIndex = 4;
+            this.Courses.Text = "Courses";
             // 
-            // txtBoxUgNote
+            // lblUgMinorsTitle
             // 
-            this.txtBoxUgNote.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBoxUgNote.Location = new System.Drawing.Point(29, 301);
-            this.txtBoxUgNote.Name = "txtBoxUgNote";
-            this.txtBoxUgNote.Size = new System.Drawing.Size(786, 96);
-            this.txtBoxUgNote.TabIndex = 7;
-            this.txtBoxUgNote.Text = "Undergraduate Minors Note";
+            this.lblUgMinorsTitle.AutoSize = true;
+            this.lblUgMinorsTitle.Location = new System.Drawing.Point(209, 21);
+            this.lblUgMinorsTitle.Name = "lblUgMinorsTitle";
+            this.lblUgMinorsTitle.Size = new System.Drawing.Size(135, 13);
+            this.lblUgMinorsTitle.TabIndex = 1;
+            this.lblUgMinorsTitle.Text = "Undergraduate Minors Title";
+            // 
+            // listBoxUgMinorsName
+            // 
+            this.listBoxUgMinorsName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBoxUgMinorsName.FormattingEnabled = true;
+            this.listBoxUgMinorsName.Items.AddRange(new object[] {
+            "Undergraduate Minors Name"});
+            this.listBoxUgMinorsName.Location = new System.Drawing.Point(29, 21);
+            this.listBoxUgMinorsName.Name = "listBoxUgMinorsName";
+            this.listBoxUgMinorsName.Size = new System.Drawing.Size(153, 275);
+            this.listBoxUgMinorsName.TabIndex = 0;
+            this.listBoxUgMinorsName.SelectedIndexChanged += new System.EventHandler(this.listBoxUgMinorsName_SelectedIndexChanged);
             // 
             // degreesTab
             // 
@@ -549,6 +577,40 @@
             this.degreesTab.TabIndex = 2;
             this.degreesTab.Text = "Degrees";
             this.degreesTab.UseVisualStyleBackColor = true;
+            // 
+            // degreesConcentrationListView
+            // 
+            this.degreesConcentrationListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.concentrationHeader});
+            this.degreesConcentrationListView.HideSelection = false;
+            this.degreesConcentrationListView.LabelWrap = false;
+            this.degreesConcentrationListView.Location = new System.Drawing.Point(301, 58);
+            this.degreesConcentrationListView.Name = "degreesConcentrationListView";
+            this.degreesConcentrationListView.Size = new System.Drawing.Size(403, 240);
+            this.degreesConcentrationListView.TabIndex = 3;
+            this.degreesConcentrationListView.UseCompatibleStateImageBehavior = false;
+            // 
+            // concentrationHeader
+            // 
+            this.concentrationHeader.Width = 80;
+            // 
+            // txtboxDegreesDesc
+            // 
+            this.txtboxDegreesDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxDegreesDesc.Location = new System.Drawing.Point(36, 126);
+            this.txtboxDegreesDesc.Name = "txtboxDegreesDesc";
+            this.txtboxDegreesDesc.Size = new System.Drawing.Size(252, 96);
+            this.txtboxDegreesDesc.TabIndex = 2;
+            this.txtboxDegreesDesc.Text = "Degrees Desc Label";
+            // 
+            // lblDegreesTitle
+            // 
+            this.lblDegreesTitle.AutoSize = true;
+            this.lblDegreesTitle.Location = new System.Drawing.Point(33, 58);
+            this.lblDegreesTitle.Name = "lblDegreesTitle";
+            this.lblDegreesTitle.Size = new System.Drawing.Size(99, 13);
+            this.lblDegreesTitle.TabIndex = 1;
+            this.lblDegreesTitle.Text = "Degrees Title Label";
             // 
             // menuStrip1
             // 
@@ -632,40 +694,6 @@
             this.graduateAdvancedCertficiatesToolStripMenuItem.Text = "Graduate Advanced Certificates";
             this.graduateAdvancedCertficiatesToolStripMenuItem.Click += new System.EventHandler(this.graduateAdvancedCertficiatesToolStripMenuItem_Click);
             // 
-            // lblDegreesTitle
-            // 
-            this.lblDegreesTitle.AutoSize = true;
-            this.lblDegreesTitle.Location = new System.Drawing.Point(33, 58);
-            this.lblDegreesTitle.Name = "lblDegreesTitle";
-            this.lblDegreesTitle.Size = new System.Drawing.Size(99, 13);
-            this.lblDegreesTitle.TabIndex = 1;
-            this.lblDegreesTitle.Text = "Degrees Title Label";
-            // 
-            // txtboxDegreesDesc
-            // 
-            this.txtboxDegreesDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxDegreesDesc.Location = new System.Drawing.Point(36, 126);
-            this.txtboxDegreesDesc.Name = "txtboxDegreesDesc";
-            this.txtboxDegreesDesc.Size = new System.Drawing.Size(252, 96);
-            this.txtboxDegreesDesc.TabIndex = 2;
-            this.txtboxDegreesDesc.Text = "Degrees Desc Label";
-            // 
-            // degreesConcentrationListView
-            // 
-            this.degreesConcentrationListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.concentrationHeader});
-            this.degreesConcentrationListView.HideSelection = false;
-            this.degreesConcentrationListView.LabelWrap = false;
-            this.degreesConcentrationListView.Location = new System.Drawing.Point(301, 58);
-            this.degreesConcentrationListView.Name = "degreesConcentrationListView";
-            this.degreesConcentrationListView.Size = new System.Drawing.Size(403, 240);
-            this.degreesConcentrationListView.TabIndex = 3;
-            this.degreesConcentrationListView.UseCompatibleStateImageBehavior = false;
-            // 
-            // concentrationHeader
-            // 
-            this.concentrationHeader.Width = 80;
-            // 
             // aboutUsTab
             // 
             this.aboutUsTab.Controls.Add(this.txtboxAboutUsDesc);
@@ -674,21 +702,21 @@
             this.aboutUsTab.Location = new System.Drawing.Point(4, 22);
             this.aboutUsTab.Name = "aboutUsTab";
             this.aboutUsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.aboutUsTab.Size = new System.Drawing.Size(894, 455);
+            this.aboutUsTab.Size = new System.Drawing.Size(894, 557);
             this.aboutUsTab.TabIndex = 1;
             this.aboutUsTab.Text = "About Us";
             this.aboutUsTab.UseVisualStyleBackColor = true;
             // 
-            // lblAboutUsTitle
+            // txtboxAboutUsDesc
             // 
-            this.lblAboutUsTitle.AutoSize = true;
-            this.lblAboutUsTitle.Font = new System.Drawing.Font("Minion Pro", 18F, System.Drawing.FontStyle.Bold);
-            this.lblAboutUsTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
-            this.lblAboutUsTitle.Location = new System.Drawing.Point(3, 3);
-            this.lblAboutUsTitle.Name = "lblAboutUsTitle";
-            this.lblAboutUsTitle.Size = new System.Drawing.Size(226, 32);
-            this.lblAboutUsTitle.TabIndex = 0;
-            this.lblAboutUsTitle.Text = "About Us Title Label";
+            this.txtboxAboutUsDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxAboutUsDesc.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxAboutUsDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
+            this.txtboxAboutUsDesc.Location = new System.Drawing.Point(23, 48);
+            this.txtboxAboutUsDesc.Name = "txtboxAboutUsDesc";
+            this.txtboxAboutUsDesc.Size = new System.Drawing.Size(519, 120);
+            this.txtboxAboutUsDesc.TabIndex = 2;
+            this.txtboxAboutUsDesc.Text = "About Us Desc";
             // 
             // txtboxAboutUs
             // 
@@ -702,22 +730,22 @@
             this.txtboxAboutUs.TabIndex = 1;
             this.txtboxAboutUs.Text = "About Us Quotes";
             // 
-            // txtboxAboutUsDesc
+            // lblAboutUsTitle
             // 
-            this.txtboxAboutUsDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxAboutUsDesc.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxAboutUsDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
-            this.txtboxAboutUsDesc.Location = new System.Drawing.Point(23, 48);
-            this.txtboxAboutUsDesc.Name = "txtboxAboutUsDesc";
-            this.txtboxAboutUsDesc.Size = new System.Drawing.Size(519, 120);
-            this.txtboxAboutUsDesc.TabIndex = 2;
-            this.txtboxAboutUsDesc.Text = "About Us Desc";
+            this.lblAboutUsTitle.AutoSize = true;
+            this.lblAboutUsTitle.Font = new System.Drawing.Font("Minion Pro", 18F, System.Drawing.FontStyle.Bold);
+            this.lblAboutUsTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
+            this.lblAboutUsTitle.Location = new System.Drawing.Point(3, 3);
+            this.lblAboutUsTitle.Name = "lblAboutUsTitle";
+            this.lblAboutUsTitle.Size = new System.Drawing.Size(226, 32);
+            this.lblAboutUsTitle.TabIndex = 0;
+            this.lblAboutUsTitle.Text = "About Us Title Label";
             // 
             // homeTab
             // 
             this.homeTab.Controls.Add(this.label4);
             this.homeTab.Controls.Add(this.label3);
-            this.homeTab.Controls.Add(this.pictureBox1);
+            this.homeTab.Controls.Add(this.pictureBoxRITLogo);
             this.homeTab.Controls.Add(this.label2);
             this.homeTab.Controls.Add(this.label1);
             this.homeTab.Location = new System.Drawing.Point(4, 22);
@@ -727,50 +755,6 @@
             this.homeTab.TabIndex = 0;
             this.homeTab.Text = "Home";
             this.homeTab.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Minion Pro", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
-            this.label1.Location = new System.Drawing.Point(262, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(363, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome to Golisano Home Page!";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Gill Sans MT", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
-            this.label2.Location = new System.Drawing.Point(343, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 27);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Window Forms Edition!";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Project3_RileyE.Properties.Resources.rit_logo;
-            this.pictureBox1.ImageLocation = "";
-            this.pictureBox1.Location = new System.Drawing.Point(326, 151);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(208, 210);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
-            this.label3.Location = new System.Drawing.Point(306, 373);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(250, 17);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Please select on a tab above to proceed! ";
             // 
             // label4
             // 
@@ -784,35 +768,164 @@
             this.label4.Text = "Edward Riley";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // tabDegrees
+            // label3
             // 
-            this.tabDegrees.Controls.Add(this.homeTab);
-            this.tabDegrees.Controls.Add(this.aboutUsTab);
-            this.tabDegrees.Controls.Add(this.degreesTab);
-            this.tabDegrees.Controls.Add(this.minorsTab);
-            this.tabDegrees.Controls.Add(this.employmentTab);
-            this.tabDegrees.Controls.Add(this.peopleTab);
-            this.tabDegrees.Controls.Add(this.contactUsTab);
-            this.tabDegrees.Location = new System.Drawing.Point(-1, 2);
-            this.tabDegrees.Name = "tabDegrees";
-            this.tabDegrees.SelectedIndex = 0;
-            this.tabDegrees.Size = new System.Drawing.Size(902, 583);
-            this.tabDegrees.TabIndex = 0;
-            this.tabDegrees.Enter += new System.EventHandler(this.tbControl_Enter);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
+            this.label3.Location = new System.Drawing.Point(306, 373);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(250, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Please select on a tab above to proceed! ";
             // 
-            // wbContactForm
+            // pictureBoxRITLogo
             // 
-            this.wbContactForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wbContactForm.IsWebBrowserContextMenuEnabled = false;
-            this.wbContactForm.Location = new System.Drawing.Point(0, 0);
-            this.wbContactForm.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.wbContactForm.MinimumSize = new System.Drawing.Size(20, 20);
-            this.wbContactForm.Name = "wbContactForm";
-            this.wbContactForm.ScriptErrorsSuppressed = true;
-            this.wbContactForm.ScrollBarsEnabled = false;
-            this.wbContactForm.Size = new System.Drawing.Size(894, 557);
-            this.wbContactForm.TabIndex = 0;
-            this.wbContactForm.Url = new System.Uri("http://ist.rit.edu/api/contactForm.php", System.UriKind.Absolute);
+            this.pictureBoxRITLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxRITLogo.Image = global::Project3_RileyE.Properties.Resources.rit_logo;
+            this.pictureBoxRITLogo.ImageLocation = "";
+            this.pictureBoxRITLogo.Location = new System.Drawing.Point(326, 151);
+            this.pictureBoxRITLogo.Name = "pictureBoxRITLogo";
+            this.pictureBoxRITLogo.Size = new System.Drawing.Size(208, 210);
+            this.pictureBoxRITLogo.TabIndex = 2;
+            this.pictureBoxRITLogo.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Gill Sans MT", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
+            this.label2.Location = new System.Drawing.Point(343, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(182, 27);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Window Forms Edition!";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Minion Pro", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
+            this.label1.Location = new System.Drawing.Point(262, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(363, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Welcome to Golisano Home Page!";
+            // 
+            // tabMain
+            // 
+            this.tabMain.Controls.Add(this.homeTab);
+            this.tabMain.Controls.Add(this.aboutUsTab);
+            this.tabMain.Controls.Add(this.degreesTab);
+            this.tabMain.Controls.Add(this.minorsTab);
+            this.tabMain.Controls.Add(this.employmentTab);
+            this.tabMain.Controls.Add(this.peopleTab);
+            this.tabMain.Controls.Add(this.researchTab);
+            this.tabMain.Controls.Add(this.contactUsTab);
+            this.tabMain.Location = new System.Drawing.Point(-1, 2);
+            this.tabMain.Name = "tabMain";
+            this.tabMain.SelectedIndex = 0;
+            this.tabMain.Size = new System.Drawing.Size(902, 583);
+            this.tabMain.TabIndex = 0;
+            this.tabMain.Enter += new System.EventHandler(this.tbControl_Enter);
+            // 
+            // researchTab
+            // 
+            this.researchTab.BackColor = System.Drawing.Color.Gainsboro;
+            this.researchTab.Controls.Add(this.tabResearchType);
+            this.researchTab.Location = new System.Drawing.Point(4, 22);
+            this.researchTab.Name = "researchTab";
+            this.researchTab.Size = new System.Drawing.Size(894, 557);
+            this.researchTab.TabIndex = 7;
+            this.researchTab.Text = "Research";
+            // 
+            // tabResearchType
+            // 
+            this.tabResearchType.Controls.Add(this.interestTab);
+            this.tabResearchType.Controls.Add(this.facultyTab);
+            this.tabResearchType.Location = new System.Drawing.Point(4, 4);
+            this.tabResearchType.Name = "tabResearchType";
+            this.tabResearchType.SelectedIndex = 0;
+            this.tabResearchType.Size = new System.Drawing.Size(887, 550);
+            this.tabResearchType.TabIndex = 0;
+            // 
+            // interestTab
+            // 
+            this.interestTab.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.interestTab.Controls.Add(this.lblResearchByInterestAreaCitation);
+            this.interestTab.Controls.Add(this.richTextBoxResearchByInterestCitation);
+            this.interestTab.Controls.Add(this.listboxResearchByInterestArea);
+            this.interestTab.Location = new System.Drawing.Point(4, 22);
+            this.interestTab.Name = "interestTab";
+            this.interestTab.Padding = new System.Windows.Forms.Padding(3);
+            this.interestTab.Size = new System.Drawing.Size(879, 524);
+            this.interestTab.TabIndex = 0;
+            this.interestTab.Text = "By Interest Area";
+            // 
+            // facultyTab
+            // 
+            this.facultyTab.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.facultyTab.Controls.Add(this.label5);
+            this.facultyTab.Controls.Add(this.richTextBoxResearchByFacultyCitation);
+            this.facultyTab.Controls.Add(this.listboxResearchByFaculty);
+            this.facultyTab.Location = new System.Drawing.Point(4, 22);
+            this.facultyTab.Name = "facultyTab";
+            this.facultyTab.Padding = new System.Windows.Forms.Padding(3);
+            this.facultyTab.Size = new System.Drawing.Size(879, 524);
+            this.facultyTab.TabIndex = 1;
+            this.facultyTab.Text = "By Faculty";
+            // 
+            // listboxResearchByInterestArea
+            // 
+            this.listboxResearchByInterestArea.FormattingEnabled = true;
+            this.listboxResearchByInterestArea.Location = new System.Drawing.Point(18, 29);
+            this.listboxResearchByInterestArea.Name = "listboxResearchByInterestArea";
+            this.listboxResearchByInterestArea.Size = new System.Drawing.Size(185, 446);
+            this.listboxResearchByInterestArea.TabIndex = 0;
+            this.listboxResearchByInterestArea.SelectedIndexChanged += new System.EventHandler(this.listboxResearchByInterestArea_SelectedIndexChanged);
+            // 
+            // richTextBoxResearchByInterestCitation
+            // 
+            this.richTextBoxResearchByInterestCitation.Location = new System.Drawing.Point(254, 29);
+            this.richTextBoxResearchByInterestCitation.Name = "richTextBoxResearchByInterestCitation";
+            this.richTextBoxResearchByInterestCitation.Size = new System.Drawing.Size(598, 446);
+            this.richTextBoxResearchByInterestCitation.TabIndex = 1;
+            this.richTextBoxResearchByInterestCitation.Text = "";
+            // 
+            // lblResearchByInterestAreaCitation
+            // 
+            this.lblResearchByInterestAreaCitation.AutoSize = true;
+            this.lblResearchByInterestAreaCitation.Location = new System.Drawing.Point(254, 7);
+            this.lblResearchByInterestAreaCitation.Name = "lblResearchByInterestAreaCitation";
+            this.lblResearchByInterestAreaCitation.Size = new System.Drawing.Size(47, 13);
+            this.lblResearchByInterestAreaCitation.TabIndex = 2;
+            this.lblResearchByInterestAreaCitation.Text = "Citations";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(254, 7);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Citations";
+            // 
+            // richTextBoxResearchByFacultyCitation
+            // 
+            this.richTextBoxResearchByFacultyCitation.Location = new System.Drawing.Point(254, 29);
+            this.richTextBoxResearchByFacultyCitation.Name = "richTextBoxResearchByFacultyCitation";
+            this.richTextBoxResearchByFacultyCitation.Size = new System.Drawing.Size(598, 446);
+            this.richTextBoxResearchByFacultyCitation.TabIndex = 4;
+            this.richTextBoxResearchByFacultyCitation.Text = "";
+            // 
+            // listboxResearchByFaculty
+            // 
+            this.listboxResearchByFaculty.FormattingEnabled = true;
+            this.listboxResearchByFaculty.Location = new System.Drawing.Point(18, 29);
+            this.listboxResearchByFaculty.Name = "listboxResearchByFaculty";
+            this.listboxResearchByFaculty.Size = new System.Drawing.Size(185, 446);
+            this.listboxResearchByFaculty.TabIndex = 3;
+            this.listboxResearchByFaculty.SelectedIndexChanged += new System.EventHandler(this.listboxResearchByFaculty_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -820,7 +933,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(900, 584);
-            this.Controls.Add(this.tabDegrees);
+            this.Controls.Add(this.tabMain);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
@@ -828,12 +941,12 @@
             this.contactUsTab.ResumeLayout(false);
             this.peopleTab.ResumeLayout(false);
             this.tbPeopleType.ResumeLayout(false);
-            this.tbStaff.ResumeLayout(false);
-            this.tbStaff.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPeopleStaff)).EndInit();
             this.tbFaculty.ResumeLayout(false);
             this.tbFaculty.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPeopleFacultyPic)).EndInit();
+            this.tbStaff.ResumeLayout(false);
+            this.tbStaff.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPeopleStaff)).EndInit();
             this.employmentTab.ResumeLayout(false);
             this.employmentTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCoopTable)).EndInit();
@@ -847,8 +960,14 @@
             this.aboutUsTab.PerformLayout();
             this.homeTab.ResumeLayout(false);
             this.homeTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabDegrees.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRITLogo)).EndInit();
+            this.tabMain.ResumeLayout(false);
+            this.researchTab.ResumeLayout(false);
+            this.tabResearchType.ResumeLayout(false);
+            this.interestTab.ResumeLayout(false);
+            this.interestTab.PerformLayout();
+            this.facultyTab.ResumeLayout(false);
+            this.facultyTab.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -919,11 +1038,21 @@
         private System.Windows.Forms.TabPage homeTab;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxRITLogo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabControl tabDegrees;
+        private System.Windows.Forms.TabControl tabMain;
         private System.Windows.Forms.WebBrowser wbContactForm;
+        private System.Windows.Forms.TabPage researchTab;
+        private System.Windows.Forms.TabControl tabResearchType;
+        private System.Windows.Forms.TabPage interestTab;
+        private System.Windows.Forms.TabPage facultyTab;
+        private System.Windows.Forms.ListBox listboxResearchByInterestArea;
+        private System.Windows.Forms.RichTextBox richTextBoxResearchByInterestCitation;
+        private System.Windows.Forms.Label lblResearchByInterestAreaCitation;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RichTextBox richTextBoxResearchByFacultyCitation;
+        private System.Windows.Forms.ListBox listboxResearchByFaculty;
     }
 }
 

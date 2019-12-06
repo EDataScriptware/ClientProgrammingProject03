@@ -38,6 +38,7 @@ namespace Project3_RileyE
             Minors();
             Employment();
             People();
+            Research();
 
 
 
@@ -332,12 +333,12 @@ namespace Project3_RileyE
             lblEmpIntroTitle.Text = employment.introduction.title;
             txtBoxContentTitleAndDesc.Text = "";
             lblEmploymentTitleDesc.Text = employment.employers.title + ": ";
-            Console.WriteLine(employment.employers.employerNames.Count());
+            // Console.WriteLine(employment.employers.employerNames.Count());
             try
             {
                 for (int i = 0; i < employment.employers.employerNames.Count(); i++ )
                 {
-                    Console.WriteLine(i+1);
+                    // Console.WriteLine(i+1);
 
                     if (employment.employers.employerNames.Count() == (i + 1))
                     {
@@ -476,16 +477,78 @@ namespace Project3_RileyE
         }
         #endregion
 
-        #region Map
+        #region Research
+        Research research = null;
 
-        
+        private void Research()
+        {
+            baseRestURL = new RESTapi("http://ist.rit.edu/api");
+            string jsonResearch = baseRestURL.getRESTData("/research/");
+            research = JToken.Parse(jsonResearch).ToObject<Research>();
+            Console.WriteLine(jsonResearch);
+
+            try
+            {
+                for (int i = 0; i < research.byInterestArea.Count(); i++)
+                {
+                    listboxResearchByInterestArea.Items.Add(research.byInterestArea[i].areaName);
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+
+            try
+            {
+                for (int i = 0; i < research.byFaculty.Count(); i++)
+                {
+                    listboxResearchByFaculty.Items.Add(research.byFaculty[i].facultyName);
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+
+        }
 
 
+
+        private void listboxResearchByInterestArea_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = listboxResearchByInterestArea.SelectedIndex;
+            richTextBoxResearchByInterestCitation.Text = "";
+            try
+            {
+                for (int i = 0; i < research.byInterestArea[index].citations.Count(); i++)
+                    richTextBoxResearchByInterestCitation.Text += "- " +
+                        research.byInterestArea[index].citations[i] + "\n\n";
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+
+
+        private void listboxResearchByFaculty_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = listboxResearchByFaculty.SelectedIndex;
+            richTextBoxResearchByFacultyCitation.Text = "";
+            try
+            {
+                for (int i = 0; i < research.byFaculty[index].citations.Count(); i++)
+                    richTextBoxResearchByFacultyCitation.Text += "- " +
+                        research.byFaculty[index].citations[i] + "\n\n";
+            }
+            catch (Exception)
+            {
+
+            }
+        }
         #endregion
-
-
-
-
 
 
     }
