@@ -25,3 +25,5 @@ Client Programming Project 03
 - A new window forms "Breaking News!" is used instead of News tab.
 -- breaking news's number is randomized after each time the button is pressed to make "sense" in reality
 -- It doesn't make sense for me in "Client's" mindset to use a News tab.
+
+- We haven't been taught the part for Courses. It was a big pain to do it. You have to read the error message carefully and try to solve the error message.
