@@ -635,6 +635,60 @@ namespace Project3_RileyE
 
 
             lblResourcesAmbassadorsTitle.Text = resources.studentAmbassadors.title;
+            pictureBoxResourcesAmbassadorsPic.ImageLocation = resources.studentAmbassadors.ambassadorsImageSource;
+
+            try
+            {
+                for (int i = 0; i < (resources.studentAmbassadors.subSectionContent.Count() - 1); i++)
+                {
+
+                    richTextBoxAmbassadorsContent.Text +=
+                        resources.studentAmbassadors.subSectionContent[i].title + "\n";
+                    richTextBoxAmbassadorsContent.Text += "- " +
+                        resources.studentAmbassadors.subSectionContent[i].description
+                        + "\n\n";
+
+                }
+
+            }
+            catch (Exception)
+            {
+
+            }
+
+            lblResourcesAmbassadorsApplyDesc.Text = resources.studentAmbassadors.subSectionContent[6].description;
+            linkLabelAmbassadorsUrl.Text = resources.studentAmbassadors.subSectionContent[6].title.ToUpper();
+            lblResourcesAmbassadorNote.Text = resources.studentAmbassadors.note;
+
+
+            lblResourcesAcademicCoopInfoTitle.Text = resources.coopEnrollment.title;
+            try
+            {
+                for (int i = 0; i < resources.coopEnrollment.enrollmentInformationContent.Count(); i++)
+                {
+                    richTextBoxResourcesAcademicCoopInfoDesc.Text +=
+                        resources.coopEnrollment.enrollmentInformationContent[i].title + "\n";
+                    richTextBoxResourcesAcademicCoopInfoDesc.Text +=
+                        resources.coopEnrollment.enrollmentInformationContent[i].description + "\n\n";
+
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+
+
+            linkLblResourcesGradOne.Text = resources.forms.graduateForms[0].formName;
+            linkLblResourcesGradTwo.Text = resources.forms.graduateForms[1].formName;
+            linkLblResourcesGradThree.Text = resources.forms.graduateForms[2].formName;
+            linkLblResourcesGradFour.Text = resources.forms.graduateForms[3].formName;
+            linkLblResourcesGradFive.Text = resources.forms.graduateForms[4].formName;
+            linkLblResourcesGradSix.Text = resources.forms.graduateForms[5].formName;
+            linkLblResourcesGradSeven.Text = resources.forms.graduateForms[6].formName;
+
+            linkLblResourcesUnderOne.Text = resources.forms.undergraduateForms[0].formName;
+
 
         }
         private void linkLblResourcesTutorSchedule_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -652,14 +706,120 @@ namespace Project3_RileyE
 
         }
 
+        private void linkLabelAmbassadorsUrl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLabelAmbassadorsUrl.LinkVisited = true;
+
+            System.Diagnostics.Process.Start(resources.studentAmbassadors.applicationFormLink);
+
+        }
+
+        private void linkLblAcademicCoopInfoUrl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLblAcademicCoopInfoUrl.LinkVisited = true;
+
+            System.Diagnostics.Process.Start(resources.coopEnrollment.RITJobZoneGuidelink);
+        }
+
+        private void linkLblResourcesGradOne_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLblResourcesGradOne.LinkVisited = true;
+            try
+            { 
+                System.Diagnostics.Process.Start(resources.forms.graduateForms[0].href);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Online file not found");
+            }
+        }
+
+        private void linkLblResourcesGradTwo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLblResourcesGradTwo.LinkVisited = true;
+            try
+            {
+                System.Diagnostics.Process.Start(resources.forms.graduateForms[1].href);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Online file not found");
+            }
+        }
+
+        private void linkLblResourcesGradThree_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLblResourcesGradThree.LinkVisited = true;
+            try
+            {
+                System.Diagnostics.Process.Start(resources.forms.graduateForms[2].href);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Online file not found");
+            }
+        }
+
+        private void linkLblResourcesGradFour_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLblResourcesGradFour.LinkVisited = true;
+            try
+            {
+                System.Diagnostics.Process.Start(resources.forms.graduateForms[3].href);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Online file not found");
+            }
+        }
+
+        private void linkLblResourcesGradFive_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLblResourcesGradFive.LinkVisited = true;
+            try
+            {
+                System.Diagnostics.Process.Start(resources.forms.graduateForms[4].href);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Online file not found");
+            }
+        }
+
+        private void linkLblResourcesGradSix_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLblResourcesGradSix.LinkVisited = true;
+            try
+            {
+                System.Diagnostics.Process.Start(resources.forms.graduateForms[5].href);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Online file not found");
+            }
+        }
+
+        private void linkLblResourcesUnderOne_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLblResourcesUnderOne.LinkVisited = true;
+            try
+            {
+                System.Diagnostics.Process.Start(resources.forms.undergraduateForms[0].href);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Online file not found");
+            }
+        }
     }
+    #endregion
 
 
 
 
 
 
-        #endregion
+
 
 }
 
