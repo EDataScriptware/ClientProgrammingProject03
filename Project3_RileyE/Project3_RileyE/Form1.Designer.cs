@@ -215,7 +215,7 @@
             this.wbContactForm.ScrollBarsEnabled = false;
             this.wbContactForm.Size = new System.Drawing.Size(894, 557);
             this.wbContactForm.TabIndex = 0;
-            this.wbContactForm.Url = new System.Uri("http://ist.rit.edu/api/contactForm.php", System.UriKind.Absolute);
+            this.wbContactForm.Url = new System.Uri("", System.UriKind.Relative);
             // 
             // peopleTab
             // 
@@ -260,6 +260,7 @@
             // lblPeopleFacultySubtitle
             // 
             this.lblPeopleFacultySubtitle.AutoSize = true;
+            this.lblPeopleFacultySubtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblPeopleFacultySubtitle.Location = new System.Drawing.Point(14, 19);
             this.lblPeopleFacultySubtitle.Name = "lblPeopleFacultySubtitle";
             this.lblPeopleFacultySubtitle.Size = new System.Drawing.Size(42, 13);
@@ -269,6 +270,7 @@
             // lblPeopleFacultyUsername
             // 
             this.lblPeopleFacultyUsername.AutoSize = true;
+            this.lblPeopleFacultyUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblPeopleFacultyUsername.Location = new System.Drawing.Point(14, 70);
             this.lblPeopleFacultyUsername.Name = "lblPeopleFacultyUsername";
             this.lblPeopleFacultyUsername.Size = new System.Drawing.Size(99, 13);
@@ -277,7 +279,10 @@
             // 
             // lblLinkPeopleWebsite
             // 
+            this.lblLinkPeopleWebsite.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblLinkPeopleWebsite.AutoSize = true;
+            this.lblLinkPeopleWebsite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
+            this.lblLinkPeopleWebsite.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lblLinkPeopleWebsite.Location = new System.Drawing.Point(486, 95);
             this.lblLinkPeopleWebsite.Name = "lblLinkPeopleWebsite";
             this.lblLinkPeopleWebsite.Size = new System.Drawing.Size(46, 13);
@@ -289,6 +294,7 @@
             // lblPeopleFacultyPhone
             // 
             this.lblPeopleFacultyPhone.AutoSize = true;
+            this.lblPeopleFacultyPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblPeopleFacultyPhone.Location = new System.Drawing.Point(486, 70);
             this.lblPeopleFacultyPhone.Name = "lblPeopleFacultyPhone";
             this.lblPeopleFacultyPhone.Size = new System.Drawing.Size(44, 13);
@@ -298,6 +304,7 @@
             // lblPeopleFacultyEmail
             // 
             this.lblPeopleFacultyEmail.AutoSize = true;
+            this.lblPeopleFacultyEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblPeopleFacultyEmail.Location = new System.Drawing.Point(486, 43);
             this.lblPeopleFacultyEmail.Name = "lblPeopleFacultyEmail";
             this.lblPeopleFacultyEmail.Size = new System.Drawing.Size(38, 13);
@@ -307,6 +314,7 @@
             // lblPeopleFacultyOffice
             // 
             this.lblPeopleFacultyOffice.AutoSize = true;
+            this.lblPeopleFacultyOffice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblPeopleFacultyOffice.Location = new System.Drawing.Point(486, 16);
             this.lblPeopleFacultyOffice.Name = "lblPeopleFacultyOffice";
             this.lblPeopleFacultyOffice.Size = new System.Drawing.Size(41, 13);
@@ -316,6 +324,8 @@
             // lblPeopleFacultyTitle
             // 
             this.lblPeopleFacultyTitle.AutoSize = true;
+            this.lblPeopleFacultyTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblPeopleFacultyTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblPeopleFacultyTitle.Location = new System.Drawing.Point(14, 348);
             this.lblPeopleFacultyTitle.Name = "lblPeopleFacultyTitle";
             this.lblPeopleFacultyTitle.Size = new System.Drawing.Size(63, 13);
@@ -324,7 +334,7 @@
             // 
             // pbPeopleFacultyPic
             // 
-            this.pbPeopleFacultyPic.BackColor = System.Drawing.Color.Transparent;
+            this.pbPeopleFacultyPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.pbPeopleFacultyPic.Location = new System.Drawing.Point(17, 95);
             this.pbPeopleFacultyPic.Name = "pbPeopleFacultyPic";
             this.pbPeopleFacultyPic.Size = new System.Drawing.Size(250, 250);
@@ -334,6 +344,7 @@
             // 
             // cbPeopleFacultyNames
             // 
+            this.cbPeopleFacultyNames.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.cbPeopleFacultyNames.FormattingEnabled = true;
             this.cbPeopleFacultyNames.Location = new System.Drawing.Point(17, 35);
             this.cbPeopleFacultyNames.Name = "cbPeopleFacultyNames";
@@ -344,6 +355,7 @@
             // lblPeopleFacultyMainTitle
             // 
             this.lblPeopleFacultyMainTitle.AutoSize = true;
+            this.lblPeopleFacultyMainTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblPeopleFacultyMainTitle.Location = new System.Drawing.Point(14, 3);
             this.lblPeopleFacultyMainTitle.Name = "lblPeopleFacultyMainTitle";
             this.lblPeopleFacultyMainTitle.Size = new System.Drawing.Size(134, 13);
@@ -479,6 +491,7 @@
             // lblEmploymentTitleDesc
             // 
             this.lblEmploymentTitleDesc.AutoSize = true;
+            this.lblEmploymentTitleDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblEmploymentTitleDesc.Location = new System.Drawing.Point(10, 538);
             this.lblEmploymentTitleDesc.Name = "lblEmploymentTitleDesc";
             this.lblEmploymentTitleDesc.Size = new System.Drawing.Size(125, 13);
@@ -489,7 +502,7 @@
             // 
             this.dataGridViewCoopTable.AllowUserToAddRows = false;
             this.dataGridViewCoopTable.AllowUserToDeleteRows = false;
-            this.dataGridViewCoopTable.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.dataGridViewCoopTable.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.dataGridViewCoopTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCoopTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Employer,
@@ -530,6 +543,7 @@
             // txtBoxContentTitleAndDesc
             // 
             this.txtBoxContentTitleAndDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxContentTitleAndDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.txtBoxContentTitleAndDesc.Location = new System.Drawing.Point(13, 42);
             this.txtBoxContentTitleAndDesc.Name = "txtBoxContentTitleAndDesc";
             this.txtBoxContentTitleAndDesc.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
@@ -540,6 +554,7 @@
             // lblEmpIntroTitle
             // 
             this.lblEmpIntroTitle.AutoSize = true;
+            this.lblEmpIntroTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblEmpIntroTitle.Location = new System.Drawing.Point(10, 14);
             this.lblEmpIntroTitle.Name = "lblEmpIntroTitle";
             this.lblEmpIntroTitle.Size = new System.Drawing.Size(137, 13);
@@ -566,6 +581,7 @@
             // txtBoxUgNote
             // 
             this.txtBoxUgNote.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxUgNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.txtBoxUgNote.Location = new System.Drawing.Point(29, 301);
             this.txtBoxUgNote.Name = "txtBoxUgNote";
             this.txtBoxUgNote.Size = new System.Drawing.Size(786, 137);
@@ -576,6 +592,7 @@
             // 
             this.txtboxUgMinorsTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtboxUgMinorsTitle.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtboxUgMinorsTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.txtboxUgMinorsTitle.Location = new System.Drawing.Point(212, 69);
             this.txtboxUgMinorsTitle.Name = "txtboxUgMinorsTitle";
             this.txtboxUgMinorsTitle.Size = new System.Drawing.Size(346, 227);
@@ -593,8 +610,9 @@
             // listBoxUgMinorsCourses
             // 
             this.listBoxUgMinorsCourses.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBoxUgMinorsCourses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.listBoxUgMinorsCourses.FormattingEnabled = true;
-            this.listBoxUgMinorsCourses.Location = new System.Drawing.Point(563, 37);
+            this.listBoxUgMinorsCourses.Location = new System.Drawing.Point(609, 37);
             this.listBoxUgMinorsCourses.Name = "listBoxUgMinorsCourses";
             this.listBoxUgMinorsCourses.Size = new System.Drawing.Size(245, 182);
             this.listBoxUgMinorsCourses.TabIndex = 5;
@@ -602,24 +620,29 @@
             // Courses
             // 
             this.Courses.AutoSize = true;
-            this.Courses.Location = new System.Drawing.Point(560, 21);
+            this.Courses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Courses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
+            this.Courses.Location = new System.Drawing.Point(605, 16);
             this.Courses.Name = "Courses";
-            this.Courses.Size = new System.Drawing.Size(45, 13);
+            this.Courses.Size = new System.Drawing.Size(75, 20);
             this.Courses.TabIndex = 4;
             this.Courses.Text = "Courses";
             // 
             // lblUgMinorsTitle
             // 
             this.lblUgMinorsTitle.AutoSize = true;
+            this.lblUgMinorsTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUgMinorsTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblUgMinorsTitle.Location = new System.Drawing.Point(209, 21);
             this.lblUgMinorsTitle.Name = "lblUgMinorsTitle";
-            this.lblUgMinorsTitle.Size = new System.Drawing.Size(135, 13);
+            this.lblUgMinorsTitle.Size = new System.Drawing.Size(197, 16);
             this.lblUgMinorsTitle.TabIndex = 1;
             this.lblUgMinorsTitle.Text = "Undergraduate Minors Title";
             // 
             // listBoxUgMinorsName
             // 
             this.listBoxUgMinorsName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBoxUgMinorsName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.listBoxUgMinorsName.FormattingEnabled = true;
             this.listBoxUgMinorsName.Items.AddRange(new object[] {
             "Undergraduate Minors Name"});
@@ -646,6 +669,8 @@
             // 
             this.degreesConcentrationListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.concentrationHeader});
+            this.degreesConcentrationListView.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.degreesConcentrationListView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.degreesConcentrationListView.HideSelection = false;
             this.degreesConcentrationListView.LabelWrap = false;
             this.degreesConcentrationListView.Location = new System.Drawing.Point(301, 58);
@@ -661,6 +686,7 @@
             // txtboxDegreesDesc
             // 
             this.txtboxDegreesDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxDegreesDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.txtboxDegreesDesc.Location = new System.Drawing.Point(36, 126);
             this.txtboxDegreesDesc.Name = "txtboxDegreesDesc";
             this.txtboxDegreesDesc.Size = new System.Drawing.Size(252, 96);
@@ -670,6 +696,7 @@
             // lblDegreesTitle
             // 
             this.lblDegreesTitle.AutoSize = true;
+            this.lblDegreesTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblDegreesTitle.Location = new System.Drawing.Point(33, 58);
             this.lblDegreesTitle.Name = "lblDegreesTitle";
             this.lblDegreesTitle.Size = new System.Drawing.Size(99, 13);
@@ -777,7 +804,7 @@
             this.txtboxAboutUsDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.txtboxAboutUsDesc.Location = new System.Drawing.Point(23, 48);
             this.txtboxAboutUsDesc.Name = "txtboxAboutUsDesc";
-            this.txtboxAboutUsDesc.Size = new System.Drawing.Size(519, 120);
+            this.txtboxAboutUsDesc.Size = new System.Drawing.Size(832, 71);
             this.txtboxAboutUsDesc.TabIndex = 2;
             this.txtboxAboutUsDesc.Text = "About Us Desc";
             // 
@@ -789,7 +816,7 @@
             this.txtboxAboutUs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.txtboxAboutUs.Location = new System.Drawing.Point(23, 174);
             this.txtboxAboutUs.Name = "txtboxAboutUs";
-            this.txtboxAboutUs.Size = new System.Drawing.Size(449, 141);
+            this.txtboxAboutUs.Size = new System.Drawing.Size(832, 141);
             this.txtboxAboutUs.TabIndex = 1;
             this.txtboxAboutUs.Text = "About Us Quotes";
             // 
@@ -823,8 +850,10 @@
             // 
             // linkLblRITMap
             // 
+            this.linkLblRITMap.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLblRITMap.AutoSize = true;
-            this.linkLblRITMap.Location = new System.Drawing.Point(396, 400);
+            this.linkLblRITMap.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linkLblRITMap.Location = new System.Drawing.Point(410, 380);
             this.linkLblRITMap.Name = "linkLblRITMap";
             this.linkLblRITMap.Size = new System.Drawing.Size(51, 13);
             this.linkLblRITMap.TabIndex = 6;
@@ -834,12 +863,14 @@
             // 
             // btnBreakingNews
             // 
-            this.btnBreakingNews.Location = new System.Drawing.Point(10, 525);
+            this.btnBreakingNews.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
+            this.btnBreakingNews.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBreakingNews.Location = new System.Drawing.Point(10, 510);
             this.btnBreakingNews.Name = "btnBreakingNews";
-            this.btnBreakingNews.Size = new System.Drawing.Size(878, 23);
+            this.btnBreakingNews.Size = new System.Drawing.Size(878, 38);
             this.btnBreakingNews.TabIndex = 5;
             this.btnBreakingNews.Text = "See Breaking News!";
-            this.btnBreakingNews.UseVisualStyleBackColor = true;
+            this.btnBreakingNews.UseVisualStyleBackColor = false;
             this.btnBreakingNews.Click += new System.EventHandler(this.btnHomePageBreakingNews_onClicked);
             // 
             // label4
@@ -859,7 +890,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
-            this.label3.Location = new System.Drawing.Point(306, 373);
+            this.label3.Location = new System.Drawing.Point(306, 348);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(250, 17);
             this.label3.TabIndex = 1;
@@ -870,7 +901,7 @@
             this.pictureBoxRITLogo.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxRITLogo.Image = global::Project3_RileyE.Properties.Resources.rit_logo;
             this.pictureBoxRITLogo.ImageLocation = "";
-            this.pictureBoxRITLogo.Location = new System.Drawing.Point(326, 151);
+            this.pictureBoxRITLogo.Location = new System.Drawing.Point(329, 119);
             this.pictureBoxRITLogo.Name = "pictureBoxRITLogo";
             this.pictureBoxRITLogo.Size = new System.Drawing.Size(208, 210);
             this.pictureBoxRITLogo.TabIndex = 2;
@@ -930,6 +961,7 @@
             // 
             // comboBoxCoursesDegree
             // 
+            this.comboBoxCoursesDegree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.comboBoxCoursesDegree.FormattingEnabled = true;
             this.comboBoxCoursesDegree.Location = new System.Drawing.Point(20, 42);
             this.comboBoxCoursesDegree.Name = "comboBoxCoursesDegree";
@@ -939,9 +971,11 @@
             // 
             // dataGridViewDegreeCourses
             // 
+            this.dataGridViewDegreeCourses.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.dataGridViewDegreeCourses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDegreeCourses.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.overallCourses});
+            this.dataGridViewDegreeCourses.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.dataGridViewDegreeCourses.Location = new System.Drawing.Point(367, 42);
             this.dataGridViewDegreeCourses.Name = "dataGridViewDegreeCourses";
             this.dataGridViewDegreeCourses.Size = new System.Drawing.Size(510, 506);
@@ -979,6 +1013,7 @@
             this.interestTab.Controls.Add(this.lblResearchByInterestAreaCitation);
             this.interestTab.Controls.Add(this.richTextBoxResearchByInterestCitation);
             this.interestTab.Controls.Add(this.listboxResearchByInterestArea);
+            this.interestTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.interestTab.Location = new System.Drawing.Point(4, 22);
             this.interestTab.Name = "interestTab";
             this.interestTab.Padding = new System.Windows.Forms.Padding(3);
@@ -989,14 +1024,17 @@
             // lblResearchByInterestAreaCitation
             // 
             this.lblResearchByInterestAreaCitation.AutoSize = true;
+            this.lblResearchByInterestAreaCitation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResearchByInterestAreaCitation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblResearchByInterestAreaCitation.Location = new System.Drawing.Point(254, 7);
             this.lblResearchByInterestAreaCitation.Name = "lblResearchByInterestAreaCitation";
-            this.lblResearchByInterestAreaCitation.Size = new System.Drawing.Size(47, 13);
+            this.lblResearchByInterestAreaCitation.Size = new System.Drawing.Size(68, 16);
             this.lblResearchByInterestAreaCitation.TabIndex = 2;
             this.lblResearchByInterestAreaCitation.Text = "Citations";
             // 
             // richTextBoxResearchByInterestCitation
             // 
+            this.richTextBoxResearchByInterestCitation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.richTextBoxResearchByInterestCitation.Location = new System.Drawing.Point(254, 29);
             this.richTextBoxResearchByInterestCitation.Name = "richTextBoxResearchByInterestCitation";
             this.richTextBoxResearchByInterestCitation.Size = new System.Drawing.Size(598, 446);
@@ -1005,6 +1043,7 @@
             // 
             // listboxResearchByInterestArea
             // 
+            this.listboxResearchByInterestArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.listboxResearchByInterestArea.FormattingEnabled = true;
             this.listboxResearchByInterestArea.Location = new System.Drawing.Point(18, 29);
             this.listboxResearchByInterestArea.Name = "listboxResearchByInterestArea";
@@ -1028,14 +1067,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.label5.Location = new System.Drawing.Point(254, 7);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 13);
+            this.label5.Size = new System.Drawing.Size(68, 16);
             this.label5.TabIndex = 5;
             this.label5.Text = "Citations";
             // 
             // richTextBoxResearchByFacultyCitation
             // 
+            this.richTextBoxResearchByFacultyCitation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.richTextBoxResearchByFacultyCitation.Location = new System.Drawing.Point(254, 29);
             this.richTextBoxResearchByFacultyCitation.Name = "richTextBoxResearchByFacultyCitation";
             this.richTextBoxResearchByFacultyCitation.Size = new System.Drawing.Size(598, 446);
@@ -1044,6 +1086,7 @@
             // 
             // listboxResearchByFaculty
             // 
+            this.listboxResearchByFaculty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.listboxResearchByFaculty.FormattingEnabled = true;
             this.listboxResearchByFaculty.Location = new System.Drawing.Point(18, 29);
             this.listboxResearchByFaculty.Name = "listboxResearchByFaculty";
@@ -1092,7 +1135,10 @@
             // 
             // linkLblResourcesTutorSchedule
             // 
+            this.linkLblResourcesTutorSchedule.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLblResourcesTutorSchedule.AutoSize = true;
+            this.linkLblResourcesTutorSchedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
+            this.linkLblResourcesTutorSchedule.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.linkLblResourcesTutorSchedule.Location = new System.Drawing.Point(602, 174);
             this.linkLblResourcesTutorSchedule.Name = "linkLblResourcesTutorSchedule";
             this.linkLblResourcesTutorSchedule.Size = new System.Drawing.Size(80, 13);
@@ -1103,6 +1149,7 @@
             // 
             // richTextBoxResourcesTutorDesc
             // 
+            this.richTextBoxResourcesTutorDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.richTextBoxResourcesTutorDesc.Location = new System.Drawing.Point(473, 88);
             this.richTextBoxResourcesTutorDesc.Name = "richTextBoxResourcesTutorDesc";
             this.richTextBoxResourcesTutorDesc.Size = new System.Drawing.Size(366, 79);
@@ -1112,14 +1159,17 @@
             // lblResourcesTutorTitle
             // 
             this.lblResourcesTutorTitle.AutoSize = true;
-            this.lblResourcesTutorTitle.Location = new System.Drawing.Point(599, 72);
+            this.lblResourcesTutorTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResourcesTutorTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
+            this.lblResourcesTutorTitle.Location = new System.Drawing.Point(579, 72);
             this.lblResourcesTutorTitle.Name = "lblResourcesTutorTitle";
-            this.lblResourcesTutorTitle.Size = new System.Drawing.Size(55, 13);
+            this.lblResourcesTutorTitle.Size = new System.Drawing.Size(79, 16);
             this.lblResourcesTutorTitle.TabIndex = 4;
             this.lblResourcesTutorTitle.Text = "Tutor Title";
             // 
             // richTextBoxResourcesStudyAbroadDesc
             // 
+            this.richTextBoxResourcesStudyAbroadDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.richTextBoxResourcesStudyAbroadDesc.Location = new System.Drawing.Point(34, 88);
             this.richTextBoxResourcesStudyAbroadDesc.Name = "richTextBoxResourcesStudyAbroadDesc";
             this.richTextBoxResourcesStudyAbroadDesc.Size = new System.Drawing.Size(330, 314);
@@ -1129,6 +1179,7 @@
             // lblStudentResourcesTitle
             // 
             this.lblStudentResourcesTitle.AutoSize = true;
+            this.lblStudentResourcesTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblStudentResourcesTitle.Location = new System.Drawing.Point(14, 7);
             this.lblStudentResourcesTitle.Name = "lblStudentResourcesTitle";
             this.lblStudentResourcesTitle.Size = new System.Drawing.Size(27, 13);
@@ -1138,15 +1189,18 @@
             // lblResourcesStudyAbroad
             // 
             this.lblResourcesStudyAbroad.AutoSize = true;
-            this.lblResourcesStudyAbroad.Location = new System.Drawing.Point(153, 72);
+            this.lblResourcesStudyAbroad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResourcesStudyAbroad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
+            this.lblResourcesStudyAbroad.Location = new System.Drawing.Point(137, 72);
             this.lblResourcesStudyAbroad.Name = "lblResourcesStudyAbroad";
-            this.lblResourcesStudyAbroad.Size = new System.Drawing.Size(94, 13);
+            this.lblResourcesStudyAbroad.Size = new System.Drawing.Size(137, 16);
             this.lblResourcesStudyAbroad.TabIndex = 2;
             this.lblResourcesStudyAbroad.Text = "Study Abroad Title";
             // 
             // lblStudentResourcesSubtitle
             // 
             this.lblStudentResourcesSubtitle.AutoSize = true;
+            this.lblStudentResourcesSubtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblStudentResourcesSubtitle.Location = new System.Drawing.Point(17, 40);
             this.lblStudentResourcesSubtitle.Name = "lblStudentResourcesSubtitle";
             this.lblStudentResourcesSubtitle.Size = new System.Drawing.Size(42, 13);
@@ -1169,6 +1223,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Silver;
             this.groupBox2.Controls.Add(this.linkLblResourcesUnderOne);
             this.groupBox2.Location = new System.Drawing.Point(680, 410);
             this.groupBox2.Name = "groupBox2";
@@ -1179,6 +1234,7 @@
             // 
             // linkLblResourcesUnderOne
             // 
+            this.linkLblResourcesUnderOne.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLblResourcesUnderOne.AutoSize = true;
             this.linkLblResourcesUnderOne.Location = new System.Drawing.Point(6, 32);
             this.linkLblResourcesUnderOne.Name = "linkLblResourcesUnderOne";
@@ -1190,6 +1246,7 @@
             // 
             // linkLblAcademicCoopInfoUrl
             // 
+            this.linkLblAcademicCoopInfoUrl.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLblAcademicCoopInfoUrl.AutoSize = true;
             this.linkLblAcademicCoopInfoUrl.Location = new System.Drawing.Point(16, 494);
             this.linkLblAcademicCoopInfoUrl.Name = "linkLblAcademicCoopInfoUrl";
@@ -1202,6 +1259,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Silver;
             this.groupBox1.Controls.Add(this.linkLblResourcesGradSeven);
             this.groupBox1.Controls.Add(this.linkLblResourcesGradSix);
             this.groupBox1.Controls.Add(this.linkLblResourcesGradFive);
@@ -1218,6 +1276,7 @@
             // 
             // linkLblResourcesGradSeven
             // 
+            this.linkLblResourcesGradSeven.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLblResourcesGradSeven.AutoSize = true;
             this.linkLblResourcesGradSeven.Location = new System.Drawing.Point(6, 257);
             this.linkLblResourcesGradSeven.Name = "linkLblResourcesGradSeven";
@@ -1228,6 +1287,7 @@
             // 
             // linkLblResourcesGradSix
             // 
+            this.linkLblResourcesGradSix.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLblResourcesGradSix.AutoSize = true;
             this.linkLblResourcesGradSix.Location = new System.Drawing.Point(6, 218);
             this.linkLblResourcesGradSix.Name = "linkLblResourcesGradSix";
@@ -1239,6 +1299,7 @@
             // 
             // linkLblResourcesGradFive
             // 
+            this.linkLblResourcesGradFive.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLblResourcesGradFive.AutoSize = true;
             this.linkLblResourcesGradFive.Location = new System.Drawing.Point(6, 176);
             this.linkLblResourcesGradFive.Name = "linkLblResourcesGradFive";
@@ -1250,6 +1311,7 @@
             // 
             // linkLblResourcesGradFour
             // 
+            this.linkLblResourcesGradFour.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLblResourcesGradFour.AutoSize = true;
             this.linkLblResourcesGradFour.Location = new System.Drawing.Point(6, 138);
             this.linkLblResourcesGradFour.Name = "linkLblResourcesGradFour";
@@ -1261,6 +1323,7 @@
             // 
             // linkLblResourcesGradThree
             // 
+            this.linkLblResourcesGradThree.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLblResourcesGradThree.AutoSize = true;
             this.linkLblResourcesGradThree.Location = new System.Drawing.Point(6, 99);
             this.linkLblResourcesGradThree.Name = "linkLblResourcesGradThree";
@@ -1272,6 +1335,7 @@
             // 
             // linkLblResourcesGradTwo
             // 
+            this.linkLblResourcesGradTwo.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLblResourcesGradTwo.AutoSize = true;
             this.linkLblResourcesGradTwo.Location = new System.Drawing.Point(6, 62);
             this.linkLblResourcesGradTwo.Name = "linkLblResourcesGradTwo";
@@ -1283,6 +1347,7 @@
             // 
             // linkLblResourcesGradOne
             // 
+            this.linkLblResourcesGradOne.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLblResourcesGradOne.AutoSize = true;
             this.linkLblResourcesGradOne.Location = new System.Drawing.Point(6, 29);
             this.linkLblResourcesGradOne.Name = "linkLblResourcesGradOne";
@@ -1294,6 +1359,7 @@
             // 
             // richTextBoxResourcesAcademicCoopInfoDesc
             // 
+            this.richTextBoxResourcesAcademicCoopInfoDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.richTextBoxResourcesAcademicCoopInfoDesc.Location = new System.Drawing.Point(16, 38);
             this.richTextBoxResourcesAcademicCoopInfoDesc.Name = "richTextBoxResourcesAcademicCoopInfoDesc";
             this.richTextBoxResourcesAcademicCoopInfoDesc.Size = new System.Drawing.Size(658, 449);
@@ -1303,9 +1369,11 @@
             // lblResourcesAcademicCoopInfoTitle
             // 
             this.lblResourcesAcademicCoopInfoTitle.AutoSize = true;
+            this.lblResourcesAcademicCoopInfoTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResourcesAcademicCoopInfoTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblResourcesAcademicCoopInfoTitle.Location = new System.Drawing.Point(13, 13);
             this.lblResourcesAcademicCoopInfoTitle.Name = "lblResourcesAcademicCoopInfoTitle";
-            this.lblResourcesAcademicCoopInfoTitle.Size = new System.Drawing.Size(110, 13);
+            this.lblResourcesAcademicCoopInfoTitle.Size = new System.Drawing.Size(160, 16);
             this.lblResourcesAcademicCoopInfoTitle.TabIndex = 0;
             this.lblResourcesAcademicCoopInfoTitle.Text = "Coop Information Title";
             // 
@@ -1328,12 +1396,13 @@
             // 
             // datagridviewResourcesISTAdvisor
             // 
-            this.datagridviewResourcesISTAdvisor.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.datagridviewResourcesISTAdvisor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.datagridviewResourcesISTAdvisor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagridviewResourcesISTAdvisor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
+            this.datagridviewResourcesISTAdvisor.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.datagridviewResourcesISTAdvisor.Location = new System.Drawing.Point(455, 248);
             this.datagridviewResourcesISTAdvisor.Name = "datagridviewResourcesISTAdvisor";
             this.datagridviewResourcesISTAdvisor.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -1360,6 +1429,7 @@
             // 
             // richtextboxFacultyAdvisorDesc
             // 
+            this.richtextboxFacultyAdvisorDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.richtextboxFacultyAdvisorDesc.Location = new System.Drawing.Point(455, 42);
             this.richtextboxFacultyAdvisorDesc.Name = "richtextboxFacultyAdvisorDesc";
             this.richtextboxFacultyAdvisorDesc.Size = new System.Drawing.Size(401, 195);
@@ -1369,6 +1439,7 @@
             // lblResourcesAdvisingFacultyTitle
             // 
             this.lblResourcesAdvisingFacultyTitle.AutoSize = true;
+            this.lblResourcesAdvisingFacultyTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblResourcesAdvisingFacultyTitle.Location = new System.Drawing.Point(452, 12);
             this.lblResourcesAdvisingFacultyTitle.Name = "lblResourcesAdvisingFacultyTitle";
             this.lblResourcesAdvisingFacultyTitle.Size = new System.Drawing.Size(102, 13);
@@ -1377,12 +1448,13 @@
             // 
             // datagridviewResourcesAcademicAdvisor
             // 
-            this.datagridviewResourcesAcademicAdvisor.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.datagridviewResourcesAcademicAdvisor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.datagridviewResourcesAcademicAdvisor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagridviewResourcesAcademicAdvisor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.AdvisorName,
             this.Department,
             this.Email});
+            this.datagridviewResourcesAcademicAdvisor.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.datagridviewResourcesAcademicAdvisor.Location = new System.Drawing.Point(21, 248);
             this.datagridviewResourcesAcademicAdvisor.Name = "datagridviewResourcesAcademicAdvisor";
             this.datagridviewResourcesAcademicAdvisor.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -1409,7 +1481,9 @@
             // 
             // linkLblAcademicAdvisor
             // 
+            this.linkLblAcademicAdvisor.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLblAcademicAdvisor.AutoSize = true;
+            this.linkLblAcademicAdvisor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLblAcademicAdvisor.Location = new System.Drawing.Point(173, 12);
             this.linkLblAcademicAdvisor.Name = "linkLblAcademicAdvisor";
             this.linkLblAcademicAdvisor.Size = new System.Drawing.Size(29, 13);
@@ -1420,6 +1494,7 @@
             // 
             // richtextboxAcademicAdvisorDesc
             // 
+            this.richtextboxAcademicAdvisorDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.richtextboxAcademicAdvisorDesc.Location = new System.Drawing.Point(21, 42);
             this.richtextboxAcademicAdvisorDesc.Name = "richtextboxAcademicAdvisorDesc";
             this.richtextboxAcademicAdvisorDesc.Size = new System.Drawing.Size(401, 172);
@@ -1429,6 +1504,7 @@
             // lblResourcesAdvisingAcademicTitle
             // 
             this.lblResourcesAdvisingAcademicTitle.AutoSize = true;
+            this.lblResourcesAdvisingAcademicTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblResourcesAdvisingAcademicTitle.Location = new System.Drawing.Point(18, 12);
             this.lblResourcesAdvisingAcademicTitle.Name = "lblResourcesAdvisingAcademicTitle";
             this.lblResourcesAdvisingAcademicTitle.Size = new System.Drawing.Size(115, 13);
@@ -1453,6 +1529,7 @@
             // lblResourcesAmbassadorNote
             // 
             this.lblResourcesAmbassadorNote.AutoSize = true;
+            this.lblResourcesAmbassadorNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblResourcesAmbassadorNote.Location = new System.Drawing.Point(16, 482);
             this.lblResourcesAmbassadorNote.Name = "lblResourcesAmbassadorNote";
             this.lblResourcesAmbassadorNote.Size = new System.Drawing.Size(91, 13);
@@ -1463,6 +1540,7 @@
             // lblResourcesAmbassadorsApplyDesc
             // 
             this.lblResourcesAmbassadorsApplyDesc.AutoSize = true;
+            this.lblResourcesAmbassadorsApplyDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblResourcesAmbassadorsApplyDesc.Location = new System.Drawing.Point(22, 410);
             this.lblResourcesAmbassadorsApplyDesc.Name = "lblResourcesAmbassadorsApplyDesc";
             this.lblResourcesAmbassadorsApplyDesc.Size = new System.Drawing.Size(61, 13);
@@ -1471,10 +1549,13 @@
             // 
             // linkLabelAmbassadorsUrl
             // 
+            this.linkLabelAmbassadorsUrl.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.linkLabelAmbassadorsUrl.AutoSize = true;
-            this.linkLabelAmbassadorsUrl.Location = new System.Drawing.Point(19, 426);
+            this.linkLabelAmbassadorsUrl.Font = new System.Drawing.Font("Myriad Pro", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelAmbassadorsUrl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
+            this.linkLabelAmbassadorsUrl.Location = new System.Drawing.Point(19, 423);
             this.linkLabelAmbassadorsUrl.Name = "linkLabelAmbassadorsUrl";
-            this.linkLabelAmbassadorsUrl.Size = new System.Drawing.Size(85, 13);
+            this.linkLabelAmbassadorsUrl.Size = new System.Drawing.Size(238, 35);
             this.linkLabelAmbassadorsUrl.TabIndex = 3;
             this.linkLabelAmbassadorsUrl.TabStop = true;
             this.linkLabelAmbassadorsUrl.Text = "Application Form";
@@ -1482,6 +1563,7 @@
             // 
             // richTextBoxAmbassadorsContent
             // 
+            this.richTextBoxAmbassadorsContent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.richTextBoxAmbassadorsContent.Location = new System.Drawing.Point(19, 48);
             this.richTextBoxAmbassadorsContent.Name = "richTextBoxAmbassadorsContent";
             this.richTextBoxAmbassadorsContent.Size = new System.Drawing.Size(477, 219);
@@ -1491,6 +1573,7 @@
             // lblResourcesAmbassadorsTitle
             // 
             this.lblResourcesAmbassadorsTitle.AutoSize = true;
+            this.lblResourcesAmbassadorsTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.lblResourcesAmbassadorsTitle.Location = new System.Drawing.Point(16, 18);
             this.lblResourcesAmbassadorsTitle.Name = "lblResourcesAmbassadorsTitle";
             this.lblResourcesAmbassadorsTitle.Size = new System.Drawing.Size(133, 13);
@@ -1499,6 +1582,7 @@
             // 
             // pictureBoxResourcesAmbassadorsPic
             // 
+            this.pictureBoxResourcesAmbassadorsPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.pictureBoxResourcesAmbassadorsPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxResourcesAmbassadorsPic.Location = new System.Drawing.Point(508, 48);
             this.pictureBoxResourcesAmbassadorsPic.Name = "pictureBoxResourcesAmbassadorsPic";

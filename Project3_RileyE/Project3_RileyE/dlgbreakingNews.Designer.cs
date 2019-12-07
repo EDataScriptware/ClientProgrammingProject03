@@ -34,6 +34,7 @@
             // 
             // txtBoxBreakingNewsDesc
             // 
+            this.txtBoxBreakingNewsDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.txtBoxBreakingNewsDesc.Location = new System.Drawing.Point(15, 46);
             this.txtBoxBreakingNewsDesc.Name = "txtBoxBreakingNewsDesc";
             this.txtBoxBreakingNewsDesc.Size = new System.Drawing.Size(392, 195);
@@ -42,6 +43,7 @@
             // 
             // txtBoxBreakingNewsTitle
             // 
+            this.txtBoxBreakingNewsTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.txtBoxBreakingNewsTitle.Location = new System.Drawing.Point(15, 4);
             this.txtBoxBreakingNewsTitle.Name = "txtBoxBreakingNewsTitle";
             this.txtBoxBreakingNewsTitle.Size = new System.Drawing.Size(392, 36);

@@ -13,10 +13,17 @@ using System.IO;
 
 namespace Project3_RileyE
 {
+    // NAME: Edward Riley
+    // PROFESSOR: Michael Floeser
+    // DATE: 12/06/2019
+    // COURSE: Client Programming
+    // ASSIGNMENT: Project #3
+
+    // GITHUB: https://github.com/emr9018/ClientProgrammingProject03
+
+
     // http://json2csharp.com/ - to be used when changing json stuff to csharp accessors and mutatotrs
     // Example will be used with http://ist.rit.edu/api/about 
-
-
 
     public partial class MainWindow : Form
     {
@@ -28,18 +35,114 @@ namespace Project3_RileyE
 
             // music functionality - The Legend of Zelda: Breath of the Wild "Cooking SFX" - 
             // By Manaka Kataoka, Yasuaki Iwata, Hajime Wakai | owned by Nintendo (C) (tm)
-
             System.Media.SoundPlayer music = new System.Media.SoundPlayer(@"../../media/opening.wav");
             music.Play();
 
-
-            // methods to load
-         
-
+            
 
 
         }
 
+        // These sections are responsible for calling APIs and loading for ChangingTab
+
+        // API Loader
+        #region Changing Tabs
+        // Load upon entering a different tab
+        private void tabMain_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int tabNumber = tabMain.SelectedIndex; // Current Tab
+
+            // no reloads allowed
+            bool aboutUsView = false;              // 1
+            bool coursesView = false;              // 2
+            bool degreesView = false;              // 3
+            bool minorsView = false;               // 4
+            bool employmentView = false;           // 5
+            bool peopleView = false;               // 6
+            bool researchView = false;             // 7
+            bool contactUsView = false;            // 8
+            bool resourcesView = false;            // 9
+
+
+            switch (tabNumber)
+            {
+                case 1:
+                    if (aboutUsView == false)
+                    {
+                        AboutUs();
+                        aboutUsView = true;
+                    }
+                    break;
+                case 2:
+                    if (coursesView == false)
+                    {
+                        Course();
+                        coursesView = true;
+                    }
+                    break;
+                case 3:
+                    if (degreesView == false)
+                    {
+                        Degrees();
+                        degreesView = true;
+                    }
+                    break;
+                case 4:
+                    if (minorsView == false)
+                    {
+                        Minors();
+                        minorsView = true;
+                    }
+                    break;
+                case 5:
+                    if (employmentView == false)
+                    {
+                        Employment();
+                        employmentView = true;
+                    }
+                    break;
+                case 6:
+                    if (peopleView == false)
+                    {
+                        People();
+                        peopleView = true;
+                    }
+                    break;
+                case 7:
+                    if (researchView == false)
+                    {
+                        Research();
+                        researchView = true;
+                    }
+                    break;
+                case 8:
+                    if (contactUsView == false)
+                    {
+                        ContactUs();
+                        contactUsView = true;
+
+                    }
+                    break;
+                case 9:
+                    if (resourcesView == false)
+                    {
+                        Resources();
+                        resourcesView = true;
+                    }
+                    break;
+
+
+
+            }
+
+
+
+
+
+        }
+        #endregion
+
+        // AboutUs Section
         #region AboutUs
         // About Us Tab
         private void AboutUs()
@@ -60,6 +163,7 @@ namespace Project3_RileyE
         }
         #endregion
 
+        // Degrees Section
         #region Degrees
         Degrees degrees = null;
 
@@ -262,6 +366,7 @@ namespace Project3_RileyE
 
         #endregion // endregion degrees
 
+        // Minors Section
         #region Minors
         Minors minors = null;
 
@@ -320,6 +425,7 @@ namespace Project3_RileyE
         }
         #endregion
 
+        // Employment Section
         #region Employment
         Employment employment = null;
         private void Employment()
@@ -392,6 +498,7 @@ namespace Project3_RileyE
         }
         #endregion
 
+        // People Section
         #region People
 
         People people = null;
@@ -474,7 +581,8 @@ namespace Project3_RileyE
             System.Diagnostics.Process.Start(people.faculty[index].website);
         }
         #endregion
-
+        
+        // Research Section
         #region Research
         Research research = null;
 
@@ -553,6 +661,7 @@ namespace Project3_RileyE
         }
         #endregion
 
+        // Resources Section
         #region Resources
         Resources resources = null;
 
@@ -809,21 +918,18 @@ namespace Project3_RileyE
 
         #endregion
 
+        // News Section
         #region News
         News news = null;
 
-
-        // private RESTapi baseRestURL = null;
-
-        private void btnHomePageBreakingNews_onClicked(object sender, EventArgs e)
-        {
-
+        public void News()
+            {
             Random ran = new Random();
 
-            RESTapi baseRestUrl = new RESTapi("http://ist.rit.edu/api");
+            RESTapi baseRestUrls = new RESTapi("http://ist.rit.edu/api");
 
-            string jsonNews = baseRestURL.getRESTData("/news/");
-
+            string jsonNews = baseRestUrls.getRESTData("/news/");
+            Console.WriteLine(jsonNews);
             news = JToken.Parse(jsonNews).ToObject<News>();
 
             int minBreakingNews = ran.Next(news.older.Count());
@@ -839,8 +945,15 @@ namespace Project3_RileyE
         }
 
 
+        private void btnHomePageBreakingNews_onClicked(object sender, EventArgs e)
+        {
+            News()
+        }
+
+
         #endregion // News
 
+        // Courses Section
         #region Courses
         // Courses[] courses = null;
         Courses[] courseses = null;
@@ -897,6 +1010,7 @@ namespace Project3_RileyE
 
         #endregion
 
+        // Map Section
         #region Map
         
 
@@ -911,6 +1025,7 @@ namespace Project3_RileyE
 
         #endregion
 
+        // Contact Us Section
         #region ContactUs
         public void ContactUs()
         {
@@ -922,97 +1037,7 @@ namespace Project3_RileyE
 
         #endregion
 
-        private void tabMain_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int tabNumber = tabMain.SelectedIndex; // Current Tab
 
-            bool aboutUsView = false;              // 1
-            bool coursesView = false;              // 2
-            bool degreesView = false;              // 3
-            bool minorsView = false;               // 4
-            bool employmentView = false;           // 5
-            bool peopleView = false;               // 6
-            bool researchView = false;             // 7
-            bool contactUsView = false;            // 8
-            bool resourcesView = false;            // 9
-
-
-            switch (tabNumber)
-            {
-                case 1:
-                    if (aboutUsView == false)
-                    { 
-                        AboutUs();
-                        aboutUsView = true;
-                    }
-                    break;
-                case 2:
-                    if (coursesView == false)
-                    {
-                        Course();
-                        coursesView = true;
-                    }
-                    break;
-                case 3:
-                    if (degreesView == false)
-                    {
-                        Degrees();
-                        degreesView = true;
-                    }
-                    break;
-                case 4:
-                    if (minorsView == false)
-                    {
-                        Minors();
-                        minorsView = true;
-                    }
-                    break;
-                case 5:
-                    if (employmentView == false)
-                    {
-                        Employment();
-                        employmentView = true;
-                    }
-                    break;
-                case 6:
-                    if (peopleView == false)
-                    {
-                        People();
-                        peopleView = true;
-                    }
-                    break;
-                case 7:
-                    if (researchView == false)
-                    {
-                        Research();
-                        researchView = true;
-                    }
-                    break;
-                case 8:
-                    if (contactUsView == false)
-                    {
-                        ContactUs();
-                        contactUsView = true;
-
-                    }
-                    break;
-                case 9:
-                    if (resourcesView == false)
-                    {
-                        Resources();
-                        resourcesView = true;
-                    }
-                    break;
-
-
-
-            }
-                        
-
-            
-
-
-        }
     }
 
 }
