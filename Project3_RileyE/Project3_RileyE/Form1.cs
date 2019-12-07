@@ -26,21 +26,15 @@ namespace Project3_RileyE
         {
             InitializeComponent();
 
-            // music functionality - THE Legend of Zelda: Breath of the Wild "Cooking SFX" - 
+            // music functionality - The Legend of Zelda: Breath of the Wild "Cooking SFX" - 
             // By Manaka Kataoka, Yasuaki Iwata, Hajime Wakai | owned by Nintendo (C) (tm)
 
-            // System.Media.SoundPlayer music = new System.Media.SoundPlayer(@"../../media/opening.wav");
-            // music.Play();
+            System.Media.SoundPlayer music = new System.Media.SoundPlayer(@"../../media/opening.wav");
+            music.Play();
+
 
             // methods to load
-            AboutUs();
-            Degrees();
-            Minors();
-            Employment();
-            People();
-            Research();
-            Resources();
-            Course();
+         
 
 
 
@@ -846,9 +840,10 @@ namespace Project3_RileyE
 
 
         #endregion // News
-        Courses[] courseses = null;
+
         #region Courses
         // Courses[] courses = null;
+        Courses[] courseses = null;
 
         private void Course()
         {
@@ -866,7 +861,7 @@ namespace Project3_RileyE
                     comboBoxCoursesDegree.Items.Add(courseses[i].degreeName);
                     comboBoxCoursesDegree.SelectedIndex = 0;
 
-                    Console.WriteLine(courseses[i].degreeName); 
+                    // Console.WriteLine(courseses[i].degreeName); 
                 }
             }
             catch (Exception)
@@ -902,7 +897,122 @@ namespace Project3_RileyE
 
         #endregion
 
+        #region Map
+        
 
+        private void linkLblRITMap_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string mapHREF = "http://ist.rit.edu/api/map.php";
+            linkLblRITMap.LinkVisited = true;
+
+            System.Diagnostics.Process.Start(mapHREF);
+
+        }
+
+        #endregion
+
+        #region ContactUs
+        public void ContactUs()
+        {
+            Uri contactUsURL = new Uri("http://ist.rit.edu/api/contactForm.php");
+
+            wbContactForm.Url = contactUsURL;
+        }
+
+
+        #endregion
+
+        private void tabMain_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int tabNumber = tabMain.SelectedIndex; // Current Tab
+
+            bool aboutUsView = false;              // 1
+            bool coursesView = false;              // 2
+            bool degreesView = false;              // 3
+            bool minorsView = false;               // 4
+            bool employmentView = false;           // 5
+            bool peopleView = false;               // 6
+            bool researchView = false;             // 7
+            bool contactUsView = false;            // 8
+            bool resourcesView = false;            // 9
+
+
+            switch (tabNumber)
+            {
+                case 1:
+                    if (aboutUsView == false)
+                    { 
+                        AboutUs();
+                        aboutUsView = true;
+                    }
+                    break;
+                case 2:
+                    if (coursesView == false)
+                    {
+                        Course();
+                        coursesView = true;
+                    }
+                    break;
+                case 3:
+                    if (degreesView == false)
+                    {
+                        Degrees();
+                        degreesView = true;
+                    }
+                    break;
+                case 4:
+                    if (minorsView == false)
+                    {
+                        Minors();
+                        minorsView = true;
+                    }
+                    break;
+                case 5:
+                    if (employmentView == false)
+                    {
+                        Employment();
+                        employmentView = true;
+                    }
+                    break;
+                case 6:
+                    if (peopleView == false)
+                    {
+                        People();
+                        peopleView = true;
+                    }
+                    break;
+                case 7:
+                    if (researchView == false)
+                    {
+                        Research();
+                        researchView = true;
+                    }
+                    break;
+                case 8:
+                    if (contactUsView == false)
+                    {
+                        ContactUs();
+                        contactUsView = true;
+
+                    }
+                    break;
+                case 9:
+                    if (resourcesView == false)
+                    {
+                        Resources();
+                        resourcesView = true;
+                    }
+                    break;
+
+
+
+            }
+                        
+
+            
+
+
+        }
     }
 
 }
