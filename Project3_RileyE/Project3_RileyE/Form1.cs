@@ -244,8 +244,8 @@ namespace Project3_RileyE
             {
 
             }
-        }
 
+        }
         private void tbControl_Enter(object sender, EventArgs e)
         {
             // create the columns for ListView
@@ -259,7 +259,7 @@ namespace Project3_RileyE
             degreesConcentrationListView.Columns.Add("Concentrations", 399);
 
 
-           
+
 
         }
 
@@ -633,7 +633,8 @@ namespace Project3_RileyE
 
             }
 
-          
+
+            lblResourcesAmbassadorsTitle.Text = resources.studentAmbassadors.title;
 
         }
         private void linkLblResourcesTutorSchedule_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -651,15 +652,14 @@ namespace Project3_RileyE
 
         }
 
-       
     }
 
-       
-            
 
-       
+
+
+
 
         #endregion
 
+}
 
-} 

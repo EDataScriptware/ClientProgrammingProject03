@@ -131,6 +131,11 @@
             this.linkLblAcademicAdvisor = new System.Windows.Forms.LinkLabel();
             this.richtextboxAcademicAdvisorDesc = new System.Windows.Forms.RichTextBox();
             this.lblResourcesAdvisingAcademicTitle = new System.Windows.Forms.Label();
+            this.ambassadorsTab = new System.Windows.Forms.TabPage();
+            this.lblResourcesAmbassadorsTitle = new System.Windows.Forms.Label();
+            this.richTextBoxAmbassadorsContent = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.linkLabelAmbassadorsUrl = new System.Windows.Forms.LinkLabel();
             this.contactUsTab.SuspendLayout();
             this.peopleTab.SuspendLayout();
             this.tbPeopleType.SuspendLayout();
@@ -157,6 +162,8 @@
             this.advisingTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewResourcesISTAdvisor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewResourcesAcademicAdvisor)).BeginInit();
+            this.ambassadorsTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // contactUsTab
@@ -971,6 +978,7 @@
             // 
             this.tabControlResourcesType.Controls.Add(this.generalResourceTab);
             this.tabControlResourcesType.Controls.Add(this.advisingTab);
+            this.tabControlResourcesType.Controls.Add(this.ambassadorsTab);
             this.tabControlResourcesType.Location = new System.Drawing.Point(3, 6);
             this.tabControlResourcesType.Name = "tabControlResourcesType";
             this.tabControlResourcesType.SelectedIndex = 0;
@@ -1183,6 +1191,54 @@
             this.lblResourcesAdvisingAcademicTitle.TabIndex = 0;
             this.lblResourcesAdvisingAcademicTitle.Text = "Academic Advisor Title";
             // 
+            // ambassadorsTab
+            // 
+            this.ambassadorsTab.Controls.Add(this.linkLabelAmbassadorsUrl);
+            this.ambassadorsTab.Controls.Add(this.pictureBox1);
+            this.ambassadorsTab.Controls.Add(this.richTextBoxAmbassadorsContent);
+            this.ambassadorsTab.Controls.Add(this.lblResourcesAmbassadorsTitle);
+            this.ambassadorsTab.Location = new System.Drawing.Point(4, 22);
+            this.ambassadorsTab.Name = "ambassadorsTab";
+            this.ambassadorsTab.Size = new System.Drawing.Size(883, 525);
+            this.ambassadorsTab.TabIndex = 2;
+            this.ambassadorsTab.Text = "Student Ambassadors";
+            this.ambassadorsTab.UseVisualStyleBackColor = true;
+            // 
+            // lblResourcesAmbassadorsTitle
+            // 
+            this.lblResourcesAmbassadorsTitle.AutoSize = true;
+            this.lblResourcesAmbassadorsTitle.Location = new System.Drawing.Point(16, 18);
+            this.lblResourcesAmbassadorsTitle.Name = "lblResourcesAmbassadorsTitle";
+            this.lblResourcesAmbassadorsTitle.Size = new System.Drawing.Size(133, 13);
+            this.lblResourcesAmbassadorsTitle.TabIndex = 0;
+            this.lblResourcesAmbassadorsTitle.Text = "Student Ambassadors Title";
+            // 
+            // richTextBoxAmbassadorsContent
+            // 
+            this.richTextBoxAmbassadorsContent.Location = new System.Drawing.Point(19, 48);
+            this.richTextBoxAmbassadorsContent.Name = "richTextBoxAmbassadorsContent";
+            this.richTextBoxAmbassadorsContent.Size = new System.Drawing.Size(477, 219);
+            this.richTextBoxAmbassadorsContent.TabIndex = 1;
+            this.richTextBoxAmbassadorsContent.Text = "";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(529, 48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(333, 219);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // linkLabelAmbassadorsUrl
+            // 
+            this.linkLabelAmbassadorsUrl.AutoSize = true;
+            this.linkLabelAmbassadorsUrl.Location = new System.Drawing.Point(19, 426);
+            this.linkLabelAmbassadorsUrl.Name = "linkLabelAmbassadorsUrl";
+            this.linkLabelAmbassadorsUrl.Size = new System.Drawing.Size(85, 13);
+            this.linkLabelAmbassadorsUrl.TabIndex = 3;
+            this.linkLabelAmbassadorsUrl.TabStop = true;
+            this.linkLabelAmbassadorsUrl.Text = "Application Form";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1232,6 +1288,9 @@
             this.advisingTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewResourcesISTAdvisor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewResourcesAcademicAdvisor)).EndInit();
+            this.ambassadorsTab.ResumeLayout(false);
+            this.ambassadorsTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1341,6 +1400,11 @@
         private System.Windows.Forms.ToolStripMenuItem humanComputerInteractionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem networkingSystemsAdministrationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem graduateCertificatesToolStripMenuItem1;
+        private System.Windows.Forms.TabPage ambassadorsTab;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.RichTextBox richTextBoxAmbassadorsContent;
+        private System.Windows.Forms.Label lblResourcesAmbassadorsTitle;
+        private System.Windows.Forms.LinkLabel linkLabelAmbassadorsUrl;
     }
 }
 
