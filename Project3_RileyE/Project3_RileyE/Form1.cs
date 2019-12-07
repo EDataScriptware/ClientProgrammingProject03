@@ -40,6 +40,7 @@ namespace Project3_RileyE
             People();
             Research();
             Resources();
+            Course();
 
 
 
@@ -725,7 +726,7 @@ namespace Project3_RileyE
         {
             linkLblResourcesGradOne.LinkVisited = true;
             try
-            { 
+            {
                 System.Diagnostics.Process.Start(resources.forms.graduateForms[0].href);
             }
             catch (Exception)
@@ -811,15 +812,97 @@ namespace Project3_RileyE
                 Console.WriteLine("Online file not found");
             }
         }
+
+        #endregion
+
+        #region News
+        News news = null;
+
+
+        // private RESTapi baseRestURL = null;
+
+        private void btnHomePageBreakingNews_onClicked(object sender, EventArgs e)
+        {
+
+            Random ran = new Random();
+
+            RESTapi baseRestUrl = new RESTapi("http://ist.rit.edu/api");
+
+            string jsonNews = baseRestURL.getRESTData("/news/");
+
+            news = JToken.Parse(jsonNews).ToObject<News>();
+
+            int minBreakingNews = ran.Next(news.older.Count());
+
+            String desc = news.older[minBreakingNews].description;
+
+            String title = news.older[minBreakingNews].title;
+
+            dlgBreakingNews dlg = new dlgBreakingNews(title, desc);
+
+            dlg.Show();
+
+        }
+
+
+        #endregion // News
+        Courses[] courseses = null;
+        #region Courses
+        // Courses[] courses = null;
+
+        private void Course()
+        {
+            baseRestURL = new RESTapi("http://ist.rit.edu/api");
+            string jsonCourses = baseRestURL.getRESTData("/courses/");
+            courseses = JToken.Parse(jsonCourses).ToObject<Courses[]>();
+
+
+           // Console.WriteLine(jsonCourses);
+
+            try
+            {
+                for (int i = 0; i < courseses.Length; i++)
+                {
+                    comboBoxCoursesDegree.Items.Add(courseses[i].degreeName);
+                    comboBoxCoursesDegree.SelectedIndex = 0;
+
+                    Console.WriteLine(courseses[i].degreeName); 
+                }
+            }
+            catch (Exception)
+            {
+                
+            }
+
+        }
+
+        private void comboBoxCoursesDegree_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            baseRestURL = new RESTapi("http://ist.rit.edu/api");
+            string jsonCourses = baseRestURL.getRESTData("/courses/");
+            courseses = JToken.Parse(jsonCourses).ToObject<Courses[]>();
+            int index = comboBoxCoursesDegree.SelectedIndex;
+            dataGridViewDegreeCourses.Rows.Clear();
+
+            try
+            {
+                for (int i = 0; i < courseses.Count(); i++)
+                {
+                    
+                    dataGridViewDegreeCourses.Rows.Add(courseses[index].courses[i]);
+
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+
+        #endregion
+
+
     }
-    #endregion
-
-
-
-
-
-
-
 
 }
-

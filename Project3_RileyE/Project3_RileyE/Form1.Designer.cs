@@ -40,7 +40,6 @@
             this.lblPeopleFacultyEmail = new System.Windows.Forms.Label();
             this.lblPeopleFacultyOffice = new System.Windows.Forms.Label();
             this.lblPeopleFacultyTitle = new System.Windows.Forms.Label();
-            this.pbPeopleFacultyPic = new System.Windows.Forms.PictureBox();
             this.cbPeopleFacultyNames = new System.Windows.Forms.ComboBox();
             this.lblPeopleFacultyMainTitle = new System.Windows.Forms.Label();
             this.tbStaff = new System.Windows.Forms.TabPage();
@@ -51,7 +50,6 @@
             this.lblPeopleStaffEmail = new System.Windows.Forms.Label();
             this.lblPeopleStaffOffice = new System.Windows.Forms.Label();
             this.lblPeopleStaffTitle = new System.Windows.Forms.Label();
-            this.pictureBoxPeopleStaff = new System.Windows.Forms.PictureBox();
             this.cbPeopleStaff = new System.Windows.Forms.ComboBox();
             this.lblPeopleStaffMainTitle = new System.Windows.Forms.Label();
             this.employmentTab = new System.Windows.Forms.TabPage();
@@ -76,7 +74,7 @@
             this.concentrationHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txtboxDegreesDesc = new System.Windows.Forms.RichTextBox();
             this.lblDegreesTitle = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStripDegreeTypes = new System.Windows.Forms.MenuStrip();
             this.computingAndInformationTechnologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.computingAndInformationTechnologyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.humanCenteredComputingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -91,9 +89,9 @@
             this.txtboxAboutUs = new System.Windows.Forms.RichTextBox();
             this.lblAboutUsTitle = new System.Windows.Forms.Label();
             this.homeTab = new System.Windows.Forms.TabPage();
+            this.btnBreakingNews = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBoxRITLogo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabMain = new System.Windows.Forms.TabControl();
@@ -117,6 +115,20 @@
             this.lblStudentResourcesTitle = new System.Windows.Forms.Label();
             this.lblResourcesStudyAbroad = new System.Windows.Forms.Label();
             this.lblStudentResourcesSubtitle = new System.Windows.Forms.Label();
+            this.academicTab = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.linkLblResourcesUnderOne = new System.Windows.Forms.LinkLabel();
+            this.linkLblAcademicCoopInfoUrl = new System.Windows.Forms.LinkLabel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.linkLblResourcesGradSeven = new System.Windows.Forms.LinkLabel();
+            this.linkLblResourcesGradSix = new System.Windows.Forms.LinkLabel();
+            this.linkLblResourcesGradFive = new System.Windows.Forms.LinkLabel();
+            this.linkLblResourcesGradFour = new System.Windows.Forms.LinkLabel();
+            this.linkLblResourcesGradThree = new System.Windows.Forms.LinkLabel();
+            this.linkLblResourcesGradTwo = new System.Windows.Forms.LinkLabel();
+            this.linkLblResourcesGradOne = new System.Windows.Forms.LinkLabel();
+            this.richTextBoxResourcesAcademicCoopInfoDesc = new System.Windows.Forms.RichTextBox();
+            this.lblResourcesAcademicCoopInfoTitle = new System.Windows.Forms.Label();
             this.advisingTab = new System.Windows.Forms.TabPage();
             this.datagridviewResourcesISTAdvisor = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -135,38 +147,28 @@
             this.lblResourcesAmbassadorNote = new System.Windows.Forms.Label();
             this.lblResourcesAmbassadorsApplyDesc = new System.Windows.Forms.Label();
             this.linkLabelAmbassadorsUrl = new System.Windows.Forms.LinkLabel();
-            this.pictureBoxResourcesAmbassadorsPic = new System.Windows.Forms.PictureBox();
             this.richTextBoxAmbassadorsContent = new System.Windows.Forms.RichTextBox();
             this.lblResourcesAmbassadorsTitle = new System.Windows.Forms.Label();
-            this.academicTab = new System.Windows.Forms.TabPage();
-            this.lblResourcesAcademicCoopInfoTitle = new System.Windows.Forms.Label();
-            this.richTextBoxResourcesAcademicCoopInfoDesc = new System.Windows.Forms.RichTextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.linkLblResourcesGradOne = new System.Windows.Forms.LinkLabel();
-            this.linkLblAcademicCoopInfoUrl = new System.Windows.Forms.LinkLabel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.linkLblResourcesUnderOne = new System.Windows.Forms.LinkLabel();
-            this.linkLblResourcesGradTwo = new System.Windows.Forms.LinkLabel();
-            this.linkLblResourcesGradThree = new System.Windows.Forms.LinkLabel();
-            this.linkLblResourcesGradFour = new System.Windows.Forms.LinkLabel();
-            this.linkLblResourcesGradFive = new System.Windows.Forms.LinkLabel();
-            this.linkLblResourcesGradSix = new System.Windows.Forms.LinkLabel();
-            this.linkLblResourcesGradSeven = new System.Windows.Forms.LinkLabel();
+            this.coursesTab = new System.Windows.Forms.TabPage();
+            this.pictureBoxRITLogo = new System.Windows.Forms.PictureBox();
+            this.pbPeopleFacultyPic = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPeopleStaff = new System.Windows.Forms.PictureBox();
+            this.pictureBoxResourcesAmbassadorsPic = new System.Windows.Forms.PictureBox();
+            this.dataGridViewDegreeCourses = new System.Windows.Forms.DataGridView();
+            this.comboBoxCoursesDegree = new System.Windows.Forms.ComboBox();
+            this.overallCourses = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contactUsTab.SuspendLayout();
             this.peopleTab.SuspendLayout();
             this.tbPeopleType.SuspendLayout();
             this.tbFaculty.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPeopleFacultyPic)).BeginInit();
             this.tbStaff.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPeopleStaff)).BeginInit();
             this.employmentTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCoopTable)).BeginInit();
             this.minorsTab.SuspendLayout();
             this.degreesTab.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.menuStripDegreeTypes.SuspendLayout();
             this.aboutUsTab.SuspendLayout();
             this.homeTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRITLogo)).BeginInit();
             this.tabMain.SuspendLayout();
             this.researchTab.SuspendLayout();
             this.tabResearchType.SuspendLayout();
@@ -175,14 +177,19 @@
             this.resourcesTab.SuspendLayout();
             this.tabControlResourcesType.SuspendLayout();
             this.generalResourceTab.SuspendLayout();
+            this.academicTab.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.advisingTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewResourcesISTAdvisor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewResourcesAcademicAdvisor)).BeginInit();
             this.ambassadorsTab.SuspendLayout();
+            this.coursesTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRITLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPeopleFacultyPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPeopleStaff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxResourcesAmbassadorsPic)).BeginInit();
-            this.academicTab.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDegreeCourses)).BeginInit();
             this.SuspendLayout();
             // 
             // contactUsTab
@@ -314,16 +321,6 @@
             this.lblPeopleFacultyTitle.TabIndex = 3;
             this.lblPeopleFacultyTitle.Text = "People Title";
             // 
-            // pbPeopleFacultyPic
-            // 
-            this.pbPeopleFacultyPic.BackColor = System.Drawing.Color.Transparent;
-            this.pbPeopleFacultyPic.Location = new System.Drawing.Point(17, 95);
-            this.pbPeopleFacultyPic.Name = "pbPeopleFacultyPic";
-            this.pbPeopleFacultyPic.Size = new System.Drawing.Size(250, 250);
-            this.pbPeopleFacultyPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbPeopleFacultyPic.TabIndex = 2;
-            this.pbPeopleFacultyPic.TabStop = false;
-            // 
             // cbPeopleFacultyNames
             // 
             this.cbPeopleFacultyNames.FormattingEnabled = true;
@@ -352,9 +349,9 @@
             this.tbStaff.Controls.Add(this.lblPeopleStaffEmail);
             this.tbStaff.Controls.Add(this.lblPeopleStaffOffice);
             this.tbStaff.Controls.Add(this.lblPeopleStaffTitle);
-            this.tbStaff.Controls.Add(this.pictureBoxPeopleStaff);
             this.tbStaff.Controls.Add(this.cbPeopleStaff);
             this.tbStaff.Controls.Add(this.lblPeopleStaffMainTitle);
+            this.tbStaff.Controls.Add(this.pictureBoxPeopleStaff);
             this.tbStaff.Location = new System.Drawing.Point(4, 22);
             this.tbStaff.Name = "tbStaff";
             this.tbStaff.Padding = new System.Windows.Forms.Padding(3);
@@ -426,16 +423,6 @@
             this.lblPeopleStaffTitle.Size = new System.Drawing.Size(63, 13);
             this.lblPeopleStaffTitle.TabIndex = 12;
             this.lblPeopleStaffTitle.Text = "People Title";
-            // 
-            // pictureBoxPeopleStaff
-            // 
-            this.pictureBoxPeopleStaff.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxPeopleStaff.Location = new System.Drawing.Point(17, 95);
-            this.pictureBoxPeopleStaff.Name = "pictureBoxPeopleStaff";
-            this.pictureBoxPeopleStaff.Size = new System.Drawing.Size(250, 250);
-            this.pictureBoxPeopleStaff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxPeopleStaff.TabIndex = 11;
-            this.pictureBoxPeopleStaff.TabStop = false;
             // 
             // cbPeopleStaff
             // 
@@ -626,7 +613,7 @@
             this.degreesTab.Controls.Add(this.degreesConcentrationListView);
             this.degreesTab.Controls.Add(this.txtboxDegreesDesc);
             this.degreesTab.Controls.Add(this.lblDegreesTitle);
-            this.degreesTab.Controls.Add(this.menuStrip1);
+            this.degreesTab.Controls.Add(this.menuStripDegreeTypes);
             this.degreesTab.Location = new System.Drawing.Point(4, 22);
             this.degreesTab.Name = "degreesTab";
             this.degreesTab.Size = new System.Drawing.Size(894, 557);
@@ -668,16 +655,16 @@
             this.lblDegreesTitle.TabIndex = 1;
             this.lblDegreesTitle.Text = "Degrees Title Label";
             // 
-            // menuStrip1
+            // menuStripDegreeTypes
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStripDegreeTypes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.computingAndInformationTechnologyToolStripMenuItem,
             this.graduateToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(894, 24);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStripDegreeTypes.Location = new System.Drawing.Point(0, 0);
+            this.menuStripDegreeTypes.Name = "menuStripDegreeTypes";
+            this.menuStripDegreeTypes.Size = new System.Drawing.Size(894, 24);
+            this.menuStripDegreeTypes.TabIndex = 4;
+            this.menuStripDegreeTypes.Text = "menuStrip1";
             // 
             // computingAndInformationTechnologyToolStripMenuItem
             // 
@@ -798,6 +785,7 @@
             // 
             // homeTab
             // 
+            this.homeTab.Controls.Add(this.btnBreakingNews);
             this.homeTab.Controls.Add(this.label4);
             this.homeTab.Controls.Add(this.label3);
             this.homeTab.Controls.Add(this.pictureBoxRITLogo);
@@ -810,6 +798,16 @@
             this.homeTab.TabIndex = 0;
             this.homeTab.Text = "Home";
             this.homeTab.UseVisualStyleBackColor = true;
+            // 
+            // btnBreakingNews
+            // 
+            this.btnBreakingNews.Location = new System.Drawing.Point(10, 525);
+            this.btnBreakingNews.Name = "btnBreakingNews";
+            this.btnBreakingNews.Size = new System.Drawing.Size(878, 23);
+            this.btnBreakingNews.TabIndex = 5;
+            this.btnBreakingNews.Text = "See Breaking News!";
+            this.btnBreakingNews.UseVisualStyleBackColor = true;
+            this.btnBreakingNews.Click += new System.EventHandler(this.btnHomePageBreakingNews_onClicked);
             // 
             // label4
             // 
@@ -833,17 +831,6 @@
             this.label3.Size = new System.Drawing.Size(250, 17);
             this.label3.TabIndex = 1;
             this.label3.Text = "Please select on a tab above to proceed! ";
-            // 
-            // pictureBoxRITLogo
-            // 
-            this.pictureBoxRITLogo.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxRITLogo.Image = global::Project3_RileyE.Properties.Resources.rit_logo;
-            this.pictureBoxRITLogo.ImageLocation = "";
-            this.pictureBoxRITLogo.Location = new System.Drawing.Point(326, 151);
-            this.pictureBoxRITLogo.Name = "pictureBoxRITLogo";
-            this.pictureBoxRITLogo.Size = new System.Drawing.Size(208, 210);
-            this.pictureBoxRITLogo.TabIndex = 2;
-            this.pictureBoxRITLogo.TabStop = false;
             // 
             // label2
             // 
@@ -871,6 +858,7 @@
             // 
             this.tabMain.Controls.Add(this.homeTab);
             this.tabMain.Controls.Add(this.aboutUsTab);
+            this.tabMain.Controls.Add(this.coursesTab);
             this.tabMain.Controls.Add(this.degreesTab);
             this.tabMain.Controls.Add(this.minorsTab);
             this.tabMain.Controls.Add(this.employmentTab);
@@ -1085,6 +1073,162 @@
             this.lblStudentResourcesSubtitle.TabIndex = 1;
             this.lblStudentResourcesSubtitle.Text = "Subtitle";
             // 
+            // academicTab
+            // 
+            this.academicTab.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.academicTab.Controls.Add(this.groupBox2);
+            this.academicTab.Controls.Add(this.linkLblAcademicCoopInfoUrl);
+            this.academicTab.Controls.Add(this.groupBox1);
+            this.academicTab.Controls.Add(this.richTextBoxResourcesAcademicCoopInfoDesc);
+            this.academicTab.Controls.Add(this.lblResourcesAcademicCoopInfoTitle);
+            this.academicTab.Location = new System.Drawing.Point(4, 22);
+            this.academicTab.Name = "academicTab";
+            this.academicTab.Size = new System.Drawing.Size(883, 525);
+            this.academicTab.TabIndex = 3;
+            this.academicTab.Text = "Academic";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.linkLblResourcesUnderOne);
+            this.groupBox2.Location = new System.Drawing.Point(680, 410);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(181, 77);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Undergraduate Forms";
+            // 
+            // linkLblResourcesUnderOne
+            // 
+            this.linkLblResourcesUnderOne.AutoSize = true;
+            this.linkLblResourcesUnderOne.Location = new System.Drawing.Point(6, 32);
+            this.linkLblResourcesUnderOne.Name = "linkLblResourcesUnderOne";
+            this.linkLblResourcesUnderOne.Size = new System.Drawing.Size(58, 13);
+            this.linkLblResourcesUnderOne.TabIndex = 0;
+            this.linkLblResourcesUnderOne.TabStop = true;
+            this.linkLblResourcesUnderOne.Text = "FormName";
+            this.linkLblResourcesUnderOne.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesUnderOne_LinkClicked);
+            // 
+            // linkLblAcademicCoopInfoUrl
+            // 
+            this.linkLblAcademicCoopInfoUrl.AutoSize = true;
+            this.linkLblAcademicCoopInfoUrl.Location = new System.Drawing.Point(16, 494);
+            this.linkLblAcademicCoopInfoUrl.Name = "linkLblAcademicCoopInfoUrl";
+            this.linkLblAcademicCoopInfoUrl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLblAcademicCoopInfoUrl.Size = new System.Drawing.Size(137, 13);
+            this.linkLblAcademicCoopInfoUrl.TabIndex = 3;
+            this.linkLblAcademicCoopInfoUrl.TabStop = true;
+            this.linkLblAcademicCoopInfoUrl.Text = "Find More Coop Information";
+            this.linkLblAcademicCoopInfoUrl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblAcademicCoopInfoUrl_LinkClicked);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.linkLblResourcesGradSeven);
+            this.groupBox1.Controls.Add(this.linkLblResourcesGradSix);
+            this.groupBox1.Controls.Add(this.linkLblResourcesGradFive);
+            this.groupBox1.Controls.Add(this.linkLblResourcesGradFour);
+            this.groupBox1.Controls.Add(this.linkLblResourcesGradThree);
+            this.groupBox1.Controls.Add(this.linkLblResourcesGradTwo);
+            this.groupBox1.Controls.Add(this.linkLblResourcesGradOne);
+            this.groupBox1.Location = new System.Drawing.Point(680, 38);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(181, 305);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Graduate Forms";
+            // 
+            // linkLblResourcesGradSeven
+            // 
+            this.linkLblResourcesGradSeven.AutoSize = true;
+            this.linkLblResourcesGradSeven.Location = new System.Drawing.Point(6, 257);
+            this.linkLblResourcesGradSeven.Name = "linkLblResourcesGradSeven";
+            this.linkLblResourcesGradSeven.Size = new System.Drawing.Size(58, 13);
+            this.linkLblResourcesGradSeven.TabIndex = 6;
+            this.linkLblResourcesGradSeven.TabStop = true;
+            this.linkLblResourcesGradSeven.Text = "FormName";
+            // 
+            // linkLblResourcesGradSix
+            // 
+            this.linkLblResourcesGradSix.AutoSize = true;
+            this.linkLblResourcesGradSix.Location = new System.Drawing.Point(6, 218);
+            this.linkLblResourcesGradSix.Name = "linkLblResourcesGradSix";
+            this.linkLblResourcesGradSix.Size = new System.Drawing.Size(58, 13);
+            this.linkLblResourcesGradSix.TabIndex = 5;
+            this.linkLblResourcesGradSix.TabStop = true;
+            this.linkLblResourcesGradSix.Text = "FormName";
+            this.linkLblResourcesGradSix.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesGradSix_LinkClicked);
+            // 
+            // linkLblResourcesGradFive
+            // 
+            this.linkLblResourcesGradFive.AutoSize = true;
+            this.linkLblResourcesGradFive.Location = new System.Drawing.Point(6, 176);
+            this.linkLblResourcesGradFive.Name = "linkLblResourcesGradFive";
+            this.linkLblResourcesGradFive.Size = new System.Drawing.Size(58, 13);
+            this.linkLblResourcesGradFive.TabIndex = 4;
+            this.linkLblResourcesGradFive.TabStop = true;
+            this.linkLblResourcesGradFive.Text = "FormName";
+            this.linkLblResourcesGradFive.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesGradFive_LinkClicked);
+            // 
+            // linkLblResourcesGradFour
+            // 
+            this.linkLblResourcesGradFour.AutoSize = true;
+            this.linkLblResourcesGradFour.Location = new System.Drawing.Point(6, 138);
+            this.linkLblResourcesGradFour.Name = "linkLblResourcesGradFour";
+            this.linkLblResourcesGradFour.Size = new System.Drawing.Size(58, 13);
+            this.linkLblResourcesGradFour.TabIndex = 3;
+            this.linkLblResourcesGradFour.TabStop = true;
+            this.linkLblResourcesGradFour.Text = "FormName";
+            this.linkLblResourcesGradFour.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesGradFour_LinkClicked);
+            // 
+            // linkLblResourcesGradThree
+            // 
+            this.linkLblResourcesGradThree.AutoSize = true;
+            this.linkLblResourcesGradThree.Location = new System.Drawing.Point(6, 99);
+            this.linkLblResourcesGradThree.Name = "linkLblResourcesGradThree";
+            this.linkLblResourcesGradThree.Size = new System.Drawing.Size(58, 13);
+            this.linkLblResourcesGradThree.TabIndex = 2;
+            this.linkLblResourcesGradThree.TabStop = true;
+            this.linkLblResourcesGradThree.Text = "FormName";
+            this.linkLblResourcesGradThree.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesGradThree_LinkClicked);
+            // 
+            // linkLblResourcesGradTwo
+            // 
+            this.linkLblResourcesGradTwo.AutoSize = true;
+            this.linkLblResourcesGradTwo.Location = new System.Drawing.Point(6, 62);
+            this.linkLblResourcesGradTwo.Name = "linkLblResourcesGradTwo";
+            this.linkLblResourcesGradTwo.Size = new System.Drawing.Size(58, 13);
+            this.linkLblResourcesGradTwo.TabIndex = 1;
+            this.linkLblResourcesGradTwo.TabStop = true;
+            this.linkLblResourcesGradTwo.Text = "FormName";
+            this.linkLblResourcesGradTwo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesGradTwo_LinkClicked);
+            // 
+            // linkLblResourcesGradOne
+            // 
+            this.linkLblResourcesGradOne.AutoSize = true;
+            this.linkLblResourcesGradOne.Location = new System.Drawing.Point(6, 29);
+            this.linkLblResourcesGradOne.Name = "linkLblResourcesGradOne";
+            this.linkLblResourcesGradOne.Size = new System.Drawing.Size(58, 13);
+            this.linkLblResourcesGradOne.TabIndex = 0;
+            this.linkLblResourcesGradOne.TabStop = true;
+            this.linkLblResourcesGradOne.Text = "FormName";
+            this.linkLblResourcesGradOne.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesGradOne_LinkClicked);
+            // 
+            // richTextBoxResourcesAcademicCoopInfoDesc
+            // 
+            this.richTextBoxResourcesAcademicCoopInfoDesc.Location = new System.Drawing.Point(16, 38);
+            this.richTextBoxResourcesAcademicCoopInfoDesc.Name = "richTextBoxResourcesAcademicCoopInfoDesc";
+            this.richTextBoxResourcesAcademicCoopInfoDesc.Size = new System.Drawing.Size(658, 449);
+            this.richTextBoxResourcesAcademicCoopInfoDesc.TabIndex = 1;
+            this.richTextBoxResourcesAcademicCoopInfoDesc.Text = "";
+            // 
+            // lblResourcesAcademicCoopInfoTitle
+            // 
+            this.lblResourcesAcademicCoopInfoTitle.AutoSize = true;
+            this.lblResourcesAcademicCoopInfoTitle.Location = new System.Drawing.Point(13, 13);
+            this.lblResourcesAcademicCoopInfoTitle.Name = "lblResourcesAcademicCoopInfoTitle";
+            this.lblResourcesAcademicCoopInfoTitle.Size = new System.Drawing.Size(110, 13);
+            this.lblResourcesAcademicCoopInfoTitle.TabIndex = 0;
+            this.lblResourcesAcademicCoopInfoTitle.Text = "Coop Information Title";
+            // 
             // advisingTab
             // 
             this.advisingTab.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -1217,9 +1361,9 @@
             this.ambassadorsTab.Controls.Add(this.lblResourcesAmbassadorNote);
             this.ambassadorsTab.Controls.Add(this.lblResourcesAmbassadorsApplyDesc);
             this.ambassadorsTab.Controls.Add(this.linkLabelAmbassadorsUrl);
-            this.ambassadorsTab.Controls.Add(this.pictureBoxResourcesAmbassadorsPic);
             this.ambassadorsTab.Controls.Add(this.richTextBoxAmbassadorsContent);
             this.ambassadorsTab.Controls.Add(this.lblResourcesAmbassadorsTitle);
+            this.ambassadorsTab.Controls.Add(this.pictureBoxResourcesAmbassadorsPic);
             this.ambassadorsTab.Location = new System.Drawing.Point(4, 22);
             this.ambassadorsTab.Name = "ambassadorsTab";
             this.ambassadorsTab.Size = new System.Drawing.Size(883, 525);
@@ -1256,16 +1400,6 @@
             this.linkLabelAmbassadorsUrl.Text = "Application Form";
             this.linkLabelAmbassadorsUrl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelAmbassadorsUrl_LinkClicked);
             // 
-            // pictureBoxResourcesAmbassadorsPic
-            // 
-            this.pictureBoxResourcesAmbassadorsPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxResourcesAmbassadorsPic.Location = new System.Drawing.Point(508, 48);
-            this.pictureBoxResourcesAmbassadorsPic.Name = "pictureBoxResourcesAmbassadorsPic";
-            this.pictureBoxResourcesAmbassadorsPic.Size = new System.Drawing.Size(370, 215);
-            this.pictureBoxResourcesAmbassadorsPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxResourcesAmbassadorsPic.TabIndex = 2;
-            this.pictureBoxResourcesAmbassadorsPic.TabStop = false;
-            // 
             // richTextBoxAmbassadorsContent
             // 
             this.richTextBoxAmbassadorsContent.Location = new System.Drawing.Point(19, 48);
@@ -1283,161 +1417,81 @@
             this.lblResourcesAmbassadorsTitle.TabIndex = 0;
             this.lblResourcesAmbassadorsTitle.Text = "Student Ambassadors Title";
             // 
-            // academicTab
+            // coursesTab
             // 
-            this.academicTab.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.academicTab.Controls.Add(this.groupBox2);
-            this.academicTab.Controls.Add(this.linkLblAcademicCoopInfoUrl);
-            this.academicTab.Controls.Add(this.groupBox1);
-            this.academicTab.Controls.Add(this.richTextBoxResourcesAcademicCoopInfoDesc);
-            this.academicTab.Controls.Add(this.lblResourcesAcademicCoopInfoTitle);
-            this.academicTab.Location = new System.Drawing.Point(4, 22);
-            this.academicTab.Name = "academicTab";
-            this.academicTab.Size = new System.Drawing.Size(883, 525);
-            this.academicTab.TabIndex = 3;
-            this.academicTab.Text = "Academic";
+            this.coursesTab.Controls.Add(this.comboBoxCoursesDegree);
+            this.coursesTab.Controls.Add(this.dataGridViewDegreeCourses);
+            this.coursesTab.Location = new System.Drawing.Point(4, 22);
+            this.coursesTab.Name = "coursesTab";
+            this.coursesTab.Size = new System.Drawing.Size(894, 557);
+            this.coursesTab.TabIndex = 9;
+            this.coursesTab.Text = "Courses";
             // 
-            // lblResourcesAcademicCoopInfoTitle
+            // pictureBoxRITLogo
             // 
-            this.lblResourcesAcademicCoopInfoTitle.AutoSize = true;
-            this.lblResourcesAcademicCoopInfoTitle.Location = new System.Drawing.Point(13, 13);
-            this.lblResourcesAcademicCoopInfoTitle.Name = "lblResourcesAcademicCoopInfoTitle";
-            this.lblResourcesAcademicCoopInfoTitle.Size = new System.Drawing.Size(110, 13);
-            this.lblResourcesAcademicCoopInfoTitle.TabIndex = 0;
-            this.lblResourcesAcademicCoopInfoTitle.Text = "Coop Information Title";
+            this.pictureBoxRITLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxRITLogo.Image = global::Project3_RileyE.Properties.Resources.rit_logo;
+            this.pictureBoxRITLogo.ImageLocation = "";
+            this.pictureBoxRITLogo.Location = new System.Drawing.Point(326, 151);
+            this.pictureBoxRITLogo.Name = "pictureBoxRITLogo";
+            this.pictureBoxRITLogo.Size = new System.Drawing.Size(208, 210);
+            this.pictureBoxRITLogo.TabIndex = 2;
+            this.pictureBoxRITLogo.TabStop = false;
             // 
-            // richTextBoxResourcesAcademicCoopInfoDesc
+            // pbPeopleFacultyPic
             // 
-            this.richTextBoxResourcesAcademicCoopInfoDesc.Location = new System.Drawing.Point(16, 38);
-            this.richTextBoxResourcesAcademicCoopInfoDesc.Name = "richTextBoxResourcesAcademicCoopInfoDesc";
-            this.richTextBoxResourcesAcademicCoopInfoDesc.Size = new System.Drawing.Size(658, 449);
-            this.richTextBoxResourcesAcademicCoopInfoDesc.TabIndex = 1;
-            this.richTextBoxResourcesAcademicCoopInfoDesc.Text = "";
+            this.pbPeopleFacultyPic.BackColor = System.Drawing.Color.Transparent;
+            this.pbPeopleFacultyPic.Location = new System.Drawing.Point(17, 95);
+            this.pbPeopleFacultyPic.Name = "pbPeopleFacultyPic";
+            this.pbPeopleFacultyPic.Size = new System.Drawing.Size(250, 250);
+            this.pbPeopleFacultyPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPeopleFacultyPic.TabIndex = 2;
+            this.pbPeopleFacultyPic.TabStop = false;
             // 
-            // groupBox1
+            // pictureBoxPeopleStaff
             // 
-            this.groupBox1.Controls.Add(this.linkLblResourcesGradSeven);
-            this.groupBox1.Controls.Add(this.linkLblResourcesGradSix);
-            this.groupBox1.Controls.Add(this.linkLblResourcesGradFive);
-            this.groupBox1.Controls.Add(this.linkLblResourcesGradFour);
-            this.groupBox1.Controls.Add(this.linkLblResourcesGradThree);
-            this.groupBox1.Controls.Add(this.linkLblResourcesGradTwo);
-            this.groupBox1.Controls.Add(this.linkLblResourcesGradOne);
-            this.groupBox1.Location = new System.Drawing.Point(680, 38);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(181, 305);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Graduate Forms";
+            this.pictureBoxPeopleStaff.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxPeopleStaff.Location = new System.Drawing.Point(17, 95);
+            this.pictureBoxPeopleStaff.Name = "pictureBoxPeopleStaff";
+            this.pictureBoxPeopleStaff.Size = new System.Drawing.Size(250, 250);
+            this.pictureBoxPeopleStaff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPeopleStaff.TabIndex = 11;
+            this.pictureBoxPeopleStaff.TabStop = false;
             // 
-            // linkLblResourcesGradOne
+            // pictureBoxResourcesAmbassadorsPic
             // 
-            this.linkLblResourcesGradOne.AutoSize = true;
-            this.linkLblResourcesGradOne.Location = new System.Drawing.Point(6, 29);
-            this.linkLblResourcesGradOne.Name = "linkLblResourcesGradOne";
-            this.linkLblResourcesGradOne.Size = new System.Drawing.Size(58, 13);
-            this.linkLblResourcesGradOne.TabIndex = 0;
-            this.linkLblResourcesGradOne.TabStop = true;
-            this.linkLblResourcesGradOne.Text = "FormName";
-            this.linkLblResourcesGradOne.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesGradOne_LinkClicked);
+            this.pictureBoxResourcesAmbassadorsPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxResourcesAmbassadorsPic.Location = new System.Drawing.Point(508, 48);
+            this.pictureBoxResourcesAmbassadorsPic.Name = "pictureBoxResourcesAmbassadorsPic";
+            this.pictureBoxResourcesAmbassadorsPic.Size = new System.Drawing.Size(370, 215);
+            this.pictureBoxResourcesAmbassadorsPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxResourcesAmbassadorsPic.TabIndex = 2;
+            this.pictureBoxResourcesAmbassadorsPic.TabStop = false;
             // 
-            // linkLblAcademicCoopInfoUrl
+            // dataGridViewDegreeCourses
             // 
-            this.linkLblAcademicCoopInfoUrl.AutoSize = true;
-            this.linkLblAcademicCoopInfoUrl.Location = new System.Drawing.Point(16, 494);
-            this.linkLblAcademicCoopInfoUrl.Name = "linkLblAcademicCoopInfoUrl";
-            this.linkLblAcademicCoopInfoUrl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.linkLblAcademicCoopInfoUrl.Size = new System.Drawing.Size(137, 13);
-            this.linkLblAcademicCoopInfoUrl.TabIndex = 3;
-            this.linkLblAcademicCoopInfoUrl.TabStop = true;
-            this.linkLblAcademicCoopInfoUrl.Text = "Find More Coop Information";
-            this.linkLblAcademicCoopInfoUrl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblAcademicCoopInfoUrl_LinkClicked);
+            this.dataGridViewDegreeCourses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDegreeCourses.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.overallCourses});
+            this.dataGridViewDegreeCourses.Location = new System.Drawing.Point(367, 42);
+            this.dataGridViewDegreeCourses.Name = "dataGridViewDegreeCourses";
+            this.dataGridViewDegreeCourses.Size = new System.Drawing.Size(510, 506);
+            this.dataGridViewDegreeCourses.TabIndex = 0;
             // 
-            // groupBox2
+            // comboBoxCoursesDegree
             // 
-            this.groupBox2.Controls.Add(this.linkLblResourcesUnderOne);
-            this.groupBox2.Location = new System.Drawing.Point(680, 410);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(181, 77);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Undergraduate Forms";
+            this.comboBoxCoursesDegree.FormattingEnabled = true;
+            this.comboBoxCoursesDegree.Location = new System.Drawing.Point(20, 42);
+            this.comboBoxCoursesDegree.Name = "comboBoxCoursesDegree";
+            this.comboBoxCoursesDegree.Size = new System.Drawing.Size(164, 21);
+            this.comboBoxCoursesDegree.TabIndex = 1;
+            this.comboBoxCoursesDegree.SelectedIndexChanged += new System.EventHandler(this.comboBoxCoursesDegree_SelectedIndexChanged);
             // 
-            // linkLblResourcesUnderOne
+            // overallCourses
             // 
-            this.linkLblResourcesUnderOne.AutoSize = true;
-            this.linkLblResourcesUnderOne.Location = new System.Drawing.Point(6, 32);
-            this.linkLblResourcesUnderOne.Name = "linkLblResourcesUnderOne";
-            this.linkLblResourcesUnderOne.Size = new System.Drawing.Size(58, 13);
-            this.linkLblResourcesUnderOne.TabIndex = 0;
-            this.linkLblResourcesUnderOne.TabStop = true;
-            this.linkLblResourcesUnderOne.Text = "FormName";
-            this.linkLblResourcesUnderOne.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesUnderOne_LinkClicked);
-            // 
-            // linkLblResourcesGradTwo
-            // 
-            this.linkLblResourcesGradTwo.AutoSize = true;
-            this.linkLblResourcesGradTwo.Location = new System.Drawing.Point(6, 62);
-            this.linkLblResourcesGradTwo.Name = "linkLblResourcesGradTwo";
-            this.linkLblResourcesGradTwo.Size = new System.Drawing.Size(58, 13);
-            this.linkLblResourcesGradTwo.TabIndex = 1;
-            this.linkLblResourcesGradTwo.TabStop = true;
-            this.linkLblResourcesGradTwo.Text = "FormName";
-            this.linkLblResourcesGradTwo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesGradTwo_LinkClicked);
-            // 
-            // linkLblResourcesGradThree
-            // 
-            this.linkLblResourcesGradThree.AutoSize = true;
-            this.linkLblResourcesGradThree.Location = new System.Drawing.Point(6, 99);
-            this.linkLblResourcesGradThree.Name = "linkLblResourcesGradThree";
-            this.linkLblResourcesGradThree.Size = new System.Drawing.Size(58, 13);
-            this.linkLblResourcesGradThree.TabIndex = 2;
-            this.linkLblResourcesGradThree.TabStop = true;
-            this.linkLblResourcesGradThree.Text = "FormName";
-            this.linkLblResourcesGradThree.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesGradThree_LinkClicked);
-            // 
-            // linkLblResourcesGradFour
-            // 
-            this.linkLblResourcesGradFour.AutoSize = true;
-            this.linkLblResourcesGradFour.Location = new System.Drawing.Point(6, 138);
-            this.linkLblResourcesGradFour.Name = "linkLblResourcesGradFour";
-            this.linkLblResourcesGradFour.Size = new System.Drawing.Size(58, 13);
-            this.linkLblResourcesGradFour.TabIndex = 3;
-            this.linkLblResourcesGradFour.TabStop = true;
-            this.linkLblResourcesGradFour.Text = "FormName";
-            this.linkLblResourcesGradFour.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesGradFour_LinkClicked);
-            // 
-            // linkLblResourcesGradFive
-            // 
-            this.linkLblResourcesGradFive.AutoSize = true;
-            this.linkLblResourcesGradFive.Location = new System.Drawing.Point(6, 176);
-            this.linkLblResourcesGradFive.Name = "linkLblResourcesGradFive";
-            this.linkLblResourcesGradFive.Size = new System.Drawing.Size(58, 13);
-            this.linkLblResourcesGradFive.TabIndex = 4;
-            this.linkLblResourcesGradFive.TabStop = true;
-            this.linkLblResourcesGradFive.Text = "FormName";
-            this.linkLblResourcesGradFive.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesGradFive_LinkClicked);
-            // 
-            // linkLblResourcesGradSix
-            // 
-            this.linkLblResourcesGradSix.AutoSize = true;
-            this.linkLblResourcesGradSix.Location = new System.Drawing.Point(6, 218);
-            this.linkLblResourcesGradSix.Name = "linkLblResourcesGradSix";
-            this.linkLblResourcesGradSix.Size = new System.Drawing.Size(58, 13);
-            this.linkLblResourcesGradSix.TabIndex = 5;
-            this.linkLblResourcesGradSix.TabStop = true;
-            this.linkLblResourcesGradSix.Text = "FormName";
-            this.linkLblResourcesGradSix.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblResourcesGradSix_LinkClicked);
-            // 
-            // linkLblResourcesGradSeven
-            // 
-            this.linkLblResourcesGradSeven.AutoSize = true;
-            this.linkLblResourcesGradSeven.Location = new System.Drawing.Point(6, 257);
-            this.linkLblResourcesGradSeven.Name = "linkLblResourcesGradSeven";
-            this.linkLblResourcesGradSeven.Size = new System.Drawing.Size(58, 13);
-            this.linkLblResourcesGradSeven.TabIndex = 6;
-            this.linkLblResourcesGradSeven.TabStop = true;
-            this.linkLblResourcesGradSeven.Text = "FormName";
+            this.overallCourses.HeaderText = "Courses";
+            this.overallCourses.Name = "overallCourses";
+            this.overallCourses.Width = 500;
             // 
             // MainWindow
             // 
@@ -1446,7 +1500,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(900, 584);
             this.Controls.Add(this.tabMain);
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menuStripDegreeTypes;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainWindow";
             this.Text = "Edward Riley - Golisano Home Page";
@@ -1455,10 +1509,8 @@
             this.tbPeopleType.ResumeLayout(false);
             this.tbFaculty.ResumeLayout(false);
             this.tbFaculty.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPeopleFacultyPic)).EndInit();
             this.tbStaff.ResumeLayout(false);
             this.tbStaff.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPeopleStaff)).EndInit();
             this.employmentTab.ResumeLayout(false);
             this.employmentTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCoopTable)).EndInit();
@@ -1466,13 +1518,12 @@
             this.minorsTab.PerformLayout();
             this.degreesTab.ResumeLayout(false);
             this.degreesTab.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuStripDegreeTypes.ResumeLayout(false);
+            this.menuStripDegreeTypes.PerformLayout();
             this.aboutUsTab.ResumeLayout(false);
             this.aboutUsTab.PerformLayout();
             this.homeTab.ResumeLayout(false);
             this.homeTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRITLogo)).EndInit();
             this.tabMain.ResumeLayout(false);
             this.researchTab.ResumeLayout(false);
             this.tabResearchType.ResumeLayout(false);
@@ -1484,19 +1535,24 @@
             this.tabControlResourcesType.ResumeLayout(false);
             this.generalResourceTab.ResumeLayout(false);
             this.generalResourceTab.PerformLayout();
+            this.academicTab.ResumeLayout(false);
+            this.academicTab.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.advisingTab.ResumeLayout(false);
             this.advisingTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewResourcesISTAdvisor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewResourcesAcademicAdvisor)).EndInit();
             this.ambassadorsTab.ResumeLayout(false);
             this.ambassadorsTab.PerformLayout();
+            this.coursesTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRITLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPeopleFacultyPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPeopleStaff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxResourcesAmbassadorsPic)).EndInit();
-            this.academicTab.ResumeLayout(false);
-            this.academicTab.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDegreeCourses)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1596,7 +1652,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStripDegreeTypes;
         private System.Windows.Forms.ToolStripMenuItem computingAndInformationTechnologyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem computingAndInformationTechnologyToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem humanCenteredComputingToolStripMenuItem;
@@ -1627,6 +1683,11 @@
         private System.Windows.Forms.LinkLabel linkLblResourcesGradThree;
         private System.Windows.Forms.LinkLabel linkLblResourcesGradTwo;
         private System.Windows.Forms.LinkLabel linkLblResourcesGradSeven;
+        private System.Windows.Forms.Button btnBreakingNews;
+        private System.Windows.Forms.TabPage coursesTab;
+        private System.Windows.Forms.DataGridView dataGridViewDegreeCourses;
+        private System.Windows.Forms.ComboBox comboBoxCoursesDegree;
+        private System.Windows.Forms.DataGridViewTextBoxColumn overallCourses;
     }
 }
 

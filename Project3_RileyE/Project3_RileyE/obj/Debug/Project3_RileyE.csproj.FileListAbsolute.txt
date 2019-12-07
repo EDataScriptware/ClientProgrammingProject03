@@ -25,3 +25,4 @@ C:\Users\student\Desktop\Project03\Project3_RileyE\obj\Debug\Project3_RileyE.csp
 C:\Users\student\Desktop\Project03\Project3_RileyE\obj\Debug\Project3_RileyE.exe
 C:\Users\student\Desktop\Project03\Project3_RileyE\obj\Debug\Project3_RileyE.pdb
 C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\Project3_RileyE\Project3_RileyE\obj\Debug\Project3_RileyE.MainWindow.resources
+C:\Users\Mason Riley\Desktop\RIT\ClientProgramming\Projects\ClientProgrammingProject03\ClientProgrammingProject03\Project3_RileyE\Project3_RileyE\obj\Debug\Project3_RileyE.dlgBreakingNews.resources
